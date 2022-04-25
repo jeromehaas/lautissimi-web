@@ -21,7 +21,7 @@ const ttf2eot = require('gulp-ttf2eot');
 // SOURCE PATHS
 const filePaths = {
 	scss: {
-		src: ['./public/scss/configs/reset.scss', './public/scss/configs/icons.scss', './public/scss/configs/fonts.scss', './public/scss/configs/variables.scss', './public/scss/configs/keyframes.scss', './public/scss/configs/typography.scss', './public/scss/configs/mixins.scss', './public/scss/configs/global.scss', './components/**/*.scss'],
+		src: ['./public/scss/reset.scss', './public/scss/icons.scss', './public/scss/fonts.scss', './public/scss/variables.scss', './public/scss/keyframes.scss', './public/scss/typography.scss', './public/scss/mixins.scss', './public/scss/global.scss', './components/**/*.scss'],
 		dist: ['./public/css', '../craft/web/css']
 	},
 	fonts: {
@@ -29,7 +29,7 @@ const filePaths = {
 		dist: ['../craft/web/fonts', '../craft/web/fonts']
 	},
 	js: {
-		src: ['./public/js/main.js', './components/**/*.js'],
+		src: ['./public/js/main.ts', './components/**/*.ts'],
 		dist: ['./public/js', '../craft/web/js']
 	},
 	image: {
@@ -45,7 +45,7 @@ const filePaths = {
 		dist: ['../craft/web/media/icons']
 	},
 	favicon: {
-		src: ['./public/media/favicons/*.png'],
+		src: ['./public/media/favicons/favicon.png'],
 		dist: ['./public/media/favicons', '../craft/web/media/favicons']
 	}
 };
@@ -141,7 +141,8 @@ const faviconTask = (done) => {
 			pipeHTML: true,
 			replace: true,
 		}))
-		.pipe(gulp.dest(filePaths.favicon.dist[0]));
+		.pipe(gulp.dest(filePaths.favicon.dist[0]))
+		.pipe(gulp.dest(filePaths.favicon.dist[1]));
 		done();
 };
 
