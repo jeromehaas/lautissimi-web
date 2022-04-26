@@ -41,11 +41,8 @@
 	font-size: 18px;
 	font-family: "Heebo", Helvetica, sans-serif;
 
-	&--bold { font-weight: 600 }
-	&--small { font-size: 14px }
-	&--big { 
-		font-size: 32px;
-		font-family: "Playfair Display";
-	}
+	&--bold { font-weight: 600; }
+	&--small { font-size: 14px; }
+	&--big { font-size: 32px; font-family: "Playfair Display"; }
 
 }
