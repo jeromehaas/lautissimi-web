@@ -22,9 +22,7 @@
 	line-height: 1;
 	opacity: 0.08;
 	white-space: nowrap;
-	
-	&--beige { color: $beige-medium }
-	&--white { color: $white }
+	text-transform: uppercase;
 }
 
 .heading--h3 {
@@ -37,4 +35,17 @@
   font-size: 20px;
   font-weight: 500;
 	line-height: 1.2;
+}
+
+.paragraph, p {
+	font-size: 18px;
+	font-family: "Heebo", Helvetica, sans-serif;
+
+	&--bold { font-weight: 600 }
+	&--small { font-size: 14px }
+	&--big { 
+		font-size: 32px;
+		font-family: "Playfair Display";
+	}
+
 }
