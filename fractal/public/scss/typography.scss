@@ -46,3 +46,23 @@
 	&--big { font-size: 32px; font-family: "Playfair Display"; }
 
 }
+
+.link, a {
+	font-family: "Heebo", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	line-height: 1.2;
+	text-decoration: none;
+	font-weight: 400;
+
+	&--small {
+		font-size: 14px;
+	}
+
+	&--serif {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 32px;
+	}
+
+}
