@@ -1,0 +1,16 @@
+name: Icon
+context: 
+  type: angle
+variants: 
+  - name: Arrow
+    context:
+      type: arrow
+  - name: Angle
+    context:
+      type: angle
+  - name: Close
+    context:
+      type: close
+  - name: LinkedIn
+    context:
+      type: linkedin

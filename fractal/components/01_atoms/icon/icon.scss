@@ -1,0 +1,20 @@
+.icon {
+  display: inline-block;
+  font: normal normal normal 32px 'Icon';
+  color: inherit;
+  flex-shrink: 0;
+	color: $beige-dark;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--small { font-size: 12px; }
+.icon--medium { font-size: 16px; }
+.icon--large { font-size: 24px; }
+.icon--big { font-size: 32px; }
+
+.icon--angle::before { content: "\ea02"; }
+.icon--arrow::before { content: "\ea03"; }
+.icon--linkedin::before { content: "\ea04"; }
+.icon--close::before { content: "\ea05"; }

@@ -21,7 +21,7 @@ const ttf2eot = require('gulp-ttf2eot');
 // SOURCE PATHS
 const filePaths = {
 	scss: {
-		src: ['./public/scss/reset.scss', './public/scss/icons.scss', './public/scss/fonts.scss', './public/scss/variables.scss', './public/scss/keyframes.scss', './public/scss/typography.scss', './public/scss/mixins.scss', './public/scss/global.scss', './components/**/*.scss'],
+		src: ['./public/scss/reset.scss', './public/scss/fonts.scss', './public/scss/variables.scss', './public/scss/keyframes.scss', './public/scss/typography.scss', './public/scss/mixins.scss', './public/scss/global.scss', './components/**/*.scss'],
 		dist: ['./public/css', '../craft/web/css']
 	},
 	fonts: {
