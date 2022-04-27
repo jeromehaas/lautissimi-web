@@ -1,0 +1,28 @@
+.close-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	width: 180px;
+	cursor: default;
+
+	&__label {
+		color: $white;
+		margin-right: 16px;
+		cursor: pointer;
+	}
+
+	&__icon { 
+		display: flex;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+		vertical-align: center;
+		text-align: center;
+		color: $white !important;
+		padding: 8px;
+		border: 1px solid $white;
+		border-radius: 50%;
+	}
+	
+}
