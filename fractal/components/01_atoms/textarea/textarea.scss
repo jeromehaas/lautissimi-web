@@ -1,22 +1,23 @@
-.text-input {
+.textarea {
 	width: 100%;
 	position: relative;
 	border-bottom: 1px solid $transparent-white;
 	
 	&__input {
 		width: 100%;
-		height: 48px;
+		height: 120px;
 		color: $white;
 		padding: 8px 0;
 		outline: none;
 		border: none;
-		padding: 0;
+		padding: none;
 		background-color: transparent;
 		margin-top: 40px;
-
-		&:focus + .text-input__label,
-		&:not(:placeholder-shown) + .text-input__label,
-		&--active + .text-input__label {
+		resize: none;
+		
+		&:focus + .textarea__label,
+		&:not(:placeholder-shown) + .textarea__label,
+		&--active + .textarea__label {
 			transform: translate(-16px, -32px);
 			font-size: 12px;
 		}
@@ -26,7 +27,6 @@
 	&__label {
 		position: absolute;
 		color: $transparent-white;
-		bottom: calc(50% - (24px / 2));
 		top: 48px;
 		left: 16px;
 		transition: all 0.2s ease;

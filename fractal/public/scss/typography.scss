@@ -71,3 +71,15 @@
 	font-weight: inherit;
 	font-family: inherit;
 }
+
+.text-input__input, 
+.textarea__input {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.text-input__label, 
+.textarea__label {
+	font-size: 18px;
+	font-weight: 300;
+}
