@@ -1,4 +1,5 @@
 name: Link
+preview: "@dark"
 context: 
   content: Link
   href: '#'
