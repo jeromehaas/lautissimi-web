@@ -1,2 +1,6 @@
 name: Text Input
 preview: "@dark"
+context:
+  label: Label
+  name: email
+  errorMessage: "Dies ist ein Plichtfeld"

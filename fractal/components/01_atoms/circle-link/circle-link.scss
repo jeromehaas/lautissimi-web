@@ -1,18 +1,16 @@
-.close-button {
+.circle-link {
+	color: $white;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
 	align-items: center;
-	width: 180px;
-	cursor: default;
 
-	&__label {
-		color: $white;
-		margin-right: 16px;
-		cursor: pointer;
-	}
-
-	&__icon { 
+	&::after { 
+		content: "\ea03";
+		margin-left: 16px;
+		font-family: Icon;
+		transform: rotate(270deg);
+		width: 32px;
+		height: 32px;
 		display: flex;
 		cursor: pointer;
 		align-items: center;

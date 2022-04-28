@@ -1,15 +1,15 @@
-name: Gravity Link
+name: Link
 preview: "@dark"
 context: 
-  content: Gravity Link
+  content: Link
   href: '#'
   color: white
 variants:
   - name: small
     context:
-      content: Gravity Link (small)
+      content: Link (small)
       style: small
   - name: serif
     context:
-      content: Gravity Link (serif)
+      content: Link (serif)
       style: serif

@@ -10,6 +10,86 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@emailjs/browser/es/api/sendPost.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/api/sendPost.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sendPost\": () => (/* binding */ sendPost)\n/* harmony export */ });\n/* harmony import */ var _models_EmailJSResponseStatus__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/EmailJSResponseStatus */ \"./node_modules/@emailjs/browser/es/models/EmailJSResponseStatus.js\");\n/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store/store */ \"./node_modules/@emailjs/browser/es/store/store.js\");\n\n\nconst sendPost = (url, data, headers = {}) => {\n    return new Promise((resolve, reject) => {\n        const xhr = new XMLHttpRequest();\n        xhr.addEventListener('load', ({ target }) => {\n            const responseStatus = new _models_EmailJSResponseStatus__WEBPACK_IMPORTED_MODULE_0__.EmailJSResponseStatus(target);\n            if (responseStatus.status === 200 || responseStatus.text === 'OK') {\n                resolve(responseStatus);\n            }\n            else {\n                reject(responseStatus);\n            }\n        });\n        xhr.addEventListener('error', ({ target }) => {\n            reject(new _models_EmailJSResponseStatus__WEBPACK_IMPORTED_MODULE_0__.EmailJSResponseStatus(target));\n        });\n        xhr.open('POST', _store_store__WEBPACK_IMPORTED_MODULE_1__.store._origin + url, true);\n        Object.keys(headers).forEach((key) => {\n            xhr.setRequestHeader(key, headers[key]);\n        });\n        xhr.send(data);\n    });\n};\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/api/sendPost.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@emailjs/browser/es/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/index.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"init\": () => (/* reexport safe */ _methods_init_init__WEBPACK_IMPORTED_MODULE_0__.init),\n/* harmony export */   \"send\": () => (/* reexport safe */ _methods_send_send__WEBPACK_IMPORTED_MODULE_1__.send),\n/* harmony export */   \"sendForm\": () => (/* reexport safe */ _methods_sendForm_sendForm__WEBPACK_IMPORTED_MODULE_2__.sendForm)\n/* harmony export */ });\n/* harmony import */ var _methods_init_init__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./methods/init/init */ \"./node_modules/@emailjs/browser/es/methods/init/init.js\");\n/* harmony import */ var _methods_send_send__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./methods/send/send */ \"./node_modules/@emailjs/browser/es/methods/send/send.js\");\n/* harmony import */ var _methods_sendForm_sendForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./methods/sendForm/sendForm */ \"./node_modules/@emailjs/browser/es/methods/sendForm/sendForm.js\");\n\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    init: _methods_init_init__WEBPACK_IMPORTED_MODULE_0__.init,\n    send: _methods_send_send__WEBPACK_IMPORTED_MODULE_1__.send,\n    sendForm: _methods_sendForm_sendForm__WEBPACK_IMPORTED_MODULE_2__.sendForm,\n});\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@emailjs/browser/es/methods/init/init.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/methods/init/init.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"init\": () => (/* binding */ init)\n/* harmony export */ });\n/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store/store */ \"./node_modules/@emailjs/browser/es/store/store.js\");\n\n/**\n * Initiation\n * @param {string} publicKey - set the EmailJS public key\n * @param {string} origin - set the EmailJS origin\n */\nconst init = (publicKey, origin = 'https://api.emailjs.com') => {\n    _store_store__WEBPACK_IMPORTED_MODULE_0__.store._userID = publicKey;\n    _store_store__WEBPACK_IMPORTED_MODULE_0__.store._origin = origin;\n};\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/methods/init/init.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@emailjs/browser/es/methods/send/send.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/methods/send/send.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"send\": () => (/* binding */ send)\n/* harmony export */ });\n/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store/store */ \"./node_modules/@emailjs/browser/es/store/store.js\");\n/* harmony import */ var _utils_validateParams__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/validateParams */ \"./node_modules/@emailjs/browser/es/utils/validateParams.js\");\n/* harmony import */ var _api_sendPost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/sendPost */ \"./node_modules/@emailjs/browser/es/api/sendPost.js\");\n\n\n\n/**\n * Send a template to the specific EmailJS service\n * @param {string} serviceID - the EmailJS service ID\n * @param {string} templateID - the EmailJS template ID\n * @param {object} templatePrams - the template params, what will be set to the EmailJS template\n * @param {string} publicKey - the EmailJS public key\n * @returns {Promise<EmailJSResponseStatus>}\n */\nconst send = (serviceID, templateID, templatePrams, publicKey) => {\n    const uID = publicKey || _store_store__WEBPACK_IMPORTED_MODULE_0__.store._userID;\n    (0,_utils_validateParams__WEBPACK_IMPORTED_MODULE_1__.validateParams)(uID, serviceID, templateID);\n    const params = {\n        lib_version: '3.6.2',\n        user_id: uID,\n        service_id: serviceID,\n        template_id: templateID,\n        template_params: templatePrams,\n    };\n    return (0,_api_sendPost__WEBPACK_IMPORTED_MODULE_2__.sendPost)('/api/v1.0/email/send', JSON.stringify(params), {\n        'Content-type': 'application/json',\n    });\n};\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/methods/send/send.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@emailjs/browser/es/methods/sendForm/sendForm.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/methods/sendForm/sendForm.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sendForm\": () => (/* binding */ sendForm)\n/* harmony export */ });\n/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store/store */ \"./node_modules/@emailjs/browser/es/store/store.js\");\n/* harmony import */ var _utils_validateParams__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/validateParams */ \"./node_modules/@emailjs/browser/es/utils/validateParams.js\");\n/* harmony import */ var _api_sendPost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/sendPost */ \"./node_modules/@emailjs/browser/es/api/sendPost.js\");\n\n\n\nconst findHTMLForm = (form) => {\n    let currentForm;\n    if (typeof form === 'string') {\n        currentForm = document.querySelector(form);\n    }\n    else {\n        currentForm = form;\n    }\n    if (!currentForm || currentForm.nodeName !== 'FORM') {\n        throw 'The 3rd parameter is expected to be the HTML form element or the style selector of form';\n    }\n    return currentForm;\n};\n/**\n * Send a form the specific EmailJS service\n * @param {string} serviceID - the EmailJS service ID\n * @param {string} templateID - the EmailJS template ID\n * @param {string | HTMLFormElement} form - the form element or selector\n * @param {string} publicKey - the EmailJS public key\n * @returns {Promise<EmailJSResponseStatus>}\n */\nconst sendForm = (serviceID, templateID, form, publicKey) => {\n    const uID = publicKey || _store_store__WEBPACK_IMPORTED_MODULE_0__.store._userID;\n    const currentForm = findHTMLForm(form);\n    (0,_utils_validateParams__WEBPACK_IMPORTED_MODULE_1__.validateParams)(uID, serviceID, templateID);\n    const formData = new FormData(currentForm);\n    formData.append('lib_version', '3.6.2');\n    formData.append('service_id', serviceID);\n    formData.append('template_id', templateID);\n    formData.append('user_id', uID);\n    return (0,_api_sendPost__WEBPACK_IMPORTED_MODULE_2__.sendPost)('/api/v1.0/email/send-form', formData);\n};\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/methods/sendForm/sendForm.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@emailjs/browser/es/models/EmailJSResponseStatus.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/models/EmailJSResponseStatus.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"EmailJSResponseStatus\": () => (/* binding */ EmailJSResponseStatus)\n/* harmony export */ });\nclass EmailJSResponseStatus {\n    constructor(httpResponse) {\n        this.status = httpResponse.status;\n        this.text = httpResponse.responseText;\n    }\n}\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/models/EmailJSResponseStatus.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@emailjs/browser/es/store/store.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/store/store.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"store\": () => (/* binding */ store)\n/* harmony export */ });\nconst store = {\n    _origin: 'https://api.emailjs.com',\n};\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/store/store.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@emailjs/browser/es/utils/validateParams.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/utils/validateParams.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"validateParams\": () => (/* binding */ validateParams)\n/* harmony export */ });\nconst validateParams = (publicKey, serviceID, templateID) => {\n    if (!publicKey) {\n        throw 'The public key is required. Visit https://dashboard.emailjs.com/admin/account';\n    }\n    if (!serviceID) {\n        throw 'The service ID is required. Visit https://dashboard.emailjs.com/admin';\n    }\n    if (!templateID) {\n        throw 'The template ID is required. Visit https://dashboard.emailjs.com/admin/templates';\n    }\n    return true;\n};\n\n\n//# sourceURL=webpack://fractal/./node_modules/@emailjs/browser/es/utils/validateParams.js?");
+
+/***/ }),
+
 /***/ "./node_modules/gsap/CSSPlugin.js":
 /*!****************************************!*\
   !*** ./node_modules/gsap/CSSPlugin.js ***!
@@ -60,13 +140,23 @@ eval("\nexports.__esModule = true;\nvar HelloWorld = (function () {\n    functio
 
 /***/ }),
 
+/***/ "./components/02_molecules/contact-form/contact-form.ts":
+/*!**************************************************************!*\
+  !*** ./components/02_molecules/contact-form/contact-form.ts ***!
+  \**************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\n    return new (P || (P = Promise))(function (resolve, reject) {\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\n    });\n};\nvar __generator = (this && this.__generator) || function (thisArg, body) {\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\n    function verb(n) { return function (v) { return step([n, v]); }; }\n    function step(op) {\n        if (f) throw new TypeError(\"Generator is already executing.\");\n        while (_) try {\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\n            if (y = 0, t) op = [op[0] & 2, t.value];\n            switch (op[0]) {\n                case 0: case 1: t = op; break;\n                case 4: _.label++; return { value: op[1], done: false };\n                case 5: _.label++; y = op[1]; op = [0]; continue;\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\n                default:\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\n                    if (t[2]) _.ops.pop();\n                    _.trys.pop(); continue;\n            }\n            op = body.call(thisArg, _);\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\n    }\n};\nexports.__esModule = true;\nvar browser_1 = __webpack_require__(/*! @emailjs/browser */ \"./node_modules/@emailjs/browser/es/index.js\");\nvar ContactForm = (function () {\n    function ContactForm() {\n        var _this = this;\n        this.init = function () {\n            _this.elements.submitButton.addEventListener('click', function (event) {\n                event.preventDefault();\n                _this.validateInputs();\n                _this.send();\n            });\n        };\n        this.validateInputs = function () {\n            _this.errors = [];\n            for (var input in _this.inputs) {\n                var name_1 = _this.inputs[input].name;\n                var element = _this.inputs[input].element;\n                var value = _this.inputs[input].element.value;\n                var validationSchema = _this.inputs[input].validationSchema;\n                var regex = new RegExp(validationSchema);\n                var res = regex.test(value);\n                if (res === false && _this.inputs[input].isRequired) {\n                    _this.errors.push(name_1);\n                    _this.addErrorStyle(element);\n                }\n                else {\n                    _this.removeErrorStyle(element);\n                }\n            }\n            ;\n        };\n        this.addErrorStyle = function (element) {\n            switch (element.tagName) {\n                case \"INPUT\":\n                    {\n                        element.classList.add('text-input__input--error');\n                    }\n                    ;\n                case \"TEXTAREA\":\n                    {\n                        element.classList.add('textarea__input--error');\n                    }\n                    ;\n            }\n            ;\n        };\n        this.removeErrorStyle = function (element) {\n            switch (element.tagName) {\n                case \"INPUT\":\n                    {\n                        element.classList.remove('text-input__input--error');\n                    }\n                    ;\n                case \"TEXTAREA\":\n                    {\n                        element.classList.remove('textarea__input--error');\n                    }\n                    ;\n            }\n            ;\n        };\n        this.send = function () { return __awaiter(_this, void 0, void 0, function () {\n            var res;\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        if (!(this.errors.length === 0)) return [3, 2];\n                        return [4, browser_1[\"default\"].send(\"yellowreach\", \"template_d4bveki\", {\n                                name: this.inputs.name.element.value,\n                                email: this.inputs.email.element.value,\n                                phone: this.inputs.phone.element.value,\n                                message: this.inputs.message.element.value\n                            }, \"ezbECtR6ZR9Hauy7P\")];\n                    case 1:\n                        res = _a.sent();\n                        if (res.status === 200) {\n                            this.showSuccessMessage();\n                            this.resetForm();\n                        }\n                        else {\n                            this.showErrorMessage();\n                        }\n                        ;\n                        _a.label = 2;\n                    case 2:\n                        ;\n                        return [2];\n                }\n            });\n        }); };\n        this.showSuccessMessage = function () {\n            _this.elements.statusMessage.error.classList.remove('status-message--active');\n            _this.elements.statusMessage.success.classList.add('status-message--active');\n        };\n        this.showErrorMessage = function () {\n            _this.elements.statusMessage.success.classList.remove('status-message--active');\n            _this.elements.statusMessage.error.classList.add('status-message--active');\n        };\n        this.resetForm = function () {\n            _this.elements.form.reset();\n        };\n        this.elements = {\n            form: document.querySelector('.contact-form'),\n            submitButton: document.querySelector('.contact-form__submit'),\n            statusMessage: {\n                success: document.querySelector('.status-message--success'),\n                error: document.querySelector('.status-message--error')\n            }\n        };\n        this.errors = [];\n        this.inputs = {\n            name: {\n                name: 'name',\n                element: document.querySelector('.contact-form__input--name input'),\n                isRequired: true,\n                validationSchema: '^.{2,50}$'\n            },\n            email: {\n                name: 'email',\n                element: document.querySelector('.contact-form__input--email input'),\n                isRequired: true,\n                validationSchema: '[a-z0-9]+@[a-z]+\\.[a-z]{2,3}'\n            },\n            phone: {\n                name: 'phone',\n                element: document.querySelector('.contact-form__input--phone input'),\n                isRequired: false,\n                validationSchema: ''\n            },\n            message: {\n                name: 'message',\n                element: document.querySelector('.contact-form__textarea--message textarea'),\n                isRequired: true,\n                validationSchema: '^.{2,500}$'\n            }\n        };\n    }\n    ;\n    return ContactForm;\n}());\n;\nexports[\"default\"] = ContactForm;\n\n\n//# sourceURL=webpack://fractal/./components/02_molecules/contact-form/contact-form.ts?");
+
+/***/ }),
+
 /***/ "./public/js/main.ts":
 /*!***************************!*\
   !*** ./public/js/main.ts ***!
   \***************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nexports.__esModule = true;\nvar hello_world_1 = __webpack_require__(/*! ../../components/01_atoms/hello-world/hello-world */ \"./components/01_atoms/hello-world/hello-world.ts\");\nvar cursor_1 = __webpack_require__(/*! ../../components/01_atoms/cursor/cursor */ \"./components/01_atoms/cursor/cursor.ts\");\nvar helloWorld = new hello_world_1[\"default\"]('Hello', 'World');\nhelloWorld.init();\nvar cursor = new cursor_1[\"default\"]();\ncursor.init();\n\n\n//# sourceURL=webpack://fractal/./public/js/main.ts?");
+eval("\nexports.__esModule = true;\nvar hello_world_1 = __webpack_require__(/*! ../../components/01_atoms/hello-world/hello-world */ \"./components/01_atoms/hello-world/hello-world.ts\");\nvar cursor_1 = __webpack_require__(/*! ../../components/01_atoms/cursor/cursor */ \"./components/01_atoms/cursor/cursor.ts\");\nvar contact_form_1 = __webpack_require__(/*! ../../components/02_molecules/contact-form/contact-form */ \"./components/02_molecules/contact-form/contact-form.ts\");\nvar helloWorld = new hello_world_1[\"default\"]('Hello', 'World');\nhelloWorld.init();\nvar cursor = new cursor_1[\"default\"]();\ncursor.init();\nvar contactForm = new contact_form_1[\"default\"]();\ncontactForm.init();\n\n\n//# sourceURL=webpack://fractal/./public/js/main.ts?");
 
 /***/ })
 
@@ -90,7 +180,7 @@ eval("\nexports.__esModule = true;\nvar hello_world_1 = __webpack_require__(/*! 
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;

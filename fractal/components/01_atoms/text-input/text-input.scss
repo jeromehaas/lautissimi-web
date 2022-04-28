@@ -1,7 +1,6 @@
 .text-input {
 	width: 100%;
 	position: relative;
-	border-bottom: 1px solid $transparent-white;
 	
 	&__input {
 		width: 100%;
@@ -10,6 +9,7 @@
 		padding: 8px 0;
 		outline: none;
 		border: none;
+		border-bottom: 1px solid $transparent-white;
 		padding: 0;
 		background-color: transparent;
 		margin-top: 40px;
@@ -21,6 +21,14 @@
 			font-size: 12px;
 		}
 
+		&--error {
+			border-bottom: 1px solid $red;
+			
+			& ~ .text-input__error-message {
+				display: block;
+			}
+			
+		}
 	}
 	
 	&__label {
@@ -31,6 +39,12 @@
 		left: 16px;
 		transition: all 0.2s ease;
 		pointer-events: none;
+	}
+
+	&__error-message {
+		color: $red;
+		padding-top: 8px;
+		display: none;
 	}
 
 }
