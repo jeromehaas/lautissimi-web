@@ -1,0 +1,30 @@
+* { cursor:none}
+
+.cursor {
+	pointer-events: none;
+
+	&__main {
+		position: fixed;
+		top: -100px;
+		left: -100px;
+		width: 8px;
+		height: 8px;
+		background-color: transparent;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		border: 1px solid $white;
+		z-index: 20;
+	}
+	
+	&__follower {
+		position: fixed;
+		top: -100px;
+		left: -100px;
+		width: 32px;
+		height: 32px;
+		transform: translate(-50%, -50%);
+		background-color: $orange-brown;
+		border-radius: 50%;
+	}
+		
+}
