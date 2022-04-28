@@ -21,7 +21,9 @@ class Cursor {
 	}
 	
 	init = () => {
-		window.addEventListener('pointermove', (event) => this.updateCursorPosition(event), true);
+		if (this.main.element && this.follower.element) {
+			window.addEventListener('pointermove', (event) => this.updateCursorPosition(event), true);
+		}
 	};
 
 	moveMain = () => {
