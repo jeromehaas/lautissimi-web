@@ -130,16 +130,6 @@ eval("\nexports.__esModule = true;\nvar gsap_1 = __webpack_require__(/*! gsap */
 
 /***/ }),
 
-/***/ "./components/01_atoms/hello-world/hello-world.ts":
-/*!********************************************************!*\
-  !*** ./components/01_atoms/hello-world/hello-world.ts ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-eval("\nexports.__esModule = true;\nvar HelloWorld = (function () {\n    function HelloWorld(greeting, world) {\n        var _this = this;\n        this.greeting = greeting;\n        this.world = world;\n        this.init = function () {\n            console.log(\"\".concat(_this.greeting, \" \").concat(_this.world, \"!\"));\n        };\n        this.greeting = greeting;\n        this.world = world;\n    }\n    ;\n    return HelloWorld;\n}());\n;\nexports[\"default\"] = HelloWorld;\n\n\n//# sourceURL=webpack://fractal/./components/01_atoms/hello-world/hello-world.ts?");
-
-/***/ }),
-
 /***/ "./components/02_molecules/contact-form/contact-form.ts":
 /*!**************************************************************!*\
   !*** ./components/02_molecules/contact-form/contact-form.ts ***!
@@ -156,7 +146,7 @@ eval("\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _argument
   \***************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nexports.__esModule = true;\nvar hello_world_1 = __webpack_require__(/*! ../../components/01_atoms/hello-world/hello-world */ \"./components/01_atoms/hello-world/hello-world.ts\");\nvar cursor_1 = __webpack_require__(/*! ../../components/01_atoms/cursor/cursor */ \"./components/01_atoms/cursor/cursor.ts\");\nvar contact_form_1 = __webpack_require__(/*! ../../components/02_molecules/contact-form/contact-form */ \"./components/02_molecules/contact-form/contact-form.ts\");\nvar helloWorld = new hello_world_1[\"default\"]('Hello', 'World');\nhelloWorld.init();\nvar cursor = new cursor_1[\"default\"]();\ncursor.init();\nvar contactForm = new contact_form_1[\"default\"]();\ncontactForm.init();\n\n\n//# sourceURL=webpack://fractal/./public/js/main.ts?");
+eval("\nexports.__esModule = true;\nvar cursor_1 = __webpack_require__(/*! ../../components/01_atoms/cursor/cursor */ \"./components/01_atoms/cursor/cursor.ts\");\nvar contact_form_1 = __webpack_require__(/*! ../../components/02_molecules/contact-form/contact-form */ \"./components/02_molecules/contact-form/contact-form.ts\");\nvar cursor = new cursor_1[\"default\"]();\ncursor.init();\nvar contactForm = new contact_form_1[\"default\"]();\ncontactForm.init();\n\n\n//# sourceURL=webpack://fractal/./public/js/main.ts?");
 
 /***/ })
 
