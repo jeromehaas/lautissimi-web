@@ -2,11 +2,13 @@ import { elementsInterface, inputsInterface } from './contact-form.model';
 import emailjs from '@emailjs/browser';
 
 class ContactForm {
+	name: string;
 	elements: elementsInterface;
 	errors: string[];
 	inputs: inputsInterface;
 
 	constructor() {
+		this.name = 'contact-form';
 		this.elements = {
 			form: document.querySelector('.contact-form'),
 			submitButton: document.querySelector('.contact-form__submit'),
@@ -46,11 +48,12 @@ class ContactForm {
 
 
 	init = (): void => {
-		this.elements.submitButton.addEventListener('click', (event) => {
-			event.preventDefault();
-			this.validateInputs();
-			this.send();
-		});
+		if (!document.querySelector(`js-${this.name}`)) return;
+			this.elements.submitButton.addEventListener('click', (event) => {
+				event.preventDefault();
+				this.validateInputs();
+				this.send();
+			});
 	};
 
 	validateInputs = (): void => {
