@@ -21,7 +21,7 @@ const ttf2eot = require('gulp-ttf2eot');
 // SOURCE PATHS
 const filePaths = {
 	scss: {
-		src: ['./public/scss/reset.scss', './public/scss/fonts.scss', './public/scss/variables.scss', './public/scss/keyframes.scss', './public/scss/typography.scss', './public/scss/mixins.scss', './public/scss/global.scss', './components/**/*.scss'],
+		src: ['./public/scss/reset.scss', './public/scss/fonts.scss', './public/scss/variables.scss', './public/scss/keyframes.scss', './public/scss/typography.scss', './public/scss/mixins.scss', './public/scss/global.scss', './components/**/**/*.scss'],
 		dist: ['./public/css', '../craft/web/css']
 	},
 	fonts: {
@@ -33,8 +33,8 @@ const filePaths = {
 		dist: ['./public/js', '../craft/web/js']
 	},
 	image: {
-		src: ['./public/media/images/**/*.+(png|jpg|jpeg|gif)'],
-		dist: ['../craft/web/public/media/images']
+		src: ['./public/media/images/**/**/*.+(png|jpg|jpeg|gif)'],
+		dist: ['./public/media/images', '../craft/web/media/images']
 	},
 	graphic: {
 		src: ['./public/media/graphics/**/*.+(png|jpg|jpeg|gif|svg)'],
@@ -100,6 +100,7 @@ const imageTask = (done) => {
 	gulp.src(filePaths.image.src)
 		.pipe(cache(webp()))
 		.pipe(dest(filePaths.image.dist[0]))
+		.pipe(dest(filePaths.image.dist[1]))
 	done();
 };
 
@@ -157,6 +158,7 @@ const watchTask = () => {
 	gulp.watch('./index.html').on('change', browserSync.reload);
 	gulp.watch(filePaths.scss.src, scssTask).on("change", browserSync.reload);
 	gulp.watch(filePaths.js.src, jsTask).on("change", browserSync.reload);
+	gulp.watch(filePaths.image.src, imageTask).on("change", browserSync.reload);
 };
 
 const developTask = series(scssTask, jsTask, watchTask);
