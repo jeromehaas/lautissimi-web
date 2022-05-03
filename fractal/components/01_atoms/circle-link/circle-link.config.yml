@@ -2,3 +2,4 @@ name: Circle Link
 preview: "@dark"
 context: 
   content: Schliessen
+  icon: close

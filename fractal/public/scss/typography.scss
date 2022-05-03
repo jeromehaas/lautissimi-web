@@ -37,8 +37,15 @@
 	line-height: 1.2;
 }
 
+.heading--p {
+	font-size: 18px;
+	font-weight: 300;
+	font-family: "Heebo", Helvetica, sans-serif;
+}
+
 .paragraph, p {
 	font-size: 18px;
+	font-weight: 300;
 	font-family: "Heebo", Helvetica, sans-serif;
 
 	&--bold { font-weight: 600; }
@@ -53,7 +60,7 @@
 	line-height: 26px;
 	line-height: 1.2;
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: 300;
 
 	&--small {
 		font-size: 14px;
