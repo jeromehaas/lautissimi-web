@@ -3,6 +3,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 class Intro {
+	name: string;
+	clipping: any;
+	timeline: any;
+	elements: any;
 
 	constructor() {
 		this.name = 'intro';
@@ -14,8 +18,23 @@ class Intro {
 			top: 50,
 			right: 0,
 			bottom: 0,
-			left: 0
+			left: 0,
+			showFullImage: false
 		};
+		this.timeline = null; 
+	}
+
+	init = () => {
+		if (!document.querySelector(`.js-${this.name}`)) return;
+		this.createTimeline();
+		this.addeventlistener();
+	};
+
+	addeventlistener = () => {
+		this.elements.image.addEventListener('click', this.showFullImage);
+	};
+
+	createTimeline = () => {
 		this.timeline = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.intro',
@@ -27,18 +46,17 @@ class Intro {
 				}
 			}
 		});
-	}
-
-	init = () => {
-		this.addEventListener();
 	};
 
-	addEventListener = () => {
-		this.elements.image.addEventListener('click', () => this.animate());
+	showFullImage = () => {
+		this.clipping.showFullImage = true;
+		this.elements.image.style.clipPath = 'inset(0% 0% 0% 0%)';
 	};
 
-	slide = (progress) => {
-		this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% ${0 + (progress * 50)}% )`;
+	slide = (progress: number) => {
+		if (!this.clipping.showFullImage) {
+			this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% ${0 + (progress * 50)}% )`;
+		};
 	};
 
 }

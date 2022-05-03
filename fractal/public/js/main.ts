@@ -2,6 +2,7 @@ import Cursor from '../../components/01_atoms/cursor/cursor';
 import ContactForm from '../../components/02_molecules/contact-form/contact-form';
 import Hero from '../../components/03_molecules/hero/hero';
 import Intro from '../../components/03_molecules/intro/intro';
+import References from '../../components/03_molecules/references/references';
 
 const cursor = new Cursor();
 cursor.init();
@@ -14,3 +15,6 @@ hero.init();
 
 const intro = new Intro();
 intro.init();
+
+const references = new References();
+references.init();
