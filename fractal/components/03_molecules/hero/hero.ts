@@ -10,28 +10,28 @@ class Hero {
 		this.elements = {
 			scroller: document.querySelector('.panel__scroller'),
 		};
-	};
+	}
 
 	init = () => {
-		if (document.querySelector(`js-${this.name}`)) return;
+		if (!document.querySelector(`js-${this.name}`)) return;
 		this.createSlider();
 		this.animateScroller();
 	};
 
 	createSlider = () => {
-		const swiper = new Swiper('.swiper', {
+		new Swiper('.swiper', {
 			modules: [ Autoplay, EffectFade ],
 			speed: 1500,
 			freeMode: false,
 			loop: true,
 			spaceBetween: 30,
-			effect: "fade",
+			effect: 'fade',
 			autoplay: {
 				delay: 15000,
 				disableOnInteraction: false,
 			}
-	});
-}
+		});
+	};
 
 	animateScroller = () => {
 		gsap.fromTo(this.elements.scroller, 
@@ -40,6 +40,6 @@ class Hero {
 		);
 	};
 
-};
+}
 
 export default Hero;
