@@ -1,0 +1,69 @@
+.team-member {
+	
+	position: fixed !important;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	 left: 0;
+	 min-height: 100vh;
+	 background-color: $white;
+	 grid-template: auto / 1fr 1fr;
+	 display: none;
+
+	 &--active {
+		display: grid;
+	}
+
+
+	 &__portrait {
+		 height: 100%;
+		 width: 100%;
+		 display: block;
+		 object-fit: cover;
+		 object-position: bottom;
+	 }
+
+	 &__text-content, .text-content {
+		 padding: 120px;
+		 position: relative;
+		 overflow: scroll;
+
+		 &__name {
+			 font-size: 64px;
+			 margin-bottom: 16px;
+		 }
+
+		 &__role {
+			 
+		 }
+
+		 &__contact-details, .contact-details {
+			 display: flex;
+			 flex-direction: row;
+			 flex-wrap: wrap;
+			 margin-bottom: 48px;
+
+			 &__phone, &__email {
+				 padding: 0;
+				 display: contents;
+				 
+				 &:not(:last-child)::after {
+					 content: ",";
+					 display: inline-block;
+					 margin: 0 8px 0 0 ;
+				 }
+				 
+			 }
+		 }
+
+		 &__close-button {
+			 position: fixed;
+			 top: 48px;
+			 right: 48px;
+		 }
+
+	 }
+
+
+
+}

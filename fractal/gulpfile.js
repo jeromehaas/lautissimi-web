@@ -21,7 +21,7 @@ const ttf2eot = require('gulp-ttf2eot');
 // SOURCE PATHS
 const filePaths = {
 	scss: {
-		src: ['./public/scss/reset.scss', './public/scss/fonts.scss', './public/scss/variables.scss', './public/scss/keyframes.scss', './public/scss/typography.scss', './public/scss/mixins.scss', './public/scss/global.scss', './components/**/**/*.scss'],
+		src: ['./public/scss/reset.scss', './public/scss/fonts.scss', './public/scss/swiper.scss', './public/scss/variables.scss', './public/scss/keyframes.scss', './public/scss/typography.scss', './public/scss/mixins.scss', './public/scss/global.scss', './components/**/**/*.scss'],
 		dist: ['./public/css', '../craft/web/css']
 	},
 	fonts: {
@@ -52,26 +52,26 @@ const filePaths = {
 
 // SCSS
 const scssTask = (done) => {
-	gulp.src(filePaths.scss.src, { "allowEmpty": true })
-	.pipe(plumber({ errorHandler: notifier.error }))
-	.pipe(concat('main.min.css'))
-	.pipe(sourcemaps.init())
-	.pipe(sass())
-	.pipe(autoprefixer())
-	.pipe(cssnano())
-	.pipe(sourcemaps.write('.'))
-	.pipe(dest(filePaths.scss.dist[0]))
-	.pipe(dest(filePaths.scss.dist[1]))
+	gulp.src(filePaths.scss.src, { 'allowEmpty': true })
+		.pipe(plumber({ errorHandler: notifier.error }))
+		.pipe(concat('main.min.css'))
+		.pipe(sourcemaps.init())
+		.pipe(sass())
+		.pipe(autoprefixer())
+		.pipe(cssnano())
+		.pipe(sourcemaps.write('.'))
+		.pipe(dest(filePaths.scss.dist[0]))
+		.pipe(dest(filePaths.scss.dist[1]));
 	done();
 };
 	
 // JS TASK
 const jsTask = (done) => {
 	gulp.src(filePaths.js.src)
-	.pipe(plumber({ errorHandler: notifier.error }))
-	.pipe(webpackStream(webpackConfig))
-	.pipe(dest(filePaths.js.dist[0]))
-	.pipe(dest(filePaths.js.dist[1]))
+		.pipe(plumber({ errorHandler: notifier.error }))
+		.pipe(webpackStream(webpackConfig))
+		.pipe(dest(filePaths.js.dist[0]))
+		.pipe(dest(filePaths.js.dist[1]));
 	done();
 };
 
@@ -100,7 +100,7 @@ const imageTask = (done) => {
 	gulp.src(filePaths.image.src)
 		.pipe(cache(webp()))
 		.pipe(dest(filePaths.image.dist[0]))
-		.pipe(dest(filePaths.image.dist[1]))
+		.pipe(dest(filePaths.image.dist[1]));
 	done();
 };
 
@@ -108,7 +108,7 @@ const imageTask = (done) => {
 const graphicTask = (done) => {
 	gulp.src(filePaths.graphic.src)
 		.pipe(svgmin())
-		.pipe(dest(filePaths.graphic.dist[0]))
+		.pipe(dest(filePaths.graphic.dist[0]));
 	done();
 };
 
@@ -116,7 +116,7 @@ const graphicTask = (done) => {
 const iconTask = (done) => {
 	gulp.src(filePaths.icon.src)
 		.pipe(svgmin())
-		.pipe(dest(filePaths.icon.dist[0]))
+		.pipe(dest(filePaths.icon.dist[0]));
 	done();
 };
 
@@ -144,7 +144,7 @@ const faviconTask = (done) => {
 		}))
 		.pipe(gulp.dest(filePaths.favicon.dist[0]))
 		.pipe(gulp.dest(filePaths.favicon.dist[1]));
-		done();
+	done();
 };
 
 // WATCH TASK
@@ -156,9 +156,9 @@ const watchTask = () => {
 		ui: { port: 3008 }
 	});
 	gulp.watch('./index.html').on('change', browserSync.reload);
-	gulp.watch(filePaths.scss.src, scssTask).on("change", browserSync.reload);
-	gulp.watch(filePaths.js.src, jsTask).on("change", browserSync.reload);
-	gulp.watch(filePaths.image.src, imageTask).on("change", browserSync.reload);
+	gulp.watch(filePaths.scss.src, scssTask).on('change', browserSync.reload);
+	gulp.watch(filePaths.js.src, jsTask).on('change', browserSync.reload);
+	gulp.watch(filePaths.image.src, imageTask).on('change', browserSync.reload);
 };
 
 const developTask = series(scssTask, jsTask, watchTask);

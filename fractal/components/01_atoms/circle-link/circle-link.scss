@@ -18,7 +18,7 @@
 		justify-content: center;
 		vertical-align: center;
 		text-align: center;
-		color: $white !important;
+		color: $white;
 		padding: 8px;
 		border: 1px solid $white;
 		border-radius: 50%;
@@ -31,6 +31,36 @@
 
 	&--close::after { 
 		content: "\ea05"; 
+	}
+
+	&--white {
+		color: $white;
+
+		&::after {
+			color: $white;
+			border-color: white
+		}
+
+	}
+
+	&--black {
+		color: $black;
+
+		&::after {
+			color: $black;
+			border-color: $black;
+		}
+
+	}
+
+	&--beige-medium {
+		color: $beige-medium;
+
+		&::after {
+			color: $beige-medium;
+			border-color: $beige-medium;
+		}
+
 	}
 	
 }

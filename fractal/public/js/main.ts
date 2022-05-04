@@ -3,6 +3,8 @@ import ContactForm from '../../components/02_molecules/contact-form/contact-form
 import Hero from '../../components/03_molecules/hero/hero';
 import Intro from '../../components/03_molecules/intro/intro';
 import References from '../../components/03_molecules/references/references';
+import Page from '../../components/04_layouts/page/page';
+import About from '../../components/03_molecules/about/about';
 
 const cursor = new Cursor();
 cursor.init();
@@ -18,3 +20,9 @@ intro.init();
 
 const references = new References();
 references.init();
+
+const page = new Page();
+page.init();
+
+const about = new About();
+about.init();

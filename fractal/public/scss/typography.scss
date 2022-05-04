@@ -32,8 +32,8 @@
 }
 
 .heading--h4 {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
 	line-height: 1.2;
 }
 
@@ -51,6 +51,7 @@
 	&--bold { font-weight: 600; }
 	&--small { font-size: 14px; }
 	&--big { font-size: 32px; font-family: "Playfair Display"; }
+	&--serif { font-family: "Playfair Display"; }
 
 }
 

@@ -1,5 +1,5 @@
 name: Text Input
-preview: "@dark"
+preview: "@page"
 context:
   label: Label
   name: email

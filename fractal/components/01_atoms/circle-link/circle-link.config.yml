@@ -1,5 +1,6 @@
 name: Circle Link
-preview: "@dark"
+preview: "@page"
 context: 
   content: Schliessen
   icon: close
+  color: black

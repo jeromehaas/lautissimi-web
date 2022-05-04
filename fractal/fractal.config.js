@@ -13,7 +13,7 @@ fractal.set('project.title', 'fractal');
 fractal.components.set('path', path.join(__dirname, 'components'));
 
 // PREVIEW DIRECTORY
-fractal.components.set('default.preview', '@default');
+fractal.components.set('default.preview', '@page');
 
 // ASSETS DIRECTORY
 fractal.web.set('static.path', path.join(__dirname, 'public'));
