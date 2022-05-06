@@ -1,0 +1,42 @@
+.desktop-navigation {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	padding: 64px 64px 64px 96px;
+	z-index: 30;
+
+	&__logo {
+		margin-right: calc((400px - 160px - 96px) + 64px);
+		width: 160px;
+	}
+
+	&__link {
+		cursor: pointer;
+		
+		&:first-child {
+			padding-left: 0 !important;
+		}
+
+	}
+
+	&__button {
+		margin-left: auto;
+		cursor: pointer;
+	}
+
+	@media (max-width: 1050px) {
+		padding: 64px 32px 32px 64px;
+
+		&__link {
+			padding: 16px 12px;
+		}
+
+	}
+
+	@media (max-width: 925px) {
+		display: none;
+	}
+
+}

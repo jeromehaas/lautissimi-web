@@ -19,16 +19,20 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		z-index: 30;
-
-		&__logo {
-			margin-bottom: 80px;
-			width: 160px;
-		}
+		position: relative;
 
 		&__heading {
+			margin-top: 160px;
 			margin-bottom: 64px;
 			width: calc(100vw - 320px);
 			max-width: 800px;
+		}
+
+		&__leave {
+			position: absolute;
+			width: 540px;
+			top: 160px;
+			left: -40px;
 		}
 
 		&__teaser {
@@ -48,29 +52,9 @@
 	}
 
 	&__showcase, .showcase {
-		position: relative;
 		max-width: calc(100vw - 400px);
 		height: 100%;
 
-		&__navigation, .navigation {
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-			display: flex;
-			padding: 32px;
-			z-index: 30;
-
-			&__link {
-				cursor: pointer;
-			}
-
-			&__button {
-				margin-left: auto;
-				cursor: pointer;
-			}
-
-		}
 
 		&__slider, .slider {
 			height: 100%;
