@@ -1,0 +1,51 @@
+.mobile-navigation {
+	position: relative;
+	
+	&__bar, .bar {
+		height: 60px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 18px 24px;
+		z-index: 10;
+		position: relative;
+
+		&__link {
+			display: block;
+			height: 24px;
+		}
+
+		&__logo {
+			display: block;
+			height: 100%;
+		}
+
+	}
+
+	&__panel, .panel {
+		position: absolute;
+		top: -100vh;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 124px 64px 64px 64px;
+		height: 100vh;
+		transition: all 0.3s ease;
+			background-color: $green-dark;
+
+		&__links, .links {
+			display: flex;
+			flex-direction: column;
+
+			&__item {
+				padding: 8px 0;
+				opacity: 0;
+			}
+
+		}
+
+	}
+
+
+}
