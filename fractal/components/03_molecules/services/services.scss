@@ -1,0 +1,194 @@
+.services {
+	width: 100%;
+	overflow: hidden;;
+
+	&__inner {
+		display: grid;
+		grid-template: auto auto auto / 50% 50%;
+		grid-template-areas:
+			"heading heading"
+			"accordion preview"
+			"statement statement";
+			grid-gap: 64px;
+	}
+
+	&__heading {
+		grid-area: heading;
+		position: relative;
+		// margin-bottom: 64px;
+ 
+		&::before {
+		 content: "";
+		 position: absolute;
+		 width: 33%;
+		 height: 2px;
+		 background-color: $beige-medium;
+		 z-index: 5;
+		 top: calc(100% - 2px);
+		 right: 64px;
+		}
+
+	}
+
+	&__accordion, .accordion {
+		grid-area: accordion;
+		z-index: 5;
+		margin-left: 80px;
+
+		&__item, .item {
+			margin-bottom: 40px;
+			transition: all 0.3s ease;
+
+			&__heading {
+				cursor: pointer;
+				color: transparentize($color: $beige-medium, $amount: 0.25);
+				margin-bottom: 24px;
+				transition: all 0.3s ease;
+				position: relative;
+					
+				&::before {
+					content: "";
+					position: absolute;	
+					left: -40px;
+					top: 32px;
+					transform: translateY(-50%);
+					width: 32px;
+					height: 32px;
+					display: block;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-image: url('/media/graphics/logos/logo-lautissimi-leave-beige.svg');
+					opacity: 0;
+					transition: all 0.3s ease;
+				}
+
+				&::after {
+					content: "\ea02";
+					font-family: 'Icon';
+					position: absolute;
+					top: 8px;
+					right: 16px;
+					transition: all 0.6s ease;
+					display: none;
+				}
+
+			}
+		
+			&__content {
+				overflow: hidden;
+				max-height: 0;
+				opacity: 0;
+				transition: all 0.3s ease;
+			}
+
+			&__image {
+				aspect-ratio: 2 / 1;
+				width: 100%;
+				display: none;
+				object-fit: cover;
+			}
+			
+			&--active {
+				
+				.item__heading {
+					color: $black;
+					position: relative;
+					
+					&::before {
+						opacity: 1;
+					}
+
+					&::after {
+						transform: rotate(180deg);
+					}
+
+				}
+				
+			}
+
+		}
+
+	}
+
+	&__preview, .preview {
+		grid-area: preview;
+		width: 100%;
+		height: 640px;
+		position: relative;
+		overflow: hidden;
+		
+		&__image {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			opacity: 0;
+			transition: all 0.6s ease;
+
+			&--active {
+				opacity: 1;
+			}
+
+		}
+
+	}
+
+	&__statement {
+		grid-area: statement;
+		padding: 64px 128px 64px 64px;
+	}
+
+	@media (max-width: 850px) {
+
+		&__inner {
+			display: grid;
+			grid-template: auto auto auto / 100%;
+			grid-template-areas:
+				"heading"
+				"accordion" 
+				"statement";
+				grid-gap: 64px;
+		}
+
+		&__accordion, .accordion {
+			margin-left: 0;
+	
+			&__item, .item {
+				margin-bottom: 32px;
+				border-bottom: 1px solid $beige-bright;
+	
+				&__heading::after {
+					display: block;
+					top: 0px;
+				}
+
+				&__text {
+					margin-bottom: 32px;
+				}
+
+				&__image {
+					display: block;
+				}
+
+				&--active {
+					
+						max-height: unset;
+						opacity: 1;
+					}
+
+				}
+	
+			}
+	
+			&__preview, .preview {
+				display: none;
+			}
+
+		}
+
+}

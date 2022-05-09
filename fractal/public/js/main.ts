@@ -6,6 +6,7 @@ import References from '../../components/03_molecules/references/references';
 import Page from '../../components/04_layouts/page/page';
 import About from '../../components/03_molecules/about/about';
 import MobileNavigation from '../../components/03_molecules/mobile-navigation/mobile.navigation';
+import Services from '../../components/03_molecules/services/services';
 
 const cursor = new Cursor();
 cursor.init();
@@ -30,3 +31,6 @@ about.init();
 
 const mobileNavigation = new MobileNavigation();
 mobileNavigation.init();
+
+const services = new Services();
+services.init();

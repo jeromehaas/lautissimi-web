@@ -1,7 +1,10 @@
 import { gsap } from 'gsap';
 
 class MobileNavigation {
-	
+	name: string;
+	elements: any;
+	panel: any;
+
 	constructor() {
 		this.name = 'mobile-navigation';
 		this.elements = {
