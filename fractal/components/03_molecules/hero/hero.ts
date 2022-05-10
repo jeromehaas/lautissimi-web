@@ -19,7 +19,7 @@ class Hero {
 	};
 
 	createSlider = () => {
-		new Swiper('.swiper', {
+		new Swiper('.hero .showcase__swiper', {
 			modules: [ Autoplay, EffectFade ],
 			speed: 1500,
 			freeMode: false,
