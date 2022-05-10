@@ -22,7 +22,6 @@ class DesktopNavigation {
 	setupScrollToSection = () => {
 		this.links.all.forEach((item) => {
 			const target = item.getAttribute('data-target');
-			console.log(target);
 			item.addEventListener('click', (event) => {
 				event.preventDefault();
 				gsap.to(window, { scrollTo: `.${target}`, ease: 'Power2.easeInOut', duration: 1 });
@@ -33,7 +32,6 @@ class DesktopNavigation {
 	setupBackToHome = () => {
 		this.links.home.addEventListener('click', (event) => {
 			event.preventDefault();
-			console.log('okokok');
 			if (window.location.pathname !== '/' && window.location.pathname !== '/components/preview/start') {
 				window.location.href = '/';
 			}

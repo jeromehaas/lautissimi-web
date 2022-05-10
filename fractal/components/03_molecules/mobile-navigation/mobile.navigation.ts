@@ -20,10 +20,24 @@ class MobileNavigation {
 	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.addEventListener();	
+		this.showPanel();
 	};
 	
 	addEventListener = () => {
 		this.elements.hamburger.addEventListener('click', this.toggleNavigation);
+		this.elements.links.forEach((item) => {
+			item.addEventListener('click', (event) => {
+				event.preventDefault();
+				const target = item.getAttribute('data-target');
+				const href = item.getAttribute('href');
+				console.log(target);
+				console.log(href);
+				if (window.location.pathname === '/' || window.location.pathname === '/components/preview/start') {
+					gsap.to(window, { scrollTo: `.${target}`, ease: 'Power2.easeInOut', duration: 1 });
+					this.hidePanel();
+				}
+			});
+		});
 	};
 
 	toggleNavigation = () => {
