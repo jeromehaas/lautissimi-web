@@ -10,7 +10,7 @@ class References {
 			modules: [Navigation, Scrollbar],
 			speed: 400,
 			slidesPerView: 3,
-			spaceBetween: 0,
+			spaceBetween: 32,
 			centeredSlides: true,
 			centeredSlidesBounds: true,
 			navigation: {

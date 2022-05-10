@@ -1,5 +1,11 @@
 .mobile-navigation {
-	position: relative;
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 150;
+
 	
 	&__bar, .bar {
 		height: 60px;
@@ -47,5 +53,8 @@
 
 	}
 
+	@media (max-width: 950px) {
+		display: block;
+	}
 
 }

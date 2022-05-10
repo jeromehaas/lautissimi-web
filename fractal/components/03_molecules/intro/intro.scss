@@ -1,5 +1,14 @@
 .intro {
 
+	&__inner {
+		padding: 0;
+	}
+
+	&__teaser {
+		padding: 104px calc(80px + 32px);
+		max-width: 1200px
+	}
+
 	&__image {
 		display: block;
 		width: 100%;

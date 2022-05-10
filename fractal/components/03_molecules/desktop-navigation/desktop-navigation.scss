@@ -33,9 +33,14 @@
 			padding: 16px 12px;
 		}
 
+		&__logo {
+			margin-right: calc((400px - 160px - 96px) + 64px + 32px);
+			width: 160px;
+		}
+
 	}
 
-	@media (max-width: 925px) {
+	@media (max-width: 950px) {
 		display: none;
 	}
 

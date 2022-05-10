@@ -2,6 +2,7 @@
   max-width: 100%;
   background-color: $beige-dark;
   overflow: hidden;
+	position: relative;
   
   
   &__inner {
@@ -13,8 +14,22 @@
     grid-template-columns: 400px 100%;
     grid-template-rows: 300px auto 120px;
     min-height: 1120px;
-		padding-bottom: 80px;
-  };
+		padding: 0 0 80px 0; 
+		position: relative;
+
+		&::before {
+			content: "xxx";
+			position: absolute;
+			width: 100vw;
+			height: 100%;
+			background-color: $beige-dark;
+			right: 100%;
+			top: 0;
+			bottom: 0;
+			z-index: 5;
+		}
+
+  }
 
   &__heading {
    grid-area: heading; 
@@ -51,10 +66,33 @@
     }
     
     &__item, .item {
-      height: calc(100% - 80px);
+      height: calc(100% - 120px);
       margin-left: 32px;
 			width: 200px;
       margin-right: 0 !important;
+
+			&--show-more {
+				width: 300px;
+				border: 1px solid $white;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				& .item__icon {
+					color: $white;
+					width: 48px;
+					height: 48px;
+					transform: rotate(235deg);
+					border: 1px solid $white;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 24px;
+				}
+
+			}
 
       &__image {
         height: 100%;
@@ -83,7 +121,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgba(101, 89, 83, 0.95);
+    background-color: #655953f2;
     z-index: 10;
 		padding: 32px 64px;
     

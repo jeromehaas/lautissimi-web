@@ -4,12 +4,13 @@
 
 	&__inner {
 		display: grid;
-		grid-template: auto auto auto / 50% 50%;
+		grid-template: auto auto auto / 1fr 1fr;
 		grid-template-areas:
 			"heading heading"
 			"accordion preview"
 			"statement statement";
 			grid-gap: 64px;
+			padding-right: 0;
 	}
 
 	&__heading {

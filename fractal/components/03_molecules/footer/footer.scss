@@ -3,10 +3,10 @@
 	overflow: hidden;
 	width: 100%;
 	max-width: 100vw;
-	position: relative;
-
+	
 	&__inner {
 		padding: 104px 96px;
+		position: relative;
 		display: grid;
 		grid-template-areas:
 			"address title"
@@ -73,7 +73,7 @@
 	&__heading {
 		grid-area: title;
 		position: absolute;
-		left: 360px;
+		left: 0;
 
 		&::after {
 			content: "";
