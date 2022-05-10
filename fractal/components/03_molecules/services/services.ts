@@ -44,13 +44,13 @@ class Services {
 		this.elements.accordion.items.forEach((item: HTMLElement) => {
 			const content = item.querySelector('.item__content');
 			item.classList.remove('accordion__item--active');
-			gsap.to(content, { maxHeight: '0', opacity: 0, duration: 0.3, ease: 'none' });
+			gsap.to(content, { maxHeight: '0', opacity: 0, duration: 0.6, ease: 'Circ.easeOut' });
 		});
 		const activeItem = this.elements.accordion.active;
 		const activeContent = this.elements.accordion.active.querySelector('.item__content');
 		const activeContentHeight = activeContent.scrollHeight + 'px';
+		gsap.to(activeContent, { maxHeight: activeContentHeight, duration: 0.6, opacity: 1, ease: 'Circ.easeOut'  });
 		activeItem.classList.add('accordion__item--active');
-		gsap.to(activeContent, { maxHeight: activeContentHeight, duration: 0.3, opacity: 1, ease: 'none' });
 	};
 
 	updatePreview = () => {
@@ -61,5 +61,6 @@ class Services {
 	};
 
 }
+
 
 export default Services;

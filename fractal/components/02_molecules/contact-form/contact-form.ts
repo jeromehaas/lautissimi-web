@@ -49,11 +49,11 @@ class ContactForm {
 
 	init = (): void => {
 		if (!document.querySelector(`js-${this.name}`)) return;
-			this.elements.submitButton.addEventListener('click', (event) => {
-				event.preventDefault();
-				this.validateInputs();
-				this.send();
-			});
+		this.elements.submitButton.addEventListener('click', (event) => {
+			event.preventDefault();
+			this.validateInputs();
+			this.send();
+		});
 	};
 
 	validateInputs = (): void => {
@@ -76,29 +76,29 @@ class ContactForm {
 
 	addErrorStyle = (element: HTMLInputElement): void => {
 		switch(element.tagName) {
-			case "INPUT": {
-				element.classList.add('text-input__input--error')
-			};
-			case "TEXTAREA": {
-				element.classList.add('textarea__input--error')
-			};
+		case 'INPUT': {
+			element.classList.add('text-input__input--error');
+		};
+		case 'TEXTAREA': {
+			element.classList.add('textarea__input--error');
+		};
 		};
 	};
 
 	removeErrorStyle = (element: HTMLInputElement) => {
 		switch(element.tagName) {
-			case "INPUT": {
-				element.classList.remove('text-input__input--error')
-			};
-			case "TEXTAREA": {
-				element.classList.remove('textarea__input--error')
-			};
+		case 'INPUT': {
+			element.classList.remove('text-input__input--error');
+		};
+		case 'TEXTAREA': {
+			element.classList.remove('textarea__input--error');
+		};
 		};
 	};
 
 	send = async () => {
 		if (this.errors.length === 0) {
-			const res = await emailjs.send("yellowreach","template_d4bveki",{
+			const res = await emailjs.send('yellowreach','template_d4bveki',{
 				name: this.inputs.name.element.value,
 				email: this.inputs.email.element.value,
 				phone: this.inputs.phone.element.value,
@@ -114,18 +114,18 @@ class ContactForm {
 	};
 
 	showSuccessMessage = () => {
-		this.elements.statusMessage.error.classList.remove('status-message--active')
-		this.elements.statusMessage.success.classList.add('status-message--active')
+		this.elements.statusMessage.error.classList.remove('status-message--active');
+		this.elements.statusMessage.success.classList.add('status-message--active');
 	};
 
 	showErrorMessage = () => {
-		this.elements.statusMessage.success.classList.remove('status-message--active')
-		this.elements.statusMessage.error.classList.add('status-message--active')
+		this.elements.statusMessage.success.classList.remove('status-message--active');
+		this.elements.statusMessage.error.classList.add('status-message--active');
 	};
 
- resetForm = () => {
-	this.elements.form.reset();
- };
+	resetForm = () => {
+		this.elements.form.reset();
+	};
 
 };
 
