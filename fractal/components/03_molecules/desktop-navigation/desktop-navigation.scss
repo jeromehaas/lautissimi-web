@@ -7,9 +7,13 @@
 	padding: 64px 64px 64px 96px;
 	z-index: 30;
 
-	&__logo {
+	&__logo, .logo {
 		margin-right: calc((400px - 160px - 96px) + 64px);
-		width: 160px;
+		
+		&__image {
+			width: 160px;			
+		}
+
 	}
 
 	&__link {

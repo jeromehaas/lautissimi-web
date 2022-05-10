@@ -37,8 +37,8 @@
 		right: 0;
 		padding: 124px 64px 64px 64px;
 		height: 100vh;
-		transition: all 0.3s ease;
-			background-color: $green-dark;
+		// transition: all 0.3s ease;
+		background-color: $green-dark;
 
 		&__links, .links {
 			display: flex;

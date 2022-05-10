@@ -39,14 +39,14 @@ class MobileNavigation {
 
 	showPanel = () => {
 		const timeline = gsap.timeline();
-		timeline.to(this.elements.panel, { top: 0, duration: 0.9, ease: 'power2.easeIn' });
+		timeline.to(this.elements.panel, { top: 0, duration: 0.9, ease: 'power1.easeInOut' });
 		timeline.to(this.elements.links, { opacity: 1, stagger: { from: 'start', amount: 0.3 } });
 	};
 
 	hidePanel = () => {
 		const timeline = gsap.timeline();
 		timeline.to(this.elements.links, { opacity: 0, duration: 0.6, stagger: { from: 'end', amount: 0.3 }  });
-		timeline.to(this.elements.panel, { top: '-100vh', duration: 0.3, ease: 'power2.easeIn' });
+		timeline.to(this.elements.panel, { top: '-100vh', duration: 0.6, ease: 'power1.easeInOut' });
 	};
 
 }
