@@ -85,6 +85,7 @@
 				width: 100%;
 				display: none;
 				object-fit: cover;
+				margin-bottom: 24px;
 			}
 			
 			&--active {
@@ -160,7 +161,9 @@
 				"accordion" 
 				"statement";
 				grid-gap: 64px;
+			padding-right: 32px;
 		}
+		
 
 		&__accordion, .accordion {
 			margin-left: 0;
@@ -198,7 +201,7 @@
 
 			&__statement {
 				grid-area: statement;
-				padding: 0 32px;
+				padding: 0 32px 32px 32px;
 			}
 
 		}
