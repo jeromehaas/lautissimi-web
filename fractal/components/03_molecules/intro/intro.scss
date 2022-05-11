@@ -19,4 +19,13 @@
 		overflow: hidden;
 	}
 
+	@media (max-width: 650px) {
+
+		&__teaser {
+			padding: 64px 24px;
+			max-width: 1200px
+		}
+
+	}
+
 }

@@ -22,6 +22,7 @@ class References {
 					draggable: true,
 				},
 				breakpoints: {
+					650: { slidesPerView: 2.5, spaceBetween: 32, },
 					950: { slidesPerView: 4, spaceBetween: 32, },
 					1200: { slidesPerView: 4, spaceBetween: 32, },
 					1600: { slidesPerView: 5, spaceBetween: 32, },

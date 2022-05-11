@@ -206,5 +206,13 @@
 			}
 
 		}
+		@media (max-width: 650px) {
+
+			&__statement {
+				padding: 0;
+				margin-bottom: 64px;
+			}
+
+		}
 
 }
