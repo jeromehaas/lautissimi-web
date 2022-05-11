@@ -1,5 +1,5 @@
 import { gsap } from 'gsap';
-import Swiper, { Autoplay, EffectFade, Navigation, Pagination, Zoom } from 'swiper';
+import Swiper, { Autoplay, EffectFade  } from 'swiper';
 
 class Hero {
 	name: string;
@@ -16,6 +16,11 @@ class Hero {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.createSlider();
 		this.animateScroller();
+		this.addEventListener();
+	};
+
+	addEventListener = () => {
+		this.elements.scroller.addEventListener('click', this.setupScroller);
 	};
 
 	createSlider = () => {
@@ -38,6 +43,12 @@ class Hero {
 			{ y: 0 },
 			{ y: 16, repeat: -1, yoyo: true, repeatDelay: 0.3, duration: 0.6, ease: 'power4.easeInOut' }
 		);
+	};
+
+
+	setupScroller = () => {
+		console.log('scroll down!');	
+		gsap.to(window, { scrollTo: '.intro', ease: 'power2.easeInOut', duration: 1 });
 	};
 
 }

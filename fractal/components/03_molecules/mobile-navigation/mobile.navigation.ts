@@ -16,7 +16,6 @@ class MobileNavigation {
 		this.panel = {
 			isVisible: false
 		};
-		console.log(this.elements);
 	};
 	
 	init = () => {
@@ -59,7 +58,6 @@ class MobileNavigation {
 		timeline.to(window, { scrollTo: `.${target}`, ease: 'none', duration: 0 });
 		timeline.to(this.elements.links, { opacity: 0, duration: 0.6, stagger: { from: 'end', amount: 0.3 }  });
 		timeline.to(this.elements.panel, { top: '-100vh', duration: 0.6, ease: 'power1.easeInOut' });
-
 	};
 
 	toggleNavigation = () => {
