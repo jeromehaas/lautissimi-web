@@ -55,7 +55,8 @@ class Intro {
 
 	slide = (progress: number) => {
 		if (!this.clipping.showFullImage) {
-			this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% ${0 + (progress * 50)}% )`;
+			// this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% ${0 + (progress * 50)}% )`;
+			this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% 0% )`;
 		};
 	};
 
