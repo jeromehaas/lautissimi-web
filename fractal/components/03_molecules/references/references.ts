@@ -6,36 +6,37 @@ class References {
 
 	constructor() {
 		this.name = 'references';
-		this.sliderConfigs = {
-			modules: [Navigation, Scrollbar],
-			speed: 400,
-			slidesPerView: 3,
-			spaceBetween: 32,
-			centeredSlides: true,
-			centeredSlidesBounds: true,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			breakpoints: {
-				800: { slidesPerView: 3 },
-				1200: { slidesPerView: 4 },
-				1600: { slidesPerView: 5 },
-			},	
+		this.slider = {
+			element: null,
+			configs: {
+				modules: [Navigation, Scrollbar],
+				speed: 400,
+				slidesPerView: 1.6,
+				spaceBetween: 32,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				scrollbar: {
+					el: '.swiper-scrollbar',
+					draggable: true,
+				},
+				breakpoints: {
+					950: { slidesPerView: 4, spaceBetween: 32, },
+					1200: { slidesPerView: 4, spaceBetween: 32, },
+					1600: { slidesPerView: 5, spaceBetween: 32, },
+				},	
+			}
 		};
 	}
 
-	init() {
+	init = () => {
 		this.createCarousel();
 	};
 
-	createCarousel() {
-		new Swiper('.slider__container', this.sliderConfigs);
-	}
+	createCarousel = () => {
+		this.slider.element = new Swiper('.slider__container', this.slider.configs);
+	};
 
 };
 
