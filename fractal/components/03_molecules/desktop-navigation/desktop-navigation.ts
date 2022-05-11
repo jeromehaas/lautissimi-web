@@ -3,6 +3,8 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 gsap.registerPlugin(ScrollToPlugin);
 
 class DesktopNavigation {
+	name: string;
+	links: any;
 
 	constructor() {
 		this.name = 'desktop-navigation';
@@ -20,7 +22,7 @@ class DesktopNavigation {
 	};
 
 	setupScrollToSection = () => {
-		this.links.all.forEach((item) => {
+		this.links.all.forEach((item: HTMLElement) => {
 			const target = item.getAttribute('data-target');
 			item.addEventListener('click', (event) => {
 				event.preventDefault();
@@ -30,7 +32,7 @@ class DesktopNavigation {
 	};
 
 	setupBackToHome = () => {
-		this.links.home.addEventListener('click', (event) => {
+		this.links.home.addEventListener('click', (event: MouseEvent) => {
 			event.preventDefault();
 			if (window.location.pathname !== '/' && window.location.pathname !== '/components/preview/start') {
 				window.location.href = '/';

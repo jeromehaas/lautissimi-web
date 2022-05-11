@@ -11,7 +11,7 @@ class Intro {
 	constructor() {
 		this.name = 'intro';
 		this.elements = {
-			container: document.querySelector('.intro'),
+			container: document.querySelector('.intro__image'),
 			image: document.querySelector('.intro__image')
 		};
 		this.clipping = {

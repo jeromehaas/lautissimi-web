@@ -9,35 +9,57 @@ class MobileNavigation {
 		this.name = 'mobile-navigation';
 		this.elements = {
 			hamburger: document.querySelector('.mobile-navigation .hamburger'),
+			bar: document.querySelector('.mobile-navigation .bar'),
 			panel: document.querySelector('.mobile-navigation .panel'),
 			links: document.querySelectorAll('.mobile-navigation .links__item')
 		};
 		this.panel = {
 			isVisible: false
 		};
+		console.log(this.elements);
 	};
 	
 	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.addEventListener();	
-		this.showPanel();
 	};
 	
 	addEventListener = () => {
+		window.addEventListener('scroll', this.setNavigationVisibility);
 		this.elements.hamburger.addEventListener('click', this.toggleNavigation);
-		this.elements.links.forEach((item) => {
-			item.addEventListener('click', (event) => {
+		this.elements.links.forEach((item: HTMLElement) => {
+			item.addEventListener('click', (event: MouseEvent) => {
 				event.preventDefault();
-				const target = item.getAttribute('data-target');
-				const href = item.getAttribute('href');
-				console.log(target);
-				console.log(href);
 				if (window.location.pathname === '/' || window.location.pathname === '/components/preview/start') {
-					gsap.to(window, { scrollTo: `.${target}`, ease: 'Power2.easeInOut', duration: 1 });
-					this.hidePanel();
+					const target = item.getAttribute('data-target');
+					this.scrollToSection(target);
+				} else {
+					const target = item.getAttribute('href');
+					this.navigateToPage(target);
 				}
 			});
 		});
+	};
+
+	setNavigationVisibility = () => {
+		if (window.pageYOffset > 60 && this.panel.isVisible === false) {
+			this.elements.bar.classList.add('mobile-navigation__bar--hidden');
+		} else {
+			this.elements.bar.classList.remove('mobile-navigation__bar--hidden');
+		}
+	};
+
+	navigateToPage = (target: string) => {
+		document.location.href = target;
+	};
+	
+	scrollToSection = (target: string) => {
+		this.toggleNavigation();
+		const timeline = gsap.timeline();
+		timeline.to(window, { scrollTo: `.${target}`, ease: 'none', duration: 0 });
+		timeline.to(this.elements.links, { opacity: 0, duration: 0.6, stagger: { from: 'end', amount: 0.3 }  });
+		timeline.to(this.elements.panel, { top: '-100vh', duration: 0.6, ease: 'power1.easeInOut' });
+
 	};
 
 	toggleNavigation = () => {
