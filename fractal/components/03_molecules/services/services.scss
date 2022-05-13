@@ -10,6 +10,7 @@
 			"accordion preview"
 			"statement statement";
 			grid-gap: 64px;
+			padding-top: 120px;
 			padding-right: 0;
 	}
 
@@ -85,6 +86,7 @@
 				width: 100%;
 				display: none;
 				object-fit: cover;
+				margin-bottom: 24px;
 			}
 			
 			&--active {
@@ -160,7 +162,9 @@
 				"accordion" 
 				"statement";
 				grid-gap: 64px;
+			padding-right: 32px;
 		}
+		
 
 		&__accordion, .accordion {
 			margin-left: 0;
@@ -198,7 +202,15 @@
 
 			&__statement {
 				grid-area: statement;
-				padding: 0 32px;
+				padding: 0 32px 32px 32px;
+			}
+
+		}
+		@media (max-width: 650px) {
+
+			&__statement {
+				padding: 0;
+				margin-bottom: 64px;
 			}
 
 		}

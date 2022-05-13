@@ -11,7 +11,7 @@ class Intro {
 	constructor() {
 		this.name = 'intro';
 		this.elements = {
-			container: document.querySelector('.intro'),
+			container: document.querySelector('.intro__image'),
 			image: document.querySelector('.intro__image')
 		};
 		this.clipping = {
@@ -55,7 +55,8 @@ class Intro {
 
 	slide = (progress: number) => {
 		if (!this.clipping.showFullImage) {
-			this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% ${0 + (progress * 50)}% )`;
+			// this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% ${0 + (progress * 50)}% )`;
+			this.elements.image.style.clipPath = `inset(0% ${50 - (progress * 50)}% 0% 0% )`;
 		};
 	};
 

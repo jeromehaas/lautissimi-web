@@ -1,6 +1,13 @@
 <footer class="footer section">
 	<div class="footer__inner section__inner">
-	
+
+		<div class="footer__intro intro">
+			{{> @heading class="intro__heading" type="h3" looklike="h1" content="Ihr Prokekt. Unsere Passion." type="h2" color="white" }}
+			{{> @paragraph class="address__item" content="Lernen Sie uns persönlich kennen. Wir nehmen uns gerne Zeit für Ihre Projektidee." color="white" }}
+		</div>
+
+			{{> @contact-form class="footer__contact-form"}}
+
 		<address class="footer__address address">
 			<img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg" ></img>
 			{{> @paragraph class="address__item" content="O&S Interior GmbH" color="white" }}

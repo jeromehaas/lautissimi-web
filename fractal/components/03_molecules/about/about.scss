@@ -13,12 +13,13 @@
 		grid-gap: 32px;
 		overflow: hidden;
 		padding-right: 0;
+		padding-top: 120px;
 	}
 
 	&__heading {
 		grid-area: heading;
 		position: relative;
-		margin-bottom: 64px;
+		margin-bottom: 32px;
  
 		&::after {
 		 content: "";
@@ -86,6 +87,54 @@
 	}
 
 
+	@media (max-width: 950px) {
+
+		&__inner {
+			display: grid;
+			grid-template-areas:
+			"heading"
+			"intro"
+			"portrait"
+			"links"
+			"statements"
+			"team-members";
+			grid-template-columns: 100%;
+			grid-template-rows: auto auto auto auto auto auto;
+			padding-right: 32px;
+		}
+
+		&__intro {
+			margin-bottom: 32px;
+		}
+
+		&__portrait {
+			width: 100%;
+			aspect-ratio: 1.6 / 1;
+		}
+
+		&__statements, .statements {
+			margin: 0;
+		}
+
+		&__links, .links {
+	
+			&__item:last-child {
+					margin-right: 0;
+				}
+	
+		}
+
+	}
+
+	@media (max-width: 450px) {
+
+		&__links, .links {
+			grid-area: links;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;	
+	}
 
 }
 
+}

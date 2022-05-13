@@ -1,22 +1,25 @@
 .mobile-navigation {
 	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 150;
-	background-color: $green-dark;
+	// position: absolute;
 
-	
-	&__bar, .bar {
+		&__bar, .bar {
 		height: 60px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		padding: 18px 24px;
-		z-index: 10;
-		position: relative;
+		z-index: 55;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		transition: all 0.3s ease;
+
+		&--hidden {
+			top: -60px !important;
+		}
+		
 
 		&__link {
 			display: block;
@@ -31,7 +34,7 @@
 	}
 
 	&__panel, .panel {
-		position: absolute;
+		position: fixed;
 		top: -100vh;
 		left: 0;
 		bottom: 0;
@@ -40,6 +43,7 @@
 		height: 100vh;
 		// transition: all 0.3s ease;
 		background-color: $green-dark;
+		z-index: 50;
 
 		&__links, .links {
 			display: flex;

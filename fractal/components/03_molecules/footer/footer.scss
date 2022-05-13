@@ -9,17 +9,32 @@
 		position: relative;
 		display: grid;
 		grid-template-areas:
-			"address title"
+			"intro heading"
+			"intro contact-form"
+			"address contact-form"
+			"address contact-form"
 			"links links";
-		grid-template-rows: 320px auto;	
-		grid-template-columns: 320px auto;	
+		grid-template-rows: auto auto auto auto;	
+		grid-template-columns: 1fr 1fr;	
+		grid-gap: 32px;
+	}
 
+	&__intro, .intro {
+		grid-area: intro;
+
+		&__heading {
+			margin-bottom: 32px;
+		}
+
+	}
+
+	&__contact-form {
+		grid-area: contact-form;
 	}
 
 	&__address, .address {
 		grid-area: address;
 		font-style: normal;
-		margin-top: 64px;
 		
 		&__logo {
 			height: 24px;
@@ -61,6 +76,7 @@
 				padding: 0;
 				margin-left: 16px;
 			 }
+
 		}
 
 		&__icon {
@@ -71,9 +87,10 @@
 	}
 
 	&__heading {
-		grid-area: title;
+		grid-area: heading;
 		position: absolute;
-		left: 0;
+		height: auto;
+		left: -160px;
 
 		&::after {
 			content: "";
