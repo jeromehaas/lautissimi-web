@@ -29,7 +29,7 @@ class ContactForm {
 				name: 'email',
 				element: document.querySelector('.contact-form__input--email input'),
 				isRequired: true,
-				validationSchema: '[a-z0-9]+@[a-z]+\.[a-z]{2,3}',
+				validationSchema: '[a-z0-9]+@[a-z]+.[a-z]{2,3}',
 			},
 			phone: {
 				name: 'phone',
@@ -48,7 +48,7 @@ class ContactForm {
 
 
 	init = (): void => {
-		if (!document.querySelector(`js-${this.name}`)) return;
+		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.elements.submitButton.addEventListener('click', (event) => {
 			event.preventDefault();
 			this.validateInputs();
@@ -78,9 +78,11 @@ class ContactForm {
 		switch(element.tagName) {
 		case 'INPUT': {
 			element.classList.add('text-input__input--error');
+			break;
 		};
 		case 'TEXTAREA': {
 			element.classList.add('textarea__input--error');
+			break;
 		};
 		};
 	};
@@ -89,16 +91,18 @@ class ContactForm {
 		switch(element.tagName) {
 		case 'INPUT': {
 			element.classList.remove('text-input__input--error');
+			break;
 		};
 		case 'TEXTAREA': {
 			element.classList.remove('textarea__input--error');
+			break;
 		};
 		};
 	};
 
 	send = async () => {
 		if (this.errors.length === 0) {
-			const res = await emailjs.send('yellowreach','template_d4bveki',{
+			const res = await emailjs.send('yellowreach','lautissimi',{
 				name: this.inputs.name.element.value,
 				email: this.inputs.email.element.value,
 				phone: this.inputs.phone.element.value,

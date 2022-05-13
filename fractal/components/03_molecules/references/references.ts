@@ -2,7 +2,8 @@ import { Swiper, Navigation, Scrollbar } from 'swiper';
 
 class References {
 	name: string;
-	sliderConfigs: any;
+	slider: any;
+
 
 	constructor() {
 		this.name = 'references';
