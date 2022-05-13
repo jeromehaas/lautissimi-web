@@ -1,0 +1,17 @@
+columnSuffix: kwbsaayd
+contentColumnType: datetime
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # References
+handle: referencesDate
+instructions: ''
+name: 'References Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

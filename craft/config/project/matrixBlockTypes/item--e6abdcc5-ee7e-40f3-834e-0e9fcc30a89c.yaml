@@ -1,0 +1,41 @@
+field: a4ce92ad-1904-4896-9957-ba44baa59842 # References Cooperations
+fieldLayouts:
+  e10a8033-236e-49c7-aa8e-83ecaf433c5d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1243221e-75c6-431c-8106-9d9302137a31 # Person
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1243221e-75c6-431c-8106-9d9302137a31: # Person
+    columnSuffix: cegqvnfd
+    contentColumnType: text
+    fieldGroup: null
+    handle: person
+    instructions: ''
+    name: Person
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: item
+name: Item
+sortOrder: 1

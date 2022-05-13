@@ -1,0 +1,16 @@
+columnSuffix: idmiwzzj
+contentColumnType: string(255)
+fieldGroup: 785c8054-7a1d-49c1-87f5-75de0bc45d9f # Team Member
+handle: teamMemberMobile
+instructions: ''
+name: 'Team Member Mobile'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+    - tel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

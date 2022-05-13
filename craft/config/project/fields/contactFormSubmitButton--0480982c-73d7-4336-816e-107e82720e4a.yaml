@@ -1,0 +1,19 @@
+columnSuffix: fborgxhz
+contentColumnType: text
+fieldGroup: 35c059dd-2c2f-41ff-8d17-876dd7228f9d # Contact Form
+handle: contactFormSubmitButton
+instructions: ''
+name: 'Contact Form Submit Button'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,4 +1,4 @@
-dateModified: 1652215370
+dateModified: 1652326503
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -6,8 +6,123 @@ email:
 meta:
   __names__:
     1c00b42a-dae4-4f15-a772-533bb5b53e7c: Lautissimi # Lautissimi
+    1c12ec36-432f-4e48-8098-0a4670531950: 'Data Privacy' # Data Privacy
+    1cf93867-b1e9-4b75-b7ec-893e1facfd2b: Required # Required
+    1e71d181-05fe-4542-b71b-9d3fd64f8dc4: 'Contact Form Inputs' # Contact Form Inputs
+    2afa1137-8726-43ba-b165-2c55caca0b11: 'About Image' # About Image
+    3beb3ad3-b5cd-4773-a3f6-8fd64f9bf2c4: 'Data Privacy Content' # Data Privacy Content
+    3e5a5869-5639-4dee-b10c-120697405c15: 'References Items' # References Items
+    03fe9a99-b286-4335-ac34-9f3ced74192c: 'About Heading' # About Heading
+    04ddc697-dc8d-4a08-97dd-2dca2840ca3a: text # text
+    4de8ced8-785b-4cf8-8964-04f7960b6886: 'References Text' # References Text
+    4e13ae6a-0bbf-45a0-90c9-62e6e8fdb413: About # About
+    7b28ea28-6059-4595-b48b-741fe2009e35: Services # Services
+    7c7c65c3-1d0d-44a3-9169-c0381eece666: 'Contact Details Company' # Contact Details Company
+    7d852a82-ff93-4f8e-971d-008d1fb250b7: Heading # Heading
+    7fcc070c-fce8-4a5e-8b15-4a32a3b20e19: 'Statement Text' # Statement Text
+    8c00cee5-9afa-41f9-899e-592a688bdf4b: Text # Text
+    8c909fe8-1a1e-4279-97b7-27b81676a69e: Footer # Footer
+    9bbcdb7c-8d5d-4d80-a9ca-37ed98d82ee0: Hero # Hero
+    9c12e0c3-5377-4fe8-a414-5ce79f73e1cf: 'Contact Form' # Contact Form
+    14c8823b-e200-4724-9a2b-84a2e10852ec: Navigation # Navigation
+    14fc35ee-f334-43ea-a260-a5e62f3677ee: Image # Image
+    20b3ef8c-e645-4b60-881f-081f9da1ad95: 'Footer Teaser' # Footer Teaser
+    22bb9c2c-1960-4718-ac3a-269a6bc5273c: Item # Item
+    33ca7d8e-2a3e-4224-8100-8fc9dd543980: About # About
+    34b948b7-e034-4c75-ac99-3354f657e1e7: 'Navigation Links' # Navigation Links
+    35c059dd-2c2f-41ff-8d17-876dd7228f9d: 'Contact Form' # Contact Form
+    53df496f-66f4-4fe0-b65d-e2ebf2f53ac0: 'Team Member Mobile' # Team Member Mobile
+    63cd45e9-41d8-46e9-8c63-55ca65abb5c2: metaDescription # metaDescription
+    70e0f843-b82b-4f17-9b23-7bde6e0ee508: Inputs # Inputs
+    81f754db-5513-4e71-bae9-d1997e6fd72a: 'Team Member' # Team Member
+    82a56296-2407-4adf-8de9-3ecab4f2284b: 'About Team Members' # About Team Members
+    86a26c5d-d5f2-4ed7-be41-fc4f5dbc4631: 'Contact Details Email' # Contact Details Email
+    86ac67de-ad5e-4a0a-8807-7f33942a1059: Text # Text
+    87da02c3-db0c-443c-bdd7-da8e5a97ed6d: References # References
+    89a176fa-8575-4f8a-a6e4-e4c34ec8b721: 'Contact Details' # Contact Details
+    91fa4198-76e2-435d-8117-1336f2346c6c: Imprint # Imprint
+    93f73022-35f0-4112-a2dc-700976016167: Kind # Kind
+    96b9272f-beb6-4892-965b-bbf8c1439f14: Hero # Hero
+    386d938e-1f1d-40be-bbb2-03adbdf0cbe8: metaImage # metaImage
+    433d965c-50d2-48a0-bf25-109cac0f462e: 'Navigation CTA' # Navigation CTA
+    458a9587-6610-4f78-9592-5e56e1adfcf9: References # References
+    587a62a1-8559-4823-9e27-ef9fd2bd51df: Intro # Intro
+    600c8f96-17c9-4c65-b989-161c9b04d400: 'Team Member Role' # Team Member Role
+    610da1f1-f8d5-417c-9e32-14a969186ff1: metaTitle # metaTitle
+    730cd0d2-75f2-4352-afca-85aad702b46f: Asset # Asset
+    751a668d-963d-478b-ac5b-80fa02f4ae6f: 'Contact Form' # Contact Form
+    785c8054-7a1d-49c1-87f5-75de0bc45d9f: 'Team Member' # Team Member
+    931de94d-cb1a-4e39-bab5-17182d8720a7: assetAlt # assetAlt
+    1488e12a-fb5f-46e1-be5e-2c1d22dfb041: Heading # Heading
+    1710e260-6d3a-4ad9-9f43-4a26382e3fb9: 'Data Privacy' # Data Privacy
+    5088bb6c-5aba-4dda-8d0b-5ea078f0ee94: Item # Item
+    5365b4bb-47ef-425d-8d42-75f6aba9c7b6: Services # Services
+    7211b9ee-a35a-4754-8ef6-8f3765920384: 'Contact Details' # Contact Details
+    7576a62d-8db2-423b-a5ee-4b47ea1cb90e: 'Services Categories' # Services Categories
+    8050afa2-d92d-4d4d-ac36-4add65d4100d: 'Footer Text' # Footer Text
+    8090f08f-7900-4494-bf95-887dfdc4baca: Text # Text
+    8148fdcb-a3e2-45c9-b63e-ce473e9a2b3b: 'Contact Form Disclaimer' # Contact Form Disclaimer
+    8784cdc1-ffc3-4a53-9e0d-333108d8a5d5: References # References
+    9124a807-553e-4511-90ef-a5906afff52c: Href # Href
+    9834cc6b-abab-4ef2-891a-82fae8eb2ab9: Navigation # Navigation
+    16285aca-5a6c-469c-abb4-f13c8cbe8ecd: Footer # Footer
+    16610df2-605b-441e-893f-4c0b82054b7c: 'References Date' # References Date
     59673e81-6588-42ea-94b1-82258efce574: Lautissimi # Lautissimi
+    198715f9-982d-443a-b572-76c3fbbf4d4b: Footer # Footer
+    211767df-d016-4750-93df-0c474312d621: 'Contact Details Linkedin' # Contact Details Linkedin
+    440135a1-bac2-4911-b82f-f00f8edf72ea: 'References Heading' # References Heading
+    476223b2-b3f5-4990-a334-dd00849b3d73: links # links
+    478698f9-d512-4489-8e98-0e2b8efa71de: Statement # Statement
+    0480982c-73d7-4336-816e-107e82720e4a: 'Contact Form Submit Button' # Contact Form Submit Button
+    710648b8-0d46-497c-96cf-821a49706c63: Heading # Heading
+    1243221e-75c6-431c-8106-9d9302137a31: Person # Person
+    4953480a-a92b-47ec-9b29-0f62f97de797: Page # Page
+    43740329-ec70-4367-91d5-c0f85e3fb773: Target # Target
+    63975976-f9ae-44ae-bd4d-3acfe3ee1942: Intro # Intro
+    a0fa242a-7dcc-4e24-b3ea-cd7f0c183706: 'Contact Details ZIP' # Contact Details ZIP
+    a4ce92ad-1904-4896-9957-ba44baa59842: 'References Cooperations' # References Cooperations
+    a5c68c1a-037c-4d50-a6c1-4c054c87c376: 'Team Member' # Team Member
+    a54e4574-2683-4d01-b382-e267d8392ac0: Label # Label
+    a711c46a-a6c8-4e31-8d5c-b8c1e87f5f13: 'About Values' # About Values
+    a4289e73-1bce-47ba-884e-d9b8685e61fd: Paragraph # Paragraph
+    aa179e31-b992-45b5-9d87-02a3b23a59ca: About # About
+    b73f5876-dbab-4454-8125-6d6f91f36d11: Links # Links
+    bd99e6a7-bca7-48ba-bf7a-ed4f05f3eec7: 'Hero Teaser' # Hero Teaser
+    bfcdff86-6bfe-4ca8-926c-6f11f4832bb6: 'Team Member Image' # Team Member Image
+    c0c121e0-efa6-446c-8c75-b42a8ee1436a: Services # Services
+    c4f40e7f-9124-4147-ab1d-634320c25a5e: 'Contact Details Mobile' # Contact Details Mobile
+    c389da40-3e34-4c2a-b8f3-f0dfc3b4abb4: Target # Target
+    c3480d0a-0bb2-4644-aea8-bfc01db762f1: 'References Overview' # References Overview
+    c5716e30-1829-4ea8-b0fa-a12e01010ebe: 'Team Member Email' # Team Member Email
+    c26450e9-e684-486c-ab84-17d42d3b2923: 'Contact Details Town' # Contact Details Town
+    c8996613-24b8-4434-948a-5ab22af5328c: Text # Text
+    ca2a0f8d-bb53-42a6-96e4-9409029b153b: Statement # Statement
+    cc76cc07-0ab5-4ee9-acb6-2efabd59282f: 'References Overview' # References Overview
+    cdc9346a-8ffb-40a1-82c4-ed1d575b61b4: 'Intro Image' # Intro Image
+    d0e74fd7-8203-4bb4-bae7-557513fc443f: Href # Href
+    d0041e93-01c5-40f7-8073-69a89b3cb2f4: 'Footer Copyright' # Footer Copyright
+    d8cb85d9-9171-497c-b885-dfd7cc41bc21: Statement # Statement
+    d9e268a2-5804-476e-a257-47ffa1fe80de: Pages # Pages
+    d953b654-2a10-406b-9c6b-ab9f150f7b74: 'Footer Links' # Footer Links
+    da12fe96-020d-4435-bf7c-6867196b238d: 'Team Member Full Name' # Team Member Full Name
+    ddbf60ce-38ef-47a5-8364-0c74615e799c: Intro # Intro
+    e017ef02-242a-425e-89ed-99b67cd2d24d: Meta # Meta
+    e0300dda-fbec-4fb1-96d8-82e87cbadf1e: 'References Location' # References Location
+    e3e29335-31d9-43ac-92e4-e81c7e4f8dda: Client # Client
+    e6abdcc5-ee7e-40f3-834e-0e9fcc30a89c: Item # Item
+    e1932db3-6d95-4f0e-98b9-fddf9c929053: Href # Href
+    e8002a2e-7222-4b76-a712-ce5ac9131c4e: 'Contact Details Street' # Contact Details Street
+    e6231236-0176-4e1d-a67b-f1384d21ba9f: Text # Text
+    ecf27232-2d0a-4d9f-8a07-9f2331256eb1: 'Data Privacy' # Data Privacy
+    f7f8b6ed-cc08-41c7-8e87-6901635621c0: References # References
+    f97fbd41-b473-4603-a976-1f88cfbf2172: Hero # Hero
+    f513ab96-438b-4652-ad82-4e8365f47f6a: 'Hero Heading' # Hero Heading
+    f868d7bc-ca7c-4c4f-9b23-2f249d9ca31b: 'Footer Heading' # Footer Heading
     f4961e40-a749-46c2-a50d-e85bdd1e3950: Common # Common
+    fbbd889b-3a5c-4d2c-8c31-2f6b6e232329: Navigation # Navigation
+    fbfb1389-8950-4b0c-8b74-5a9aa4602cdb: Imprint # Imprint
+    fc12a792-01d3-44d2-9f13-6dabb1faa7b8: button # button
+    fd9340a7-6de6-4cb1-9fbd-5ec214b3fe20: 'Team Member Introduction' # Team Member Introduction
 system:
   edition: solo
   live: true

@@ -1,0 +1,19 @@
+columnSuffix: qyiulavh
+contentColumnType: text
+fieldGroup: e017ef02-242a-425e-89ed-99b67cd2d24d # Meta
+handle: metadescription
+instructions: ''
+name: metaDescription
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # References
+handle: referencesCooperations
+instructions: ''
+name: 'References Cooperations'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_referencescooperations}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

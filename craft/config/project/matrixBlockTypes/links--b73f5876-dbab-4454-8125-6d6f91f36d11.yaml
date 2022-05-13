@@ -1,0 +1,95 @@
+field: 34b948b7-e034-4c75-ac99-3354f657e1e7 # Navigation Links
+fieldLayouts:
+  97c7dfed-d864-432d-97e4-78548177654e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c8996613-24b8-4434-948a-5ab22af5328c # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9124a807-553e-4511-90ef-a5906afff52c # Href
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c389da40-3e34-4c2a-b8f3-f0dfc3b4abb4 # Target
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9124a807-553e-4511-90ef-a5906afff52c: # Href
+    columnSuffix: null
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: href
+    instructions: ''
+    name: Href
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  c389da40-3e34-4c2a-b8f3-f0dfc3b4abb4: # Target
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: target
+    instructions: ''
+    name: Target
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c8996613-24b8-4434-948a-5ab22af5328c: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: links
+name: Links
+sortOrder: 1

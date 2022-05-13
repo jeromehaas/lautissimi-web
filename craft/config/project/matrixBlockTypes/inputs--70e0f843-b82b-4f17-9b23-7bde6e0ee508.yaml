@@ -1,0 +1,153 @@
+field: 1e71d181-05fe-4542-b71b-9d3fd64f8dc4 # Contact Form Inputs
+fieldLayouts:
+  03ef6efd-b249-4f22-b3c9-a40c1949b2be:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a54e4574-2683-4d01-b382-e267d8392ac0 # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1cf93867-b1e9-4b75-b7ec-893e1facfd2b # Required
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 93f73022-35f0-4112-a2dc-700976016167 # Kind
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1cf93867-b1e9-4b75-b7ec-893e1facfd2b: # Required
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: required
+    instructions: ''
+    name: Required
+    searchable: false
+    settings:
+      multi: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - required
+            -
+              - value
+              - required
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - optional
+            -
+              - value
+              - optional
+            -
+              - default
+              - '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Checkboxes
+  93f73022-35f0-4112-a2dc-700976016167: # Kind
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: kind
+    instructions: ''
+    name: Kind
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Text
+            -
+              - value
+              - text
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Email
+            -
+              - value
+              - email
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Mobile
+            -
+              - value
+              - mobile
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Textarea
+            -
+              - value
+              - textarea
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  a54e4574-2683-4d01-b382-e267d8392ac0: # Label
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: ''
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: inputs
+name: Inputs
+sortOrder: 1

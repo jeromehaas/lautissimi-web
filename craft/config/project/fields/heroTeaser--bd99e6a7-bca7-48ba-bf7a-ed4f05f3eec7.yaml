@@ -1,0 +1,19 @@
+columnSuffix: zjvosiub
+contentColumnType: text
+fieldGroup: 9bbcdb7c-8d5d-4d80-a9ca-37ed98d82ee0 # Hero
+handle: heroTeaser
+instructions: ''
+name: 'Hero Teaser'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

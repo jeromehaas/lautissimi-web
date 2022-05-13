@@ -1,0 +1,20 @@
+columnSuffix: wigmwqsl
+contentColumnType: smallint(4)
+fieldGroup: 89a176fa-8575-4f8a-a6e4-e4c34ec8b721 # Contact Details
+handle: contactDetailsZip
+instructions: ''
+name: 'Contact Details ZIP'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: 9999
+  min: 0
+  prefix: null
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: aa179e31-b992-45b5-9d87-02a3b23a59ca # About
+handle: aboutTeamMembers
+instructions: ''
+name: 'About Team Members'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:81f754db-5513-4e71-bae9-d1997e6fd72a' # Team Member
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

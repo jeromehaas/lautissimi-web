@@ -1,0 +1,19 @@
+columnSuffix: umkvlmph
+contentColumnType: text
+fieldGroup: 89a176fa-8575-4f8a-a6e4-e4c34ec8b721 # Contact Details
+handle: contactDetailsStreet
+instructions: ''
+name: 'Contact Details Street'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,19 @@
+columnSuffix: knvbpaeh
+contentColumnType: text
+fieldGroup: ca2a0f8d-bb53-42a6-96e4-9409029b153b # Statement
+handle: statementText
+instructions: ''
+name: 'Statement Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

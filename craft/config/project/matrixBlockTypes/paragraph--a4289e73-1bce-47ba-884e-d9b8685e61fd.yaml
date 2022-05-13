@@ -1,0 +1,70 @@
+field: 3beb3ad3-b5cd-4773-a3f6-8fd64f9bf2c4 # Data Privacy Content
+fieldLayouts:
+  38d177fd-9bd2-4e0f-953b-461cf7f2c2b8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1488e12a-fb5f-46e1-be5e-2c1d22dfb041 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8090f08f-7900-4494-bf95-887dfdc4baca # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1488e12a-fb5f-46e1-be5e-2c1d22dfb041: # Heading
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8090f08f-7900-4494-bf95-887dfdc4baca: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: paragraph
+name: Paragraph
+sortOrder: 1

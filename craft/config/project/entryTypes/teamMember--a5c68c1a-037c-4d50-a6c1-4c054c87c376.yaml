@@ -1,0 +1,92 @@
+fieldLayouts:
+  7a6d7d78-773a-4f7d-acbe-7780b76adac8:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: bfcdff86-6bfe-4ca8-926c-6f11f4832bb6 # Team Member Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: da12fe96-020d-4435-bf7c-6867196b238d # Team Member Full Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 600c8f96-17c9-4c65-b989-161c9b04d400 # Team Member Role
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53df496f-66f4-4fe0-b65d-e2ebf2f53ac0 # Team Member Mobile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c5716e30-1829-4ea8-b0fa-a12e01010ebe # Team Member Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fd9340a7-6de6-4cb1-9fbd-5ec214b3fe20 # Team Member Introduction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: teamMember
+hasTitleField: false
+name: 'Team Member'
+section: 81f754db-5513-4e71-bae9-d1997e6fd72a # Team Member
+sortOrder: 1
+titleFormat: '{{teamMemberFullName}}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
