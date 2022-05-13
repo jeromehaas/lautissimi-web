@@ -1,0 +1,13 @@
+.imprint {
+	background-color: $green-dark;
+
+	&__heading {
+		margin-bottom: 64px;
+	}
+
+	&__owner, 
+	&__address {
+		margin-bottom: 46px;
+	}
+
+}

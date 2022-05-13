@@ -1,0 +1,12 @@
+.data-privacy {
+	background-color: $green-dark;
+
+	&__heading {
+		margin-bottom: 64px;
+	}
+
+	&__item, .item {
+		margin-bottom: 46px;
+	}
+
+}
