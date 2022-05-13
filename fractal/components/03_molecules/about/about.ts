@@ -30,7 +30,8 @@ class About {
 			});
 		});
 		this.closeButtons.forEach((button) => {
-			button.addEventListener('click', () => {
+			button.addEventListener('click', (event) => {
+				event.preventDefault();
 				this.hideTeamMember();
 			});
 		});

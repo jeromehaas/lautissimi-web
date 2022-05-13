@@ -18,16 +18,24 @@ class DesktopNavigation {
 	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.setupScrollToSection();
+		this.setupScrollToContact();
 		this.setupBackToHome();
 	};
 
 	setupScrollToSection = () => {
 		this.links.all.forEach((item: HTMLElement) => {
 			const target = item.getAttribute('data-target');
-			item.addEventListener('click', (event) => {
+			item.addEventListener('click', (event: MouseEvent) => {
 				event.preventDefault();
 				gsap.to(window, { scrollTo: `.${target}`, ease: 'Power2.easeInOut', duration: 1 });
 			});
+		});
+	};
+
+	setupScrollToContact = () => {
+		this.links.contact.addEventListener('click', (event: MouseEvent) => {
+			event.preventDefault();
+			gsap.to(window, { scrollTo: '.footer', ease: 'Power2.easeInOut', duration: 1 });
 		});
 	};
 
