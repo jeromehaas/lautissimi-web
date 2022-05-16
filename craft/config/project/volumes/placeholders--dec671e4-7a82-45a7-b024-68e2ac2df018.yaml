@@ -1,5 +1,5 @@
 fieldLayouts:
-  16c768da-9d4f-40d9-b9e9-cda25a2c5477:
+  a18dcdf4-880a-4e1d-92af-eb37cde62a2b:
     tabs:
       -
         elements:
@@ -37,13 +37,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: general
+handle: placeholders
 hasUrls: true
-name: General
+name: Placeholders
 settings:
-  path: ./uploads/general
-sortOrder: 2
+  path: ./uploads/placeholders
+sortOrder: 3
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
-url: ./uploads/general
+url: ./uploads/placeholders

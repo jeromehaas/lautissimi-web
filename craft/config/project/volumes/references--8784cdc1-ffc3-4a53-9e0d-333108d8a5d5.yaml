@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 931de94d-cb1a-4e39-bab5-17182d8720a7 # assetAlt
+            fieldUid: 931de94d-cb1a-4e39-bab5-17182d8720a7 # Asset Alt Tag
             instructions: null
             label: null
             required: false

@@ -1,9 +1,9 @@
 columnSuffix: tezgisqu
 contentColumnType: text
 fieldGroup: 730cd0d2-75f2-4352-afca-85aad702b46f # Asset
-handle: assetalt
+handle: assetAltTag
 instructions: ''
-name: assetAlt
+name: 'Asset Alt Tag'
 searchable: false
 settings:
   byteLimit: null

@@ -4,7 +4,7 @@
 		padding: 0;
 	}
 
-	&__teaser {
+	&__teaser, .paragraph {
 		padding: 104px calc(80px + 32px);
 		max-width: 1200px
 	}
@@ -17,6 +17,8 @@
 		transition: all 0.6s ease-in-out;
 		clip-path: inset(0% 50% 0% 0%);
 		overflow: hidden;
+		object-fit: cover;
+		object-position: center;
 	}
 
 	@media (max-width: 650px) {

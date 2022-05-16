@@ -101,6 +101,18 @@
 	font-size: 64px;
 }
 
+.intro .paragraph {
+	font-size: 32px; font-family: "Playfair Display";
+	color: $beige-medium;
+
+	strong {
+		color: $black;
+		font-size: inherit;
+		font-family: inherit;
+	}
+
+}
+
 @media (max-width: 900px) {
 
 	.reference-detail .panel__heading {
