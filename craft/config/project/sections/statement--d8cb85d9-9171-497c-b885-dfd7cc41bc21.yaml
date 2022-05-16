@@ -4,7 +4,7 @@ handle: statement
 name: Statement
 propagationMethod: all
 siteSettings:
-  1c00b42a-dae4-4f15-a772-533bb5b53e7c: # Lautissimi
+  1c00b42a-dae4-4f15-a772-533bb5b53e7c: # Lautissimi (DE)
     enabledByDefault: true
     hasUrls: false
     template: null

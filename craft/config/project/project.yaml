@@ -1,11 +1,11 @@
-dateModified: 1652446322
+dateModified: 1652477478
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    1c00b42a-dae4-4f15-a772-533bb5b53e7c: Lautissimi # Lautissimi
+    1c00b42a-dae4-4f15-a772-533bb5b53e7c: 'Lautissimi (DE)' # Lautissimi (DE)
     1c12ec36-432f-4e48-8098-0a4670531950: 'Data Privacy' # Data Privacy
     1cf93867-b1e9-4b75-b7ec-893e1facfd2b: Required # Required
     1e71d181-05fe-4542-b71b-9d3fd64f8dc4: 'Contact Form Inputs' # Contact Form Inputs
@@ -52,6 +52,7 @@ meta:
     730cd0d2-75f2-4352-afca-85aad702b46f: Asset # Asset
     751a668d-963d-478b-ac5b-80fa02f4ae6f: 'Contact Form' # Contact Form
     785c8054-7a1d-49c1-87f5-75de0bc45d9f: 'Team Member' # Team Member
+    0897c51d-71f1-4ab2-9641-a746a1066490: General # General
     931de94d-cb1a-4e39-bab5-17182d8720a7: assetAlt # assetAlt
     1488e12a-fb5f-46e1-be5e-2c1d22dfb041: Heading # Heading
     1710e260-6d3a-4ad9-9f43-4a26382e3fb9: 'Data Privacy' # Data Privacy

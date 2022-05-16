@@ -1,9 +1,9 @@
-baseUrl: $BASE_URL
+baseUrl: 'http://$BASE_URL/de/'
 enabled: true
-handle: default
+handle: de
 hasUrls: true
 language: en-GB
-name: Lautissimi
+name: 'Lautissimi (DE)'
 primary: true
 siteGroup: 59673e81-6588-42ea-94b1-82258efce574 # Lautissimi
 sortOrder: 1
