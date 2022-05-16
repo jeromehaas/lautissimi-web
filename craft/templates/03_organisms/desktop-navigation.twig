@@ -1,0 +1,24 @@
+{% set navigation = craft.entries.section('navigation').one() %}
+{% set links = navigation.navigationLinks %}
+{% set ctas = navigation.navigationCta %}
+
+<nav class="desktop-navigation  js-desktop-navigation">
+		    <a class="desktop-navigation__logo logo" href="/">
+		        <img class="logo__image" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+		    </a>
+		 
+				<div class="desktop-navigation__link-wrapper">	
+					{% for item in links %}
+						<a class="gravity-link desktop-navigation__link" href="{{ item.href }}" data-target="{{ item.target }}">
+							{{ item.text }}
+		  	    </a>	 
+					{% endfor %}
+		    </div>
+
+				{% for item in ctas %}	
+		    	<a class="circle-link circle-link--arrow  desktop-navigation__button" href="{{ item.href }}">
+						{{ item.text }}
+					</a>
+				{% endfor %}
+				
+		</nav>
