@@ -1,4 +1,4 @@
-dateModified: 1652709337
+dateModified: 1652711285
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -11,6 +11,7 @@ meta:
     1e71d181-05fe-4542-b71b-9d3fd64f8dc4: 'Contact Form Inputs' # Contact Form Inputs
     2afa1137-8726-43ba-b165-2c55caca0b11: 'About Image' # About Image
     3beb3ad3-b5cd-4773-a3f6-8fd64f9bf2c4: 'Data Privacy Content' # Data Privacy Content
+    3e1e3901-51d3-448d-a8ba-7e4ef22bf85b: 'About Intro' # About Intro
     3e5a5869-5639-4dee-b10c-120697405c15: 'References Items' # References Items
     3e79d756-7327-43ef-8118-df026799c731: 'Services Heading' # Services Heading
     03fe9a99-b286-4335-ac34-9f3ced74192c: 'About Heading' # About Heading
@@ -32,6 +33,7 @@ meta:
     33ca7d8e-2a3e-4224-8100-8fc9dd543980: About # About
     34b948b7-e034-4c75-ac99-3354f657e1e7: 'Navigation Links' # Navigation Links
     35c059dd-2c2f-41ff-8d17-876dd7228f9d: 'Contact Form' # Contact Form
+    49a1a799-e9bc-4c47-a1a2-fb079893ff10: Team # Team
     51c7a578-fb76-4b6d-a319-a0a3ab277708: Services # Services
     52e5a549-eea0-48c2-a78d-0460bc167b9c: 'Intro Text' # Intro Text
     53df496f-66f4-4fe0-b65d-e2ebf2f53ac0: 'Team Member Mobile' # Team Member Mobile

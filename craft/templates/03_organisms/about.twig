@@ -1,0 +1,70 @@
+{% set about = craft.entries.section('about').one() %}
+{% set values = about.aboutValues %}
+{% set teamMembers = about.aboutTeamMembers %}
+
+<div class="about section js-about">
+    <div class="about__inner section__inner">
+
+        <h2 class="heading  heading--h2   heading--beige-medium  about__heading">
+            {{ about['aboutHeading'] is defined ? about.aboutHeading : '' }}
+        </h2>
+        
+				<div class="about__intro">
+					{{ about['aboutIntro'] is defined ? about.aboutIntro : '' }}
+				</div>
+
+        <div class="about__statements statements ">
+				{% for item in values %}
+					<div class="statements__item item">
+						<h4 class="heading  heading--h4   heading--black  item__heading">
+							{{ item.heading }}
+						</h4>
+					<p class="paragraph  paragraph--black   item__text paragraph">
+						{{ item.text }}
+					</p>
+					</div>
+				{% endfor %}
+        </div>
+
+				
+				{% if about['aboutImage'] is defined %}
+					 <img class="about__portrait" src="{{ about.aboutImage.one().url() }}" alt="{{ about.aboutImage.one().assetAltTag }}">
+				{% endif %}
+
+        <div class="about__links links">
+					{% for item in teamMembers.orderBy('postDate ASC').all() %}
+            <a class="external-link links__item" href="#" data-name="{{ item.teamMemberFullName|kebab }}">{{ item.teamMemberFullName }}
+							<i class="external-link__icon icon icon--arrow"></i>
+						</a>
+					{% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% for item in teamMembers.orderBy('postDate ASC').all() %}
+
+<div class="team-member" data-name="{{ item.teamMemberFullName|kebab }}">
+<img class="team-member__portrait" src="{{ item.teamMemberImage.one().url() }}" alt="{{ item.teamMemberFullName }}" class="team-member__portrait">
+    <div class="team-member__text-content text-content">
+		<h2 class="heading  heading--h3   heading--black  text-content__name">
+            {{ item.teamMemberFullName }}
+					</h2>
+        <p class="paragraph  paragraph--beige-medium   paragraph--serif  text-content__role">
+				{{ item.teamMemberRole }}
+        </p>
+        <div class="text-content__contact-details contact-details">
+            <a class="gravity-link  gravity-link--beige-medium contact-details__phone" href="tel:{{ item.teamMemberMobile|trim }}">
+						{{ item.teamMemberMobile }}
+            </a> 
+						<a class="gravity-link  gravity-link--beige-medium contact-details__email" href="mailto:{{ item.teamMemberEmail }}">
+						{{ item.teamMemberEmail }}
+					</a>
+        </div>
+			<p class="text-content__introduction">Ich bin fasziniert von der Einzigartigkeit, die in jedem unserer Projekte steckt. Die immer wieder neuen Ausgangslagen erfordern flexibles Denken und viel Einfühlungsvermögen. Um die passende Produktlösung für unsere Kunden zu finden, helfen mir neben meiner langjährigen Erfahrung auch die von Vertrauen geprägte Zusammenarbeit mit den Herstellern. Meine handwerkliche Grundausbildung sowie Weiterbildungen im Marketing mit dem Master für Dienstleistungsmarketing an der HSLU unterstützen mich im Alltag bei praktischen Aufgaben. Ein vielseitiges Interesse und das Anpacken von Themen ausserhalb meines gewohnten Umfeldes zeichnen mich zusätzlich aus. Denn mein Ziel ist es, immer ein Auge auf dem Mehrwert für Kunden und Gäste zu behalten.</p>
+			<a class="circle-link circle-link--close  circle-link--beige-medium  text-content__close-button" href="#">
+			
+		</a>
+	</div>
+</div>
+{% endfor %}
