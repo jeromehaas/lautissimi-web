@@ -1,0 +1,19 @@
+columnSuffix: uxyooden
+contentColumnType: text
+fieldGroup: 5365b4bb-47ef-425d-8d42-75f6aba9c7b6 # Services
+handle: servicesHeading
+instructions: ''
+name: 'Services Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

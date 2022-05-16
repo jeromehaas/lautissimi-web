@@ -1,4 +1,4 @@
-dateModified: 1652705894
+dateModified: 1652709337
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -12,6 +12,7 @@ meta:
     2afa1137-8726-43ba-b165-2c55caca0b11: 'About Image' # About Image
     3beb3ad3-b5cd-4773-a3f6-8fd64f9bf2c4: 'Data Privacy Content' # Data Privacy Content
     3e5a5869-5639-4dee-b10c-120697405c15: 'References Items' # References Items
+    3e79d756-7327-43ef-8118-df026799c731: 'Services Heading' # Services Heading
     03fe9a99-b286-4335-ac34-9f3ced74192c: 'About Heading' # About Heading
     04ddc697-dc8d-4a08-97dd-2dca2840ca3a: text # text
     4de8ced8-785b-4cf8-8964-04f7960b6886: 'References Text' # References Text
@@ -31,6 +32,7 @@ meta:
     33ca7d8e-2a3e-4224-8100-8fc9dd543980: About # About
     34b948b7-e034-4c75-ac99-3354f657e1e7: 'Navigation Links' # Navigation Links
     35c059dd-2c2f-41ff-8d17-876dd7228f9d: 'Contact Form' # Contact Form
+    51c7a578-fb76-4b6d-a319-a0a3ab277708: Services # Services
     52e5a549-eea0-48c2-a78d-0460bc167b9c: 'Intro Text' # Intro Text
     53df496f-66f4-4fe0-b65d-e2ebf2f53ac0: 'Team Member Mobile' # Team Member Mobile
     63cd45e9-41d8-46e9-8c63-55ca65abb5c2: metaDescription # metaDescription
@@ -70,6 +72,7 @@ meta:
     16285aca-5a6c-469c-abb4-f13c8cbe8ecd: Footer # Footer
     16610df2-605b-441e-893f-4c0b82054b7c: 'References Date' # References Date
     59673e81-6588-42ea-94b1-82258efce574: Lautissimi # Lautissimi
+    77277e65-28ee-4149-9813-28cf3c321e6d: 'Services Teaser' # Services Teaser
     198715f9-982d-443a-b572-76c3fbbf4d4b: Footer # Footer
     211767df-d016-4750-93df-0c474312d621: 'Contact Details Linkedin' # Contact Details Linkedin
     440135a1-bac2-4911-b82f-f00f8edf72ea: 'References Heading' # References Heading

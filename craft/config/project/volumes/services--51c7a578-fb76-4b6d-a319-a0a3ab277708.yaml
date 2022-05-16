@@ -1,5 +1,5 @@
 fieldLayouts:
-  7e5919a1-15ef-4128-8f0a-09b9a47730e0:
+  a166a969-388c-4d6b-a789-f0391b906dcd:
     tabs:
       -
         elements:
@@ -23,29 +23,11 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
           -
-            fieldUid: 3e79d756-7327-43ef-8118-df026799c731 # Services Heading
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 7576a62d-8db2-423b-a5ee-4b47ea1cb90e # Services Categories
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 77277e65-28ee-4149-9813-28cf3c321e6d # Services Teaser
+            fieldUid: 931de94d-cb1a-4e39-bab5-17182d8720a7 # Asset Alt Tag
             instructions: null
             label: null
             required: false
@@ -56,10 +38,12 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 handle: services
-hasTitleField: false
+hasUrls: true
 name: Services
-section: 7b28ea28-6059-4595-b48b-741fe2009e35 # Services
-sortOrder: 1
-titleFormat: '{section.name|raw}'
+settings:
+  path: ./uploads/services
+sortOrder: 4
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: ./uploads/services
