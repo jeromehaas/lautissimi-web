@@ -8,7 +8,7 @@
 		&__text, .paragraph {
 			color: $white;
 
-			a {
+			&__link, a {
 				color: $beige-medium;
 				text-decoration: none;
 			}
@@ -50,7 +50,6 @@
 
 		&--success::after { background-color: $green; }
 		&--error::after { background-color: $red; }
-
 		&--active { display: block }
 
 	}
