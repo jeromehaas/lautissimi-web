@@ -1,0 +1,51 @@
+{% set references = craft.entries.section('references').one() %}
+{% set projects = references.referencesItems %}
+
+<div class="references section">
+     <div class="references__inner section__inner">
+
+         <h2 class="heading  heading--h2   heading--white  references__heading">
+				 	{{ references['referencesHeading'] ? references.referencesHeading : '' }}
+         </h2>
+         <div class="references__slider slider js-slider">
+             <div class="slider__container">
+                 <div class="slider__wrapper swiper-wrapper">
+
+
+									{% for item in projects.all() %}
+										<a class="slider__item item cell swiper-slide" href="{{ item.url }}">
+											<img class="item__image" src="{{ item.projectPreviewImage.one().url() }}" alt="{{ item.projectHeading }} | {{ item.parent.title }} ">
+											<h4 class="heading  heading--h4   heading--white  item__heading">
+												{{ item.parent.title }}
+											</h4>
+							 			</a>
+									{% endfor %}
+
+
+                     <a class="slider__item slider__item--show-more item cell swiper-slide" href="#">
+                         <i class="item__icon icon icon--arrow"></i>
+                         <p class="paragraph  paragraph--white   item__text">{{ currentSite.language == 'de' ? 'weitere Referenzen' : 'further references' }}</p>
+                     </a> 
+                     <a class="slider__item item slider__item--empty cell swiper-slide" href="#"></a>
+                     <a class="slider__item item slider__item--empty cell swiper-slide" href="#"></a>
+
+                 </div>
+             </div>
+         </div>
+
+         <div class="references__controls controls">
+             <div class="controls__scrollbar swiper-scrollbar"></div>
+             <div class="controls__arrow-wrapper">
+                 <div class="controls__arrow controls__arrow--prev swiper-button-prev"></div>
+                 <div class="controls__arrow controls__arrow--next swiper-button-next"></div>
+             </div>
+         </div>
+
+         <div class="references__description">
+             <p class="description__text paragraph">
+				 			{{ references['referencesDescription'] ? references.referencesDescription|nl2br : '' }}
+						</p>
+         </div>
+
+     </div>
+ </div>

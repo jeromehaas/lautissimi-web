@@ -31,7 +31,7 @@ fieldLayouts:
 handle: client
 hasTitleField: true
 name: Client
-section: 87da02c3-db0c-443c-bdd7-da8e5a97ed6d # References
+section: 87da02c3-db0c-443c-bdd7-da8e5a97ed6d # Projects
 sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null

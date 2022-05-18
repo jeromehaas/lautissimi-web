@@ -1,9 +1,9 @@
-columnSuffix: uxyooden
+columnSuffix: ecdwtftd
 contentColumnType: text
-fieldGroup: 5365b4bb-47ef-425d-8d42-75f6aba9c7b6 # Service
-handle: servicesHeading
+fieldGroup: b1aefba3-0637-4f18-ad0f-6e10d5cf4dd5 # Reference
+handle: referencesDescription
 instructions: ''
-name: 'Services Heading'
+name: 'References Description'
 searchable: false
 settings:
   byteLimit: null
@@ -11,7 +11,7 @@ settings:
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: ''
+  multiline: '1'
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

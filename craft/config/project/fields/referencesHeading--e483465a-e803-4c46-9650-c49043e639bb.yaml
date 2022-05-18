@@ -1,9 +1,9 @@
-columnSuffix: evflcxqd
+columnSuffix: tysqvqsu
 contentColumnType: text
-fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # References
-handle: referencesLocation
+fieldGroup: b1aefba3-0637-4f18-ad0f-6e10d5cf4dd5 # Reference
+handle: referencesHeading
 instructions: ''
-name: 'References Location'
+name: 'References Heading'
 searchable: false
 settings:
   byteLimit: null

@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # References
-handle: referencesCooperations
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # Project
+handle: projectCooperations
 instructions: ''
-name: 'References Cooperations'
+name: 'Project Cooperations'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_referencescooperations}}'
+  contentTable: '{{%matrixcontent_projectcooperations}}'
   maxBlocks: ''
   minBlocks: ''
   propagationKeyFormat: null

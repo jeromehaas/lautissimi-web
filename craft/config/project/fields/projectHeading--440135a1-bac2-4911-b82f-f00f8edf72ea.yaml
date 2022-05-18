@@ -1,9 +1,9 @@
 columnSuffix: arrhkyrt
 contentColumnType: text
-fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # References
-handle: referencesHeading
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # Project
+handle: projectHeading
 instructions: ''
-name: 'References Heading'
+name: 'Project Heading'
 searchable: false
 settings:
   byteLimit: null

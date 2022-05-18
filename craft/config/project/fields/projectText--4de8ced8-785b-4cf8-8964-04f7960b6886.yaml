@@ -1,9 +1,9 @@
 columnSuffix: mrxtebmk
 contentColumnType: text
-fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # References
-handle: referencesText
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # Project
+handle: projectText
 instructions: ''
-name: 'References Text'
+name: 'Project Text'
 searchable: false
 settings:
   byteLimit: null

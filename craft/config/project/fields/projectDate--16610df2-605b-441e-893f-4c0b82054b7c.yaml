@@ -1,9 +1,9 @@
 columnSuffix: kwbsaayd
 contentColumnType: datetime
-fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # References
-handle: referencesDate
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # Project
+handle: projectDate
 instructions: ''
-name: 'References Date'
+name: 'Project Date'
 searchable: false
 settings:
   max: null
