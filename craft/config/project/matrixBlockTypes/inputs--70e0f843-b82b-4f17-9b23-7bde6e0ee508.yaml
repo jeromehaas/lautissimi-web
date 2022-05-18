@@ -5,6 +5,15 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: fb2627bb-0b55-4cc2-9d84-32faebf0ddf7 # Identifier
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: a54e4574-2683-4d01-b382-e267d8392ac0 # Label
             instructions: null
             label: null
@@ -31,6 +40,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: 9ff12ebb-e0a8-4433-8a08-6723570d0815 # Error Message
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -43,33 +61,52 @@ fields:
     name: Required
     searchable: false
     settings:
-      multi: true
       options:
         -
           __assoc__:
             -
               - label
-              - required
+              - optional
             -
               - value
-              - required
+              - 'false'
             -
               - default
-              - ''
+              - '1'
         -
           __assoc__:
             -
               - label
-              - optional
+              - required
             -
               - value
-              - optional
+              - 'true'
             -
               - default
-              - '1'
+              - ''
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\Checkboxes
+    type: craft\fields\RadioButtons
+  9ff12ebb-e0a8-4433-8a08-6723570d0815: # Error Message
+    columnSuffix: nodycgvy
+    contentColumnType: text
+    fieldGroup: null
+    handle: errorMessage
+    instructions: ''
+    name: 'Error Message'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   93f73022-35f0-4112-a2dc-700976016167: # Kind
     columnSuffix: null
     contentColumnType: string
@@ -135,6 +172,26 @@ fields:
     handle: label
     instructions: ''
     name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fb2627bb-0b55-4cc2-9d84-32faebf0ddf7: # Identifier
+    columnSuffix: lcntozkh
+    contentColumnType: text
+    fieldGroup: null
+    handle: identifier
+    instructions: ''
+    name: Identifier
     searchable: false
     settings:
       byteLimit: null

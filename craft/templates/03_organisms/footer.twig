@@ -1,0 +1,68 @@
+{% set footer = craft.entries.section('footer').one() %}
+{% set links = footer.footerLinks %}
+
+<footer class="footer section">
+    <div class="footer__inner section__inner">
+
+        <div class="footer__text text">
+            <h3 class="heading  heading--h1  heading--white  text__heading">
+								{{ footer['footerTeaser'] is defined ? footer.footerTeaser : '' }}
+            </h3>
+            <p class="paragraph  paragraph--white   text__item">
+								{{ footer['footerText'] is defined ? footer.footerText : '' }}
+            </p>
+        </div>
+
+				{% include "02_molecules/contact-form" %}
+      
+        <address class="footer__address address">
+          <img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+					{% if contactDetails['contactDetailsCompany'] is defined %}
+						<p class="paragraph  paragraph--white   address__item">
+							{{ contactDetails.contactDetailsCompany }}
+						</p>
+					{% endif %}
+					{% if contactDetails['contactDetailsStreet'] is defined %} 
+						<p class="paragraph  paragraph--white   address__item">
+							{{ contactDetails.contactDetailsStreet }}
+						</p>
+					{% endif %}
+					{% if contactDetails['contactDetailsZip'] is defined and contactDetails['contactDetailsTown'] is defined %}
+						<p class="paragraph  paragraph--white   address__item">
+							{{ contactDetails.contactDetailsZip }}
+							{{ contactDetails.contactDetailsTown }}
+						</p> 
+					{% endif %}
+					{% if contactDetails['contactDetailsEmail'] is defined %}
+						<a class="gravity-link  gravity-link--white    address__item" href="mailto:{{ contactDetails.contactDetailsEmail }}">
+							{{ contactDetails.contactDetailsEmail }}
+						</a> 
+					{% endif %}
+					{% if contactDetails['contactDetailsLinkedin'] %}
+						<a class="address__item item" href="{{ contactDetails.contactDetailsLinkedin }}">
+							<i class="item__icon icon icon--linkedin"></i>
+						</a>
+					{% endif %}
+        </address>
+
+        <div class="footer__links">
+					{% if footer['footerCopyright'] is defined %}
+						<p class="paragraph  paragraph--white   links__item">
+							{{ footer.footerCopyright }}
+						</p> 
+					{% endif %}
+					{% for item in links %}
+						<a class="gravity-link  gravity-link--white   links__item" href="{{ item.href }}" target="_blank">
+							{{ item.text }}
+						</a> 
+						{% endfor %}
+						<a class="gravity-link  gravity-link--white    links__item" href="#">
+							{{ currentSite.language == 'de' ? 'Deutsch' : 'English' }}
+            </a>
+        </div>
+
+        <h2 class="heading  heading--h2   heading--white  footer__heading">
+					{{ footer['footerHeading'] is defined ? footer.footerHeading : '' }}
+        </h2>
+    </div>
+</footer>

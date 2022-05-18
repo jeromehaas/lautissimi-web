@@ -5,8 +5,13 @@
 
 	&__disclaimer, .disclaimer {
 
-		&__text {
+		&__text, .paragraph {
 			color: $white;
+
+			a {
+				color: $beige-medium;
+				text-decoration: none;
+			}
 		}
 
 		&__link {

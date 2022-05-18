@@ -1,13 +1,13 @@
-columnSuffix: wigmwqsl
-contentColumnType: string(20)
-fieldGroup: 89a176fa-8575-4f8a-a6e4-e4c34ec8b721 # Contact Details
-handle: contactDetailsZip
+columnSuffix: unbmhern
+contentColumnType: text
+fieldGroup: 35c059dd-2c2f-41ff-8d17-876dd7228f9d # Contact Form
+handle: contactFormSuccessMessage
 instructions: ''
-name: 'Contact Details ZIP'
+name: 'Contact Form Success Message'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: 5
+  charLimit: null
   code: ''
   columnType: null
   initialRows: '4'

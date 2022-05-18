@@ -1,4 +1,4 @@
-dateModified: 1652711285
+dateModified: 1652872493
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -18,6 +18,7 @@ meta:
     04ddc697-dc8d-4a08-97dd-2dca2840ca3a: text # text
     4de8ced8-785b-4cf8-8964-04f7960b6886: 'References Text' # References Text
     4e13ae6a-0bbf-45a0-90c9-62e6e8fdb413: About # About
+    05d36db5-afa1-493d-93e9-2347387ff12b: 'Contact Form Success Message' # Contact Form Success Message
     7b28ea28-6059-4595-b48b-741fe2009e35: Services # Services
     7c7c65c3-1d0d-44a3-9169-c0381eece666: 'Contact Details Company' # Contact Details Company
     7d852a82-ff93-4f8e-971d-008d1fb250b7: Heading # Heading
@@ -26,6 +27,7 @@ meta:
     8c909fe8-1a1e-4279-97b7-27b81676a69e: Footer # Footer
     9bbcdb7c-8d5d-4d80-a9ca-37ed98d82ee0: Hero # Hero
     9c12e0c3-5377-4fe8-a414-5ce79f73e1cf: 'Contact Form' # Contact Form
+    9ff12ebb-e0a8-4433-8a08-6723570d0815: 'Error Message' # Error Message
     14c8823b-e200-4724-9a2b-84a2e10852ec: Navigation # Navigation
     14fc35ee-f334-43ea-a260-a5e62f3677ee: Image # Image
     20b3ef8c-e645-4b60-881f-081f9da1ad95: 'Footer Teaser' # Footer Teaser
@@ -94,6 +96,7 @@ meta:
     a4289e73-1bce-47ba-884e-d9b8685e61fd: Paragraph # Paragraph
     aa179e31-b992-45b5-9d87-02a3b23a59ca: About # About
     b73f5876-dbab-4454-8125-6d6f91f36d11: Links # Links
+    bce90d5a-9c1f-46bd-95a5-bd54df05ff3b: 'Contact Form Error Message' # Contact Form Error Message
     bd99e6a7-bca7-48ba-bf7a-ed4f05f3eec7: 'Hero Teaser' # Hero Teaser
     bfcdff86-6bfe-4ca8-926c-6f11f4832bb6: 'Team Member Image' # Team Member Image
     c0c121e0-efa6-446c-8c75-b42a8ee1436a: Services # Services
@@ -127,6 +130,7 @@ meta:
     f513ab96-438b-4652-ad82-4e8365f47f6a: 'Hero Heading' # Hero Heading
     f868d7bc-ca7c-4c4f-9b23-2f249d9ca31b: 'Footer Heading' # Footer Heading
     f4961e40-a749-46c2-a50d-e85bdd1e3950: Common # Common
+    fb2627bb-0b55-4cc2-9d84-32faebf0ddf7: Identifier # Identifier
     fbbd889b-3a5c-4d2c-8c31-2f6b6e232329: Navigation # Navigation
     fbfb1389-8950-4b0c-8b74-5a9aa4602cdb: Imprint # Imprint
     fc12a792-01d3-44d2-9f13-6dabb1faa7b8: button # button

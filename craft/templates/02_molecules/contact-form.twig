@@ -1,0 +1,36 @@
+{% set contactForm = craft.entries.section('contactForm').one() %}
+
+<form class="contact-form js-contact-form footer__contact-form">
+
+{% for item in contactForm.contactFormInputs %}
+	{% if item.kind == 'text' or item.kind == 'email' or item.kind == 'mobile' %}
+		<div class="text-input contact-form__input contact-form__input--{{ item.identifier }}">
+			<input class="text-input__input" type="text" placeholder=" ">
+			<label class="text-input__label">{{ item.label }}  {{ item.required == 'true' ? '*' : '' }}</label>
+			<p class="text-input__error-message">{{ item.errorMessage }}</p>
+		</div>
+	{% else %}
+		<div class="textarea contact-form__textarea contact-form__textarea--{{ item.identifier }}">
+			<textarea class="textarea__input" rows="4" placeholder=" "></textarea>
+			<label class="textarea__label">{{ item.label }}</label>
+			<p class="text-input__error-message">{{ item.errorMessage }}</p>
+		</div> 
+	{% endif %}
+{% endfor %}
+
+	<span class="contact-form__disclaimer disclaimer">
+	 {{ contactForm['contactFormDisclaimer'] is defined ? contactForm.contactFormDisclaimer : '' }}
+	</span>
+	<a class="circle-link contact-form__submit" href="#">
+	 {{ contactForm['contactFormSubmitButton'] is defined ? contactForm.contactFormSubmitButton : '' }}
+	</a>
+	<div class="contact-form__status-message status-message">
+	<p class="status-message--success">
+		{{ contactForm['contactFormSuccessMessage'] is defined ? contactForm.contactFormSuccessMessage : '' }}
+	</p>
+	<p class="status-message--error">
+		{{ contactForm['contactFormErrorMessage'] is defined ? contactForm.contactFormErrorMessage : '' }}
+	</p>
+	</div>
+
+</form>

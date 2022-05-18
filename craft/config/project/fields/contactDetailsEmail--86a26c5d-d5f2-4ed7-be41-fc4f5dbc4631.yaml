@@ -1,15 +1,19 @@
 columnSuffix: dsywjjgu
-contentColumnType: string(255)
+contentColumnType: text
 fieldGroup: 89a176fa-8575-4f8a-a6e4-e4c34ec8b721 # Contact Details
 handle: contactDetailsEmail
 instructions: ''
 name: 'Contact Details Email'
 searchable: false
 settings:
-  maxLength: '255'
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
   placeholder: null
-  types:
-    - email
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Url
+type: craft\fields\PlainText

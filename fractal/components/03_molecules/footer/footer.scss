@@ -9,18 +9,19 @@
 		position: relative;
 		display: grid;
 		grid-template-areas:
-			"intro heading"
-			"intro contact-form"
+			"text heading"
+			"text contact-form"
 			"address contact-form"
 			"address contact-form"
 			"links links";
 		grid-template-rows: 240px auto auto auto;	
 		grid-template-columns: 1fr 1fr;	
-		grid-gap: 32px;
+		grid-row-gap: 32px;
+		grid-column-gap: 64px;
 	}
 
-	&__intro, .intro {
-		grid-area: intro;
+	&__text, .text {
+		grid-area: text;
 
 		&__heading {
 			margin-top: 64px;
@@ -122,7 +123,7 @@
 			display: grid;
 			padding: 24px;
 			grid-template-areas:
-				"intro"
+				"text"
 				"contact-form"
 				"address"
 				"links";
