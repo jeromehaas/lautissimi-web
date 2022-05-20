@@ -7,7 +7,7 @@ siteSettings:
   1c00b42a-dae4-4f15-a772-533bb5b53e7c: # Lautissimi (DE)
     enabledByDefault: true
     hasUrls: true
-    template: refer/_entry
+    template: 05_pages/references-detail.twig
     uriFormat: 'references/{parent.slug}/{slug}'
 structure:
   maxLevels: null

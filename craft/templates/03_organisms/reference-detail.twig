@@ -1,0 +1,76 @@
+<div class="reference-detail section js-reference-detail">
+	<div class="reference-detail__inner section__inner">
+
+		<div class="reference-detail__panel panel">
+			<h1 class="heading  heading--h1   heading--white  panel__heading">
+				{{ entry.parent.title }}
+			</h1>
+			<p class="paragraph  paragraph--white   panel__description">
+				{{ entry.projectText }}
+			</p>
+			<div class="panel__item item">
+				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
+					{{ currentSite.language == 'de-CH' ? 'Jahr' : 'Year' }}
+				</p>
+				<p class="paragraph  paragraph--white   item__heading">
+					{{ entry.projectDate|date('Y') }}
+				</p>
+			</div>
+			<div class="panel__item item">
+				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
+					{{ currentSite.language == 'de-CH' ? 'Ort' : 'Location' }}
+				</p>
+				<p class="paragraph  paragraph--white   item__heading">
+					{{ entry.projectLocation }}
+				</p>
+			</div>
+			<div class="panel__item item">
+				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
+					{{ currentSite.language == 'de-CH' ? 'In Zusammenarbeit mit:' : 'In cooperation with:' }}
+				</p>
+				{% for item in entry.projectCooperations %}
+					<p class="paragraph  paragraph--white   item__heading">
+						{{ item.person }}
+					</p>
+				{% endfor %}
+			</div>
+
+			<a class="back-link panel__back-link" href="/#references">
+				<i class="back-link__icon icon icon--angle"></i>
+				<p class="back-link__text">
+					{{ currentSite.language == 'de-CH' ? 'zurück' : 'back' }}
+				</p>
+			</a>
+		</div>
+
+		<div class="reference-detail__showcase showcase">
+
+			<div class="showcase__swiper swiper">
+				<div class="showcase__wrapper swiper-wrapper">
+					{% for item in entry.projectImages %}
+						<div class="showcase__slide swiper-slide">
+							<img class="showcase__image" src="/{{ item.url }}" alt="{{ item.title }}"/>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="showcase__controls controls">
+				<div class="controls__pagination"></div>
+				<i class="controls__angle controls__angle--previous icon icon--angle"></i>
+				<i class="controls__angle controls__angle--next icon icon--angle"></i>
+			</div>
+
+			<a class="switcher showcase__switcher" href="{{ entry.projectNext.one().url }}">
+				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="">
+				<div class="switcher__label label">
+					<p class="paragraph  paragraph--white   label__text">
+						{{ currentSite.language == 'de-CH' ? 'weiter' : 'next' }}
+					</p>
+					<i class="label__icon icon icon--angle"></i>
+				</div>
+			</a>
+		</div>
+
+	</div>
+</div>
