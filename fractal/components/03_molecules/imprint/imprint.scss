@@ -1,13 +1,21 @@
 .imprint {
 	background-color: $green-dark;
 
+	&__inner {
+		padding: 104px 96px;
+	}
+
 	&__heading {
 		margin-bottom: 64px;
 	}
 
-	&__owner, 
-	&__address {
-		margin-bottom: 46px;
+	&__box {
+		margin-bottom: 40px;
+		
+		p, a {
+			color: $white;			
+		}
+
 	}
 
 }

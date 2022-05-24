@@ -1,4 +1,4 @@
-dateModified: 1653006905
+dateModified: 1653393421
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -11,6 +11,7 @@ meta:
     1cf93867-b1e9-4b75-b7ec-893e1facfd2b: Required # Required
     1e71d181-05fe-4542-b71b-9d3fd64f8dc4: 'Contact Form Inputs' # Contact Form Inputs
     2afa1137-8726-43ba-b165-2c55caca0b11: 'About Image' # About Image
+    03a93c3b-918b-4335-a499-081b17ad9626: Imprint # Imprint
     3beb3ad3-b5cd-4773-a3f6-8fd64f9bf2c4: 'Data Privacy Content' # Data Privacy Content
     3e1e3901-51d3-448d-a8ba-7e4ef22bf85b: 'About Intro' # About Intro
     3e79d756-7327-43ef-8118-df026799c731: 'Services Heading' # Services Heading
@@ -18,6 +19,7 @@ meta:
     04ddc697-dc8d-4a08-97dd-2dca2840ca3a: text # text
     4de8ced8-785b-4cf8-8964-04f7960b6886: 'Project Text' # Project Text
     4e13ae6a-0bbf-45a0-90c9-62e6e8fdb413: About # About
+    5ad7b01a-68e1-4dfe-9df3-e9ffca1de7f5: 'Imprint Box' # Imprint Box
     05d36db5-afa1-493d-93e9-2347387ff12b: 'Contact Form Success Message' # Contact Form Success Message
     7b28ea28-6059-4595-b48b-741fe2009e35: Services # Services
     7c7c65c3-1d0d-44a3-9169-c0381eece666: 'Contact Details Company' # Contact Details Company
@@ -35,13 +37,14 @@ meta:
     33ca7d8e-2a3e-4224-8100-8fc9dd543980: About # About
     34b948b7-e034-4c75-ac99-3354f657e1e7: 'Navigation Links' # Navigation Links
     35c059dd-2c2f-41ff-8d17-876dd7228f9d: 'Contact Form' # Contact Form
-    042ca1b7-1cd3-4b0b-9006-5985a5674b27: 'Project Next' # Project Next
     49a1a799-e9bc-4c47-a1a2-fb079893ff10: Team # Team
     51c7a578-fb76-4b6d-a319-a0a3ab277708: Services # Services
     52e5a549-eea0-48c2-a78d-0460bc167b9c: 'Intro Text' # Intro Text
     53df496f-66f4-4fe0-b65d-e2ebf2f53ac0: 'Team Member Mobile' # Team Member Mobile
+    58f73fe0-0362-4ee7-8383-57cd67040f70: Heading # Heading
     63cd45e9-41d8-46e9-8c63-55ca65abb5c2: metaDescription # metaDescription
     70e0f843-b82b-4f17-9b23-7bde6e0ee508: Inputs # Inputs
+    81ab7748-17e8-408d-bb8a-42f62e3e78b9: 'Imprint Heading' # Imprint Heading
     81b9277b-cf7e-4fb7-8af5-90863aad655a: References # References
     81f754db-5513-4e71-bae9-d1997e6fd72a: 'Team Member' # Team Member
     82a56296-2407-4adf-8de9-3ecab4f2284b: 'About Team Members' # About Team Members
@@ -64,6 +67,7 @@ meta:
     785c8054-7a1d-49c1-87f5-75de0bc45d9f: 'Team Member' # Team Member
     0897c51d-71f1-4ab2-9641-a746a1066490: General # General
     931de94d-cb1a-4e39-bab5-17182d8720a7: 'Asset Alt Tag' # Asset Alt Tag
+    953f17ff-a718-42fa-b333-c914a8ab23e4: Text # Text
     1488e12a-fb5f-46e1-be5e-2c1d22dfb041: Heading # Heading
     1710e260-6d3a-4ad9-9f43-4a26382e3fb9: 'Data Privacy' # Data Privacy
     5088bb6c-5aba-4dda-8d0b-5ea078f0ee94: Item # Item
@@ -101,6 +105,7 @@ meta:
     b1aefba3-0637-4f18-ad0f-6e10d5cf4dd5: Reference # Reference
     b73f5876-dbab-4454-8125-6d6f91f36d11: Links # Links
     bce90d5a-9c1f-46bd-95a5-bd54df05ff3b: 'Contact Form Error Message' # Contact Form Error Message
+    bd3e18d5-c14b-4707-8476-07195ae8c015: 'Data Privacy Heading' # Data Privacy Heading
     bd99e6a7-bca7-48ba-bf7a-ed4f05f3eec7: 'Hero Teaser' # Hero Teaser
     bfb1e524-d384-40ae-afed-58c6612cfea2: References # References
     bfcdff86-6bfe-4ca8-926c-6f11f4832bb6: 'Team Member Image' # Team Member Image
@@ -127,6 +132,7 @@ meta:
     e0300dda-fbec-4fb1-96d8-82e87cbadf1e: 'Project Location' # Project Location
     e3e29335-31d9-43ac-92e4-e81c7e4f8dda: Client # Client
     e6abdcc5-ee7e-40f3-834e-0e9fcc30a89c: Item # Item
+    e8a0010c-760c-420d-8f7b-8a571d116685: 'Project Next' # Project Next
     e1932db3-6d95-4f0e-98b9-fddf9c929053: Href # Href
     e8002a2e-7222-4b76-a712-ce5ac9131c4e: 'Contact Details Street' # Contact Details Street
     e483465a-e803-4c46-9650-c49043e639bb: 'References Heading' # References Heading
@@ -137,6 +143,7 @@ meta:
     f513ab96-438b-4652-ad82-4e8365f47f6a: 'Hero Heading' # Hero Heading
     f868d7bc-ca7c-4c4f-9b23-2f249d9ca31b: 'Footer Heading' # Footer Heading
     f4961e40-a749-46c2-a50d-e85bdd1e3950: Common # Common
+    fa597310-719d-40da-98d4-8875fb414dc5: Box # Box
     fb2627bb-0b55-4cc2-9d84-32faebf0ddf7: Identifier # Identifier
     fbbd889b-3a5c-4d2c-8c31-2f6b6e232329: Navigation # Navigation
     fbfb1389-8950-4b0c-8b74-5a9aa4602cdb: Imprint # Imprint

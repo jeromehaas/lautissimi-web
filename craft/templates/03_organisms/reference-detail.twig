@@ -61,6 +61,7 @@
 				<i class="controls__angle controls__angle--next icon icon--angle"></i>
 			</div>
 
+			{% if entry['projectNext'].one().url() is defined %}
 			<a class="switcher showcase__switcher" href="{{ entry.projectNext.one().url }}">
 				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="">
 				<div class="switcher__label label">
@@ -70,6 +71,8 @@
 					<i class="label__icon icon icon--angle"></i>
 				</div>
 			</a>
+		{% endif %}
+
 		</div>
 
 	</div>

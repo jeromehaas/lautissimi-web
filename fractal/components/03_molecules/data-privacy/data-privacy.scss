@@ -1,12 +1,18 @@
 .data-privacy {
 	background-color: $green-dark;
 
+	&__inner {
+		padding: 104px 96px;
+	}
+
 	&__heading {
 		margin-bottom: 64px;
+		max-width: 800px
 	}
 
 	&__item, .item {
 		margin-bottom: 46px;
+		max-width: 800px;
 	}
 
 }

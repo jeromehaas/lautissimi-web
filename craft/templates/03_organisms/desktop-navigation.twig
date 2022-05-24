@@ -2,7 +2,7 @@
 {% set links = navigation.navigationLinks %}
 {% set ctas = navigation.navigationCta %}
 
-<nav class="desktop-navigation  js-desktop-navigation">
+<nav class="desktop-navigation 	{% if class is defined %} {{ class }} {% endif %}  js-desktop-navigation">
 		    <a class="desktop-navigation__logo logo" href="/">
 		        <img class="logo__image" src="/media/graphics/logos/logo-lautissimi.svg"></img>
 		    </a>
