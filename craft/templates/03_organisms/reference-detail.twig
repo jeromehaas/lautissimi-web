@@ -10,7 +10,7 @@
 			</p>
 			<div class="panel__item item">
 				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
-					{{ currentSite.language == 'de-CH' ? 'Jahr' : 'Year' }}
+					{{ currentSite.handle == 'de' ? 'Jahr' : 'Year' }}
 				</p>
 				<p class="paragraph  paragraph--white   item__heading">
 					{{ entry.projectDate|date('Y') }}
@@ -18,7 +18,7 @@
 			</div>
 			<div class="panel__item item">
 				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
-					{{ currentSite.language == 'de-CH' ? 'Ort' : 'Location' }}
+					{{ currentSite.handle == 'de' ? 'Ort' : 'Location' }}
 				</p>
 				<p class="paragraph  paragraph--white   item__heading">
 					{{ entry.projectLocation }}
@@ -26,7 +26,7 @@
 			</div>
 			<div class="panel__item item">
 				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
-					{{ currentSite.language == 'de-CH' ? 'In Zusammenarbeit mit:' : 'In cooperation with:' }}
+					{{ currentSite.handle == 'de' ? 'In Zusammenarbeit mit:' : 'In cooperation with:' }}
 				</p>
 				{% for item in entry.projectCooperations %}
 					<p class="paragraph  paragraph--white   item__heading">
@@ -38,7 +38,7 @@
 			<a class="back-link panel__back-link" href="/#references">
 				<i class="back-link__icon icon icon--angle"></i>
 				<p class="back-link__text">
-					{{ currentSite.language == 'de-CH' ? 'zurück' : 'back' }}
+					{{ currentSite.handle == 'de' ? 'zurück' : 'back' }}
 				</p>
 			</a>
 		</div>
@@ -66,7 +66,7 @@
 				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="">
 				<div class="switcher__label label">
 					<p class="paragraph  paragraph--white   label__text">
-						{{ currentSite.language == 'de-CH' ? 'weiter' : 'next' }}
+						{{ currentSite.handle == 'de' ? 'weiter' : 'next' }}
 					</p>
 					<i class="label__icon icon icon--angle"></i>
 				</div>

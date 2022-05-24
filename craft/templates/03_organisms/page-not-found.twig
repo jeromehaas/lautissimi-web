@@ -1,0 +1,13 @@
+{% set pageNotFound = craft.entries.section('pageNotFound').one() %}
+
+<div class="page-not-found section">
+    <div class="page-not-found__inner section__inner">
+
+        <h1 class="heading  heading--h1   heading--green  page-not-found__heading heading--white">
+				{{ pageNotFound['pageNotFoundHeading'] is defined ? pageNotFound.pageNotFoundHeading : 'ssssxx' }}
+        </h1> 
+				<a class="circle-link circle-link--arrow  page-not-found__button" href="#">
+				{{ currentSite.handle == 'de' ? 'Zurück zur Website' : 'Back to website' }}
+        </a>
+    </div>
+</div>

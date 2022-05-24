@@ -1,0 +1,19 @@
+columnSuffix: hxcgvamm
+contentColumnType: text
+fieldGroup: 4d47debf-5c13-48ac-8c6c-1bf3d2a3c0c5 # Page Not Found
+handle: pageNotFoundHeading
+instructions: ''
+name: 'Page Not Found Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

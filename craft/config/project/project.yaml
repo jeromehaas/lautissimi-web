@@ -1,4 +1,4 @@
-dateModified: 1653393421
+dateModified: 1653397692
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -11,11 +11,14 @@ meta:
     1cf93867-b1e9-4b75-b7ec-893e1facfd2b: Required # Required
     1e71d181-05fe-4542-b71b-9d3fd64f8dc4: 'Contact Form Inputs' # Contact Form Inputs
     2afa1137-8726-43ba-b165-2c55caca0b11: 'About Image' # About Image
+    2b8bc827-62ad-45d9-b662-79adf6027924: 'Page Not Found Heading' # Page Not Found Heading
+    2f5504ec-954c-4556-b14b-34cc70ef22f3: 'Page Not Found' # Page Not Found
     03a93c3b-918b-4335-a499-081b17ad9626: Imprint # Imprint
     3beb3ad3-b5cd-4773-a3f6-8fd64f9bf2c4: 'Data Privacy Content' # Data Privacy Content
     3e1e3901-51d3-448d-a8ba-7e4ef22bf85b: 'About Intro' # About Intro
     3e79d756-7327-43ef-8118-df026799c731: 'Services Heading' # Services Heading
     03fe9a99-b286-4335-ac34-9f3ced74192c: 'About Heading' # About Heading
+    4d47debf-5c13-48ac-8c6c-1bf3d2a3c0c5: 'Page Not Found' # Page Not Found
     04ddc697-dc8d-4a08-97dd-2dca2840ca3a: text # text
     4de8ced8-785b-4cf8-8964-04f7960b6886: 'Project Text' # Project Text
     4e13ae6a-0bbf-45a0-90c9-62e6e8fdb413: About # About
@@ -82,6 +85,7 @@ meta:
     9834cc6b-abab-4ef2-891a-82fae8eb2ab9: Navigation # Navigation
     16285aca-5a6c-469c-abb4-f13c8cbe8ecd: Footer # Footer
     16610df2-605b-441e-893f-4c0b82054b7c: 'Project Date' # Project Date
+    41438cfe-af14-4821-b481-fab8614a0e06: 'Page Not Found' # Page Not Found
     59673e81-6588-42ea-94b1-82258efce574: Lautissimi # Lautissimi
     77277e65-28ee-4149-9813-28cf3c321e6d: 'Services Teaser' # Services Teaser
     198715f9-982d-443a-b572-76c3fbbf4d4b: Footer # Footer
