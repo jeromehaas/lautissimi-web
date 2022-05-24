@@ -9,4 +9,9 @@ siteSettings:
     hasUrls: true
     template: 05_pages/p-imprint.twig
     uriFormat: legal/imprint
+  cbdca878-f920-45ad-9c48-262b21cf7421: # Lautissimi (EN)
+    enabledByDefault: true
+    hasUrls: true
+    template: 05_pages/p-imprint.twig
+    uriFormat: legal/imprint
 type: single

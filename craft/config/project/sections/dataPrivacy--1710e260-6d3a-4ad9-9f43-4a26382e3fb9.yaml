@@ -9,4 +9,9 @@ siteSettings:
     hasUrls: true
     template: 05_pages/p-data-privacy.twig
     uriFormat: legal/data-privacy
+  cbdca878-f920-45ad-9c48-262b21cf7421: # Lautissimi (EN)
+    enabledByDefault: true
+    hasUrls: true
+    template: 05_pages/p-data-privacy.twig
+    uriFormat: legal/data-privacy
 type: single

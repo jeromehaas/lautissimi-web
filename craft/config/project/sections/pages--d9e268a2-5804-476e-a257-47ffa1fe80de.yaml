@@ -9,6 +9,11 @@ siteSettings:
     hasUrls: true
     template: 'pages/{slug}'
     uriFormat: '{slug}'
+  cbdca878-f920-45ad-9c48-262b21cf7421: # Lautissimi (EN)
+    enabledByDefault: true
+    hasUrls: true
+    template: 'pages/{slug}'
+    uriFormat: '{slug}'
 structure:
   maxLevels: null
   uid: 15ee700b-e250-4ce6-b411-6bceaa38dfd5

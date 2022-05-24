@@ -9,6 +9,11 @@ siteSettings:
     hasUrls: true
     template: 05_pages/p-reference-detail.twig
     uriFormat: 'projects/{parent.slug}/{slug}'
+  cbdca878-f920-45ad-9c48-262b21cf7421: # Lautissimi (EN)
+    enabledByDefault: true
+    hasUrls: true
+    template: 05_pages/p-reference-detail.twig
+    uriFormat: 'projects/{parent.slug}/{slug}'
 structure:
   maxLevels: null
   uid: b70de299-a53e-4e32-a27c-37b158c84f81

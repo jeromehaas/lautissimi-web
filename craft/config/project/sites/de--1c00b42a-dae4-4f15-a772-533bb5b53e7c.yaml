@@ -1,4 +1,4 @@
-baseUrl: $BASE_URL
+baseUrl: $BASE_URL_DE
 enabled: true
 handle: de
 hasUrls: true

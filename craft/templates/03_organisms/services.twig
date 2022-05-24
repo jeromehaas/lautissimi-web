@@ -4,7 +4,7 @@
 <div class="services section js-services">
     <div class="services__inner section__inner">
         <h2 class="heading  heading--h2   services__heading">
-            {{ services['servicesHeading'] is defined ? services.servicesHeading : 'bno'}}
+            {{ services['servicesHeading'] is defined ? services.servicesHeading : ''}}
         </h2>
         <div class="services__accordion accordion">
            
@@ -31,7 +31,7 @@
         </div>
 
 				<div class="services__teaser">				
-					{{ services['servicesTeaser'] is defined ? services.servicesTeaser : 'bno'}}
+					{{ services['servicesTeaser'] is defined ? services.servicesTeaser : ''}}
 				</div>
     </div>
 </div>
