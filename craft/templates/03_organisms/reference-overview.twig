@@ -11,7 +11,7 @@
 			<div class="reference-overview__container">
 			{% for item in projects.all() %}
 					<div class="reference-overview__item item item--{{ item.projectSize }}">
-						<img class="item__image" src="{{ item.projectPreviewImage.one().url() }}" alt="{{ item.parent.title }}">
+						<img class="item__image" src="/{{ item.projectPreviewImage.one().url() }}" alt="{{ item.parent.title }}">
 						<h4 class="heading  heading--h4 heading--white  item__heading">{{ item.parent.title }}</h4>
 					</div>
 				{% endfor %}

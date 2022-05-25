@@ -19,7 +19,7 @@
                 <div class="showcase__wrapper swiper-wrapper">
 									{% for item in hero.heroImages.all() %}
                     <div class="showcase__slide swiper-slide">
-                        <img class="showcase__image" src="{{ item.url() }}" alt="Rupa Restaurant" />
+                        <img class="showcase__image" src="/{{ item.url() }}" alt="Rupa Restaurant" />
                     </div>
 									{% endfor %}
                 </div>

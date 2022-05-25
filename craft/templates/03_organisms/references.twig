@@ -14,14 +14,14 @@
 
 					{% for item in projects.all() %}
 						<a class="slider__item item cell swiper-slide" href="{{ item.url }}">
-							<img class="item__image" src="{{ item.projectPreviewImage.one().url() }}" alt="{{ item.projectHeading }} | {{ item.parent.title }} ">
+							<img class="item__image" src="/{{ item.projectPreviewImage.one().url() }}" alt="{{ item.projectHeading }} | {{ item.parent.title }} ">
 							<h4 class="heading  heading--h4   heading--white  item__heading">
 								{{ item.parent.title }}
 							</h4>
 						</a>
 					{% endfor %}
 
-					<a class="slider__item slider__item--show-more item cell swiper-slide" href="/reference-overview">
+					<a class="slider__item slider__item--show-more item cell swiper-slide" href="/{{ currentSite.language }}/reference-overview">
 						<i class="item__icon icon icon--arrow"></i>
 						<p class="paragraph  paragraph--white   item__text">{{ currentSite.language == 'de' ? 'weitere Referenzen' : 'further references' }}</p>
 					</a>

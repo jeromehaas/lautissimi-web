@@ -52,24 +52,28 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   43740329-ec70-4367-91d5-c0f85e3fb773: # Target
     columnSuffix: null
-    contentColumnType: string(255)
+    contentColumnType: text
     fieldGroup: null
     handle: target
     instructions: ''
     name: Target
     searchable: false
     settings:
-      maxLength: '255'
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
       placeholder: null
-      types:
-        - url
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\Url
+    type: craft\fields\PlainText
   e1932db3-6d95-4f0e-98b9-fddf9c929053: # Href
     columnSuffix: null
     contentColumnType: string(255)

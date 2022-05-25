@@ -4,7 +4,7 @@
     <div class="intro__inner section__inner">
 				{{ intro['introText'] is defined ? intro.introText : '' }}
 				{% if intro['introImage'] is defined %}
-				 	<img class="intro__image" src="{{ intro.introImage.one().url() }}" alt="{{ intro.introImage.one().assetAltTag }}"/>
+				 	<img class="intro__image" src="/{{ intro.introImage.one().url() }}" alt="{{ intro.introImage.one().assetAltTag }}"/>
 				{% endif %}
     </div>
 </div>

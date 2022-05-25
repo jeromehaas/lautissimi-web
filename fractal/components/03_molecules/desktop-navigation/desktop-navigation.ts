@@ -41,9 +41,8 @@ class DesktopNavigation {
 
 	setupBackToHome = () => {
 		this.links.home.addEventListener('click', (event: MouseEvent) => {
-			event.preventDefault();
-			if (window.location.pathname !== '/' && window.location.pathname !== '/components/preview/start') {
-				window.location.href = '/';
+			if (window.location.pathname == '/de' || window.location.pathname == '/en' || window.location.pathname == 'components/preview/start') {
+				event.preventDefault();
 			}
 		});
 	};

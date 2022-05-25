@@ -28,7 +28,7 @@
 
 				
 				{% if about['aboutImage'] is defined %}
-					 <img class="about__portrait" src="{{ about.aboutImage.one().url() }}" alt="{{ about.aboutImage.one().assetAltTag }}">
+					 <img class="about__portrait" src="/{{ about.aboutImage.one().url() }}" alt="{{ about.aboutImage.one().assetAltTag }}">
 				{% endif %}
 
         <div class="about__links links">
@@ -45,7 +45,7 @@
 {% for item in teamMembers.orderBy('postDate ASC').all() %}
 
 <div class="team-member" data-name="{{ item.teamMemberFullName|kebab }}">
-<img class="team-member__portrait" src="{{ item.teamMemberImage.one().url() }}" alt="{{ item.teamMemberFullName }}" class="team-member__portrait">
+<img class="team-member__portrait" src="/{{ item.teamMemberImage.one().url() }}" alt="{{ item.teamMemberFullName }}" class="team-member__portrait">
     <div class="team-member__text-content text-content">
 		<h2 class="heading  heading--h3   heading--black  text-content__name">
             {{ item.teamMemberFullName }}

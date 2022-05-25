@@ -35,10 +35,10 @@
 				{% endfor %}
 			</div>
 
-			<a class="back-link panel__back-link" href="/#references">
+			<a class="back-link panel__back-link" href="/{{ currentSite.language }}/#references">
 				<i class="back-link__icon icon icon--angle"></i>
 				<p class="back-link__text">
-					{{ currentSite.handle == 'de' ? 'zurück' : 'back' }}
+					{{ currentSite.language == 'de' ? 'zurück' : 'back' }}
 				</p>
 			</a>
 		</div>
@@ -63,10 +63,10 @@
 
 			{% if entry['projectNext'].one().url() is defined %}
 			<a class="switcher showcase__switcher" href="{{ entry.projectNext.one().url }}">
-				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="">
+				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="Next">
 				<div class="switcher__label label">
 					<p class="paragraph  paragraph--white   label__text">
-						{{ currentSite.handle == 'de' ? 'weiter' : 'next' }}
+						{{ currentSite.language == 'de' ? 'weiter' : 'next' }}
 					</p>
 					<i class="label__icon icon icon--angle"></i>
 				</div>
