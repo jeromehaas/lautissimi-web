@@ -1,4 +1,4 @@
-dateModified: 1653469210
+dateModified: 1653473893
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -29,6 +29,7 @@ meta:
     7c7c65c3-1d0d-44a3-9169-c0381eece666: 'Contact Details Company' # Contact Details Company
     7d852a82-ff93-4f8e-971d-008d1fb250b7: Heading # Heading
     7fcc070c-fce8-4a5e-8b15-4a32a3b20e19: 'Statement Text' # Statement Text
+    8a39d3e1-12e0-40d2-9b5f-a32aed9d7089: 'Hero Images' # Hero Images
     8c00cee5-9afa-41f9-899e-592a688bdf4b: Text # Text
     8c909fe8-1a1e-4279-97b7-27b81676a69e: Footer # Footer
     9bbcdb7c-8d5d-4d80-a9ca-37ed98d82ee0: Hero # Hero
