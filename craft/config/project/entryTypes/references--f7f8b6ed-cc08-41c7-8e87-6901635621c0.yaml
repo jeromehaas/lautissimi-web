@@ -104,6 +104,19 @@ fieldLayouts:
             width: 100
         name: Detail
         sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 210c2e23-d00b-41f3-8b82-f54da7597837 # Project Size
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Overview
+        sortOrder: 3
 handle: references
 hasTitleField: false
 name: References

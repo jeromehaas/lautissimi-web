@@ -1,5 +1,9 @@
 .reference-overview {
 	background-color: $green-dark;
+
+	&__inner {
+		padding: 0 104px;
+	}
 	
 	&__heading {
 		margin-bottom: 64px;

@@ -3,7 +3,6 @@
 
 <footer class="footer section">
     <div class="footer__inner section__inner">
-
         <div class="footer__text text">
             <h3 class="heading  heading--h1  heading--white  text__heading">
 								{{ footer['footerTeaser'] is defined ? footer.footerTeaser : '' }}
@@ -56,8 +55,8 @@
 							{{ item.text }}
 						</a> 
 						{% endfor %}
-						<a class="gravity-link  gravity-link--white    links__item" href="#">
-							{{ currentSite.handle == 'de' ? 'Deutsch' : 'English' }}
+						<a class="gravity-link  gravity-link--white    links__item" href="{{ currentSite.handle == 'de' ? '/en' : '/' }}">
+							{{ currentSite.handle == 'de' ? 'Englisch' : 'Deutsch' }}
             </a>
 						<a class="links__item" href="https://www.hotelleriesuisse.ch/" target="_blank">
 							<img src="/media/graphics/logos/logo-hotellerie-suisse.svg" alt="Hotellerie Suisse">

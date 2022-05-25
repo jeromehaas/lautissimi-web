@@ -13,5 +13,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: 05_pages/p-data-privacy.twig
-    uriFormat: legal/data-privacy
+    uriFormat: en/legal/data-privacy
 type: single

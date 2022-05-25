@@ -1,10 +1,11 @@
-dateModified: 1653398695
+dateModified: 1653469210
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0da2035b-d5e9-4908-9ff6-ea87aa7a0ad3: Projects # Projects
     0eb991fa-f7c6-43b2-a2f3-133b955bf050: 'References Items' # References Items
     1c00b42a-dae4-4f15-a772-533bb5b53e7c: 'Lautissimi (DE)' # Lautissimi (DE)
     1c12ec36-432f-4e48-8098-0a4670531950: 'Data Privacy' # Data Privacy
@@ -58,6 +59,7 @@ meta:
     91fa4198-76e2-435d-8117-1336f2346c6c: Imprint # Imprint
     93f73022-35f0-4112-a2dc-700976016167: Kind # Kind
     96b9272f-beb6-4892-965b-bbf8c1439f14: Hero # Hero
+    210c2e23-d00b-41f3-8b82-f54da7597837: 'Project Size' # Project Size
     386d938e-1f1d-40be-bbb2-03adbdf0cbe8: metaImage # metaImage
     433d965c-50d2-48a0-bf25-109cac0f462e: 'Navigation CTA' # Navigation CTA
     457b9fc7-b34f-43e0-80cb-57e79608e051: 'References Description' # References Description
@@ -96,9 +98,11 @@ meta:
     0480982c-73d7-4336-816e-107e82720e4a: 'Contact Form Submit Button' # Contact Form Submit Button
     710648b8-0d46-497c-96cf-821a49706c63: Heading # Heading
     1243221e-75c6-431c-8106-9d9302137a31: Person # Person
+    4849329c-9737-4eb7-a7a1-f64f8dc57392: Heading # Heading
     4953480a-a92b-47ec-9b29-0f62f97de797: Page # Page
     43740329-ec70-4367-91d5-c0f85e3fb773: Target # Target
     63975976-f9ae-44ae-bd4d-3acfe3ee1942: Intro # Intro
+    82768000-61fd-467c-a74f-85ddc7e78b7d: 'Reference Overview' # Reference Overview
     a0fa242a-7dcc-4e24-b3ea-cd7f0c183706: 'Contact Details ZIP' # Contact Details ZIP
     a4ce92ad-1904-4896-9957-ba44baa59842: 'Project Cooperations' # Project Cooperations
     a5c68c1a-037c-4d50-a6c1-4c054c87c376: 'Team Member' # Team Member
@@ -117,13 +121,13 @@ meta:
     c4ddc7de-3e21-4e79-a6a9-c0666c4159be: 'Project Images' # Project Images
     c4f40e7f-9124-4147-ab1d-634320c25a5e: 'Contact Details Mobile' # Contact Details Mobile
     c389da40-3e34-4c2a-b8f3-f0dfc3b4abb4: Target # Target
-    c3480d0a-0bb2-4644-aea8-bfc01db762f1: 'References Overview' # References Overview
+    c3480d0a-0bb2-4644-aea8-bfc01db762f1: 'Reference Overview' # Reference Overview
     c5716e30-1829-4ea8-b0fa-a12e01010ebe: 'Team Member Email' # Team Member Email
     c26450e9-e684-486c-ab84-17d42d3b2923: 'Contact Details Town' # Contact Details Town
     c8996613-24b8-4434-948a-5ab22af5328c: Text # Text
     ca2a0f8d-bb53-42a6-96e4-9409029b153b: Statement # Statement
     cbdca878-f920-45ad-9c48-262b21cf7421: 'Lautissimi (EN)' # Lautissimi (EN)
-    cc76cc07-0ab5-4ee9-acb6-2efabd59282f: 'References Overview' # References Overview
+    cc76cc07-0ab5-4ee9-acb6-2efabd59282f: 'Reference Overview' # Reference Overview
     cdc9346a-8ffb-40a1-82c4-ed1d575b61b4: 'Intro Image' # Intro Image
     d0e74fd7-8203-4bb4-bae7-557513fc443f: Href # Href
     d0041e93-01c5-40f7-8073-69a89b3cb2f4: 'Footer Copyright' # Footer Copyright

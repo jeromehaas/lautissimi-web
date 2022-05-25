@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 82768000-61fd-467c-a74f-85ddc7e78b7d # Reference Overview
+handle: projects
+instructions: ''
+name: Projects
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:87da02c3-db0c-443c-bdd7-da8e5a97ed6d' # Projects
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries
