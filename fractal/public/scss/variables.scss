@@ -14,3 +14,8 @@ $green: #049f44;
 
 // COLORS WITH TRANSPARENCY
 $transparent-white: transparentize($color: $white, $amount: 0.40);
+
+// LAYOUT CONFIGS
+$padding-page-vertical-big: 96px; // BIGGER THAN 950 PIXELS
+$padding-page-vertical-medium: 64px; // SMALLER THAN 950 PIXELS
+$padding-page-vertical-small: 32px; // SMALLER THAN 650 PIXELS

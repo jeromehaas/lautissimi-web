@@ -1,6 +1,5 @@
 .mobile-navigation {
 	display: none;
-	// position: absolute;
 
 		&__bar, .bar {
 		height: 60px;
@@ -8,7 +7,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding: 18px 24px;
+		padding: 24px $padding-page-vertical-medium;
 		z-index: 55;
 		position: fixed;
 		top: 0;
@@ -41,7 +40,6 @@
 		right: 0;
 		padding: 124px 64px 64px 64px;
 		height: 100vh;
-		// transition: all 0.3s ease;
 		background-color: $green-dark;
 		z-index: 50;
 
@@ -60,6 +58,15 @@
 
 	@media (max-width: 950px) {
 		display: block;
+	}
+
+	@media (max-width: 650px) {
+
+		&__bar, .bar {
+			padding: 24px $padding-page-vertical-small;
+		}
+
+
 	}
 
 }

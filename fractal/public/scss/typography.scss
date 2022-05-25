@@ -138,6 +138,19 @@
 	.paragraph--big {
 		font-size: 24px;
 	}
+
+	.intro .paragraph, 
+	.about__intro .paragraph, 
+	.services__teaser .paragraph {
+		font-size: 24px; font-family: "Playfair Display";
+
+	strong {
+		color: $black;
+		font-size: inherit;
+		font-family: inherit;
+	}
+
+}
 	
 }
 

@@ -21,7 +21,6 @@
 	overflow-x: hidden;
 	position: relative;
 	background-color: $light-grey;
-	// background-color: $green-dark;
 
 	&--dark { background-color: $green-dark; }
 	&--light { background-color:$light-grey;  }
@@ -35,13 +34,29 @@
 
 .section__inner {
 	width: 100%;
-	padding: 0 32px;
+	padding: 0 $padding-page-vertical-big;
 	max-width: 1440px;
 	margin: 0 auto;
 }
 
 img {
 	-webkit-user-drag: none;
+}
+
+@media (max-width: 950px) {
+	
+	.section__inner {
+		padding: 0 $padding-page-vertical-medium;
+	}
+
+}
+
+@media (max-width: 650px) {
+	
+	.section__inner {
+		padding: 0 $padding-page-vertical-small;
+	}
+
 }
 
 

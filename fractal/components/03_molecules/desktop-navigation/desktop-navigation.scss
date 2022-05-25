@@ -2,7 +2,7 @@
 
 	background-color: $green-dark;
 	display: flex;
-	padding: 64px 64px 64px 96px;
+	padding: 64px $padding-page-vertical-big;
 	z-index: 30;
 
 	&__logo, .logo {

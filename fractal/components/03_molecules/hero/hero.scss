@@ -14,7 +14,7 @@
 		grid-area: panel;
 		width: 400px;
 		min-height: 100vh;
-		padding: 56px 48px 56px 96px;
+		padding: 56px 48px 56px $padding-page-vertical-big;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -103,7 +103,7 @@
 
 		&__panel, .panel {
 			width: 100%;
-			padding: 24px;
+			padding: $padding-page-vertical-medium;
 			min-height: unset;
 
 			&__heading {
@@ -134,7 +134,7 @@
 
 		&__panel, .panel {
 			width: 100%;
-			padding: 24px;
+			padding: $padding-page-vertical-small;
 			min-height: unset;
 
 			&__heading {

@@ -2,7 +2,7 @@
 	background-color: $green-dark;
 
 	&__inner {
-		padding: 104px 96px;
+		padding: 104px $padding-page-vertical-big;
 	}
 
 	&__heading {
@@ -14,6 +14,22 @@
 		
 		p, a {
 			color: $white;			
+		}
+
+	}
+
+	@media (max-width: 950px) {
+
+		&__inner {
+			padding: 104px $padding-page-vertical-medium;
+		}
+
+	}
+
+	@media (max-width: 650px) {
+
+		&__inner {
+			padding: 104px $padding-page-vertical-small;
 		}
 
 	}

@@ -10,7 +10,8 @@
 		"team-members team-members";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-		grid-gap: 32px;
+		grid-row-gap: 32px;
+		grid-column-gap: 120px;
 		overflow: hidden;
 		padding-right: 0;
 		padding-top: 120px;
@@ -44,7 +45,7 @@
 
 	&__statements, .statements {
 		grid-area: statements;
-		margin: 40px 40px 80px 80px;
+		margin: 40px 0 40px 80px;
 		
 		&__item, .item {
 			margin-bottom: 64px;
@@ -100,7 +101,7 @@
 			"team-members";
 			grid-template-columns: 100%;
 			grid-template-rows: auto auto auto auto auto auto;
-			padding-right: 32px;
+			padding: 120px $padding-page-vertical-medium 0 $padding-page-vertical-medium;
 		}
 
 		&__intro {
@@ -126,6 +127,14 @@
 
 	}
 
+	@media (max-width: 650px) {
+	
+		&__inner {
+			padding: 120px $padding-page-vertical-small 0 $padding-page-vertical-small;
+		}
+
+	}
+	
 	@media (max-width: 450px) {
 
 		&__links, .links {

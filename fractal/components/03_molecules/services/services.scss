@@ -1,6 +1,6 @@
 .services {
 	width: 100%;
-	overflow: hidden;;
+	overflow: hidden;
 
 	&__inner {
 		display: grid;
@@ -10,8 +10,7 @@
 			"accordion preview"
 			"statement statement";
 			grid-gap: 64px;
-			padding-top: 120px;
-			padding-right: 0;
+			padding: 120px 0 0 $padding-page-vertical-big;
 	}
 
 	&__heading {
@@ -34,7 +33,7 @@
 	&__accordion, .accordion {
 		grid-area: accordion;
 		z-index: 5;
-		margin-left: 80px;
+		margin-left: 40px;
 
 		&__item, .item {
 			margin-bottom: 40px;
@@ -79,6 +78,10 @@
 				max-height: 0;
 				opacity: 0;
 				transition: opacity 0.1s ease 0s
+			}
+
+			&__text {
+				padding: 0;
 			}
 
 			&__image {
@@ -147,12 +150,12 @@
 
 	}
 
-	&__teaser {
+	&__teaser, .paragraph {
 		grid-area: statement;
-		padding: 64px 128px 64px 64px;
+		padding: 64px 128px 64px 0px;
 	}
 
-	@media (max-width: 850px) {
+	@media (max-width: 950px) {
 
 		&__inner {
 			display: grid;
@@ -161,8 +164,8 @@
 				"heading"
 				"accordion" 
 				"statement";
-				grid-gap: 64px;
-			padding-right: 32px;
+			grid-gap: 64px;
+			padding: 120px $padding-page-vertical-medium 0 $padding-page-vertical-medium;
 		}
 		
 
@@ -177,6 +180,10 @@
 					display: block;
 					top: 0px;
 				}
+	
+				&__heading::before {
+					display: none;
+				}
 
 				&__text {
 					margin-bottom: 32px;
@@ -187,7 +194,6 @@
 				}
 
 				&--active {
-					
 						max-height: unset;
 						opacity: 1;
 					}
@@ -202,14 +208,18 @@
 
 			&__statement {
 				grid-area: statement;
-				padding: 0 32px 32px 32px;
+				padding: 24px 0 64px 0 !important;
 			}
 
 		}
 		@media (max-width: 650px) {
 
+			&__inner {
+				padding: 120px $padding-page-vertical-small 0 $padding-page-vertical-small;
+			}
+
 			&__statement {
-				padding: 0;
+				// padding: 0;
 				margin-bottom: 64px;
 			}
 

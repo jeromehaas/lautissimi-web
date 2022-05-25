@@ -5,7 +5,7 @@
 	}
 
 	&__teaser, .paragraph {
-		padding: 104px calc(80px + 32px);
+		padding: 104px $padding-page-vertical-big;
 		max-width: 1200px
 	}
 
@@ -21,11 +21,18 @@
 		object-position: center;
 	}
 
+	@media (max-width: 950px) {
+
+		&__teaser, .paragraph {
+			padding: 64px $padding-page-vertical-medium;
+		}
+
+	}
+	
 	@media (max-width: 650px) {
 
-		&__teaser {
-			padding: 64px 24px;
-			max-width: 1200px
+		&__teaser, .paragraph {
+			padding: 64px $padding-page-vertical-small;
 		}
 
 	}
