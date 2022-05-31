@@ -11,7 +11,8 @@ class MobileNavigation {
 			hamburger: document.querySelector('.mobile-navigation .hamburger'),
 			bar: document.querySelector('.mobile-navigation .bar'),
 			panel: document.querySelector('.mobile-navigation .panel'),
-			links: document.querySelectorAll('.mobile-navigation .links__item')
+			links: document.querySelectorAll('.mobile-navigation .links__item'),
+			home: document.querySelector('.mobile-navigation .bar__link')
 		};
 		this.panel = {
 			isVisible: false
@@ -20,10 +21,12 @@ class MobileNavigation {
 	
 	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
-		this.addEventListener();	
+		this.setupScrollToSection();	
+		this.setupBackToHome();
 	};
 	
-	addEventListener = () => {
+	
+	setupScrollToSection = () => {
 		window.addEventListener('scroll', this.setNavigationVisibility);
 		this.elements.hamburger.addEventListener('click', this.toggleNavigation);
 		this.elements.links.forEach((item: HTMLElement) => {
@@ -81,6 +84,20 @@ class MobileNavigation {
 		const timeline = gsap.timeline();
 		timeline.to(this.elements.links, { opacity: 0, duration: 0.6, stagger: { from: 'end', amount: 0.3 }  });
 		timeline.to(this.elements.panel, { top: '-100vh', duration: 0.6, ease: 'power1.easeInOut' });
+	};
+
+	setupBackToHome = () => {
+		this.elements.home.addEventListener('click', (event: MouseEvent) => {
+			if (					
+				window.location.pathname == '/' || 
+				window.location.pathname == '/de' || 
+				window.location.pathname == '/de/' || 
+				window.location.pathname == '/en' || 
+				window.location.pathname == '/en/' || 
+				window.location.pathname == 'components/preview/start') {
+				event.preventDefault();
+			} 
+		});
 	};
 
 }

@@ -51,7 +51,13 @@ class DesktopNavigation {
 
 	setupBackToHome = () => {
 		this.links.home.addEventListener('click', (event: MouseEvent) => {
-			if (window.location.pathname == '/de' || window.location.pathname == '/en' || window.location.pathname == 'components/preview/start') {
+			if (
+				window.location.pathname == '/de' || 
+				window.location.pathname == '/de/' || 
+				window.location.pathname == '/en' || 
+				window.location.pathname == '/en/' || 
+				window.location.pathname == 'components/preview/start'
+			) {
 				event.preventDefault();
 			}
 		});
