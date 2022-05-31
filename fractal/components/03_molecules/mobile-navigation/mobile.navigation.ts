@@ -38,7 +38,7 @@ class MobileNavigation {
 					window.location.pathname == '/de/' || 
 					window.location.pathname == '/en' || 
 					window.location.pathname == '/en/' || 
-					window.location.pathname == 'components/preview/start) {
+					window.location.pathname == 'components/preview/start') {
 					const target = item.getAttribute('data-target');
 					this.scrollToSection(target);
 				} else {
@@ -106,6 +106,6 @@ class MobileNavigation {
 		});
 	};
 
-}
+};
 
 export default MobileNavigation;

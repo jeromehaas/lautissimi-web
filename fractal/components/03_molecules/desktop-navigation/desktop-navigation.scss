@@ -15,7 +15,6 @@
 	}
 
 	&__link {
-		cursor: pointer;
 		
 		&:first-child {
 			padding-left: 0 !important;
@@ -25,7 +24,6 @@
 
 	&__button {
 		margin-left: auto;
-		cursor: pointer;
 	}
 
 	@media (max-width: 1050px) {
