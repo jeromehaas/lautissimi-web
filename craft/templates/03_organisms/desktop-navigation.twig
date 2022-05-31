@@ -9,7 +9,7 @@
 		 
 				<div class="desktop-navigation__link-wrapper">	
 					{% for item in links %}
-						<a class="gravity-link desktop-navigation__link" href="/{{ currentSite.language }}{{ item.href }}" data-target="{{ item.target }}">
+						<a class="gravity-link desktop-navigation__link" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
 							{{ item.text }}
 		  	    </a>	 
 					{% endfor %}

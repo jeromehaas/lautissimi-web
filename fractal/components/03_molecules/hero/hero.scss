@@ -88,17 +88,18 @@
 
 		&__inner {
 			display: grid;
-			grid-template: auto auto / auto;
+			grid-template: 1fr auto / auto;
 			grid-template-areas: 
 			"showcase"
 			"panel"; 
 			position: relative;
+			min-height: 100vh;
 		}
 
 		&__showcase, .showcase {
 			grid-area: showcase;
 			max-width: 100vw;
-			height: 50vh;
+			height: 100%;
 		}
 
 		&__panel, .panel {

@@ -36,20 +36,24 @@ fieldLayouts:
 fields:
   9124a807-553e-4511-90ef-a5906afff52c: # Href
     columnSuffix: null
-    contentColumnType: string(255)
+    contentColumnType: text
     fieldGroup: null
     handle: href
     instructions: ''
     name: Href
     searchable: false
     settings:
-      maxLength: '255'
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
       placeholder: null
-      types:
-        - url
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\Url
+    type: craft\fields\PlainText
   c389da40-3e34-4c2a-b8f3-f0dfc3b4abb4: # Target
     columnSuffix: null
     contentColumnType: text

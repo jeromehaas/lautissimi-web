@@ -76,20 +76,24 @@ fields:
     type: craft\fields\PlainText
   e1932db3-6d95-4f0e-98b9-fddf9c929053: # Href
     columnSuffix: null
-    contentColumnType: string(255)
+    contentColumnType: text
     fieldGroup: null
     handle: href
     instructions: ''
     name: Href
     searchable: false
     settings:
-      maxLength: '255'
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
       placeholder: null
-      types:
-        - url
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\Url
+    type: craft\fields\PlainText
 handle: button
 name: button
 sortOrder: 1

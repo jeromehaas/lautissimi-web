@@ -1,7 +1,7 @@
 {% set services = craft.entries.section('services').one() %}
 {% set links = services.servicesCategories %}
 
-<div class="services section js-services">
+<div class="services section js-services" id="services">
     <div class="services__inner section__inner">
         <h2 class="heading  heading--h2   services__heading">
             {{ services['servicesHeading'] is defined ? services.servicesHeading : ''}}
