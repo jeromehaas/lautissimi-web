@@ -1,3 +1,7 @@
+{% set navigation = craft.entries.section('navigation').one() %}
+{% set links = navigation.navigationLinks %}
+{% set ctas = navigation.navigationCta %}
+
 <nav class='mobile-navigation js-mobile-navigation'>
 	<div class='mobile-navigation__inner'>
 		<div class='mobile-navigation__bar bar'>
@@ -12,18 +16,16 @@
 	</div>
 	<div class="mobile-navigation__panel panel">
 		<div class='panel__links'>
-			<a class="gravity-link  gravity-link--white    links__item" href="/" data-target="services">
-				Leistungen
+		{% for item in links %}
+			<a class="gravity-link gravity-link--white links__item" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
+				{{ item.text }}
 			</a>
-			<a class="gravity-link  gravity-link--white    links__item" href="/" data-target="references">
-				Referenzen
+		{% endfor %}
+		{% for item in ctas %}
+			<a class="gravity-link gravity-link--white links__item" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
+				{{ item.text }}
 			</a>
-			<a class="gravity-link  gravity-link--white    links__item" href="/" data-target="about">
-				Über uns
-			</a>
-			<a class="gravity-link  gravity-link--white    links__item" href="/" data-target="footer">
-				Kontakt
-			</a>
+		{% endfor %}
 		</div>
 	</div>
 </div></nav>

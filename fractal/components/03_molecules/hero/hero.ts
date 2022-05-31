@@ -47,7 +47,6 @@ class Hero {
 
 
 	setupScroller = () => {
-		console.log('scroll down!');	
 		gsap.to(window, { scrollTo: '.intro', ease: 'power2.easeInOut', duration: 1 });
 	};
 

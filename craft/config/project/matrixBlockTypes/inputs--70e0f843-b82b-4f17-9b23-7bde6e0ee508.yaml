@@ -105,7 +105,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   93f73022-35f0-4112-a2dc-700976016167: # Kind
     columnSuffix: null
@@ -183,7 +183,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   fb2627bb-0b55-4cc2-9d84-32faebf0ddf7: # Identifier
     columnSuffix: lcntozkh

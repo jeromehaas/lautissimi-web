@@ -43,7 +43,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   d0e74fd7-8203-4bb4-bae7-557513fc443f: # Href
     columnSuffix: ozsazxnz

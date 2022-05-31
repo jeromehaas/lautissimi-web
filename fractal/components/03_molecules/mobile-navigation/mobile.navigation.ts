@@ -32,7 +32,13 @@ class MobileNavigation {
 		this.elements.links.forEach((item: HTMLElement) => {
 			item.addEventListener('click', (event: MouseEvent) => {
 				event.preventDefault();
-				if (window.location.pathname === '/' || window.location.pathname === '/components/preview/start') {
+				if (
+					window.location.pathname == '/' || 
+					window.location.pathname == '/de' || 
+					window.location.pathname == '/de/' || 
+					window.location.pathname == '/en' || 
+					window.location.pathname == '/en/' || 
+					window.location.pathname == 'components/preview/start) {
 					const target = item.getAttribute('data-target');
 					this.scrollToSection(target);
 				} else {

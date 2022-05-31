@@ -16,7 +16,7 @@
 		    </div>
 
 				{% for item in ctas %}	
-		    	<a class="circle-link circle-link--arrow  desktop-navigation__button" href="/{{ currentSite.language }}{{ item.href }}">
+		    	<a class="circle-link circle-link--arrow  desktop-navigation__button" href="/{{ currentSite.language }}/#{{ item.href }}"  data-target="{{ item.target }}">
 						{{ item.text }}
 					</a>
 				{% endfor %}

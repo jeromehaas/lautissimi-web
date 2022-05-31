@@ -26,15 +26,14 @@ class DesktopNavigation {
 		this.links.all.forEach((item: HTMLElement) => {
 			const target = item.getAttribute('data-target');
 			item.addEventListener('click', (event: MouseEvent) => {
-				console.log(window.location.pathname);
 				if (
+					window.location.pathname == '/' || 
 					window.location.pathname == '/de' || 
 					window.location.pathname == '/de/' || 
 					window.location.pathname == '/en' || 
 					window.location.pathname == '/en/' || 
 					window.location.pathname == 'components/preview/start'
 				) {
-					console.log('heerer');
 					event.preventDefault();
 					gsap.to(window, { scrollTo: `.${target}`, ease: 'Power2.easeInOut', duration: 1 });
 				}
@@ -52,6 +51,7 @@ class DesktopNavigation {
 	setupBackToHome = () => {
 		this.links.home.addEventListener('click', (event: MouseEvent) => {
 			if (
+				window.location.pathname == '/' || 
 				window.location.pathname == '/de' || 
 				window.location.pathname == '/de/' || 
 				window.location.pathname == '/en' || 
