@@ -115,20 +115,28 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
 	.reference-detail .panel__heading {
 		font-size: 48px;
 	}
 
+	.heading--h2 {
+		font-size: 160px;
+	}
+	
 }
 
 @media (max-width: 650px) {
-
+	
 	.heading--h1 {
 		font-size: 48px;
 		font-weight: 600;	
 		line-height: 1.2;
+	}
+	
+	.heading--h2 {
+		font-size: 120px;
 	}
 
 	.heading--h3 {
@@ -144,14 +152,22 @@
 	.services__teaser .paragraph {
 		font-size: 24px; font-family: "Playfair Display";
 
-	strong {
-		color: $black;
-		font-size: inherit;
-		font-family: inherit;
-	}
+		strong {
+			color: $black;
+			font-size: inherit;
+			font-family: inherit;
+		}
 
-}
+	}
 	
+}
+
+@media (max-width: 350px) {
+	
+	.heading--h2 {
+		font-size: 80px;
+	}	
+
 }
 
 
