@@ -23,12 +23,23 @@
 		}
 
 		&--error {
-			border-bottom: 1px solid $red;
 			
 			& ~ .text-input__error-message {
 				display: block;
+				
+				&::after {
+					content: "";
+					height: 8px;
+					border-radius: 50%;
+					width: 8px;
+					background-color: $red;
+					right: 16px;
+					bottom: 48px;
+					position: absolute;
+				}
+				
 			}
-			
+
 		}
 
 	}
