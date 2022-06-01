@@ -4,9 +4,11 @@ import Swiper, { Autoplay, EffectFade  } from 'swiper';
 class Hero {
 	name: string;
 	elements: any;
+	slider: any;
 
 	constructor() {
 		this.name = 'hero';
+		this.slider = null;
 		this.elements = {
 			scroller: document.querySelector('.panel__scroller'),
 		};
@@ -17,14 +19,16 @@ class Hero {
 		this.createSlider();
 		this.animateScroller();
 		this.addEventListener();
+		this.showNextSlide();
 	};
 
 	addEventListener = () => {
 		this.elements.scroller.addEventListener('click', this.setupScroller);
+		this.slider.on('click', this.showNextSlide);
 	};
 
 	createSlider = () => {
-		new Swiper('.hero .showcase__swiper', {
+		this.slider = new Swiper('.hero .showcase__swiper', {
 			modules: [ Autoplay, EffectFade ],
 			speed: 1500,
 			freeMode: false,
@@ -48,6 +52,10 @@ class Hero {
 
 	setupScroller = () => {
 		gsap.to(window, { scrollTo: '.intro', ease: 'power2.easeInOut', duration: 1 });
+	};
+
+	showNextSlide = () => {
+		this.slider.slideNext();
 	};
 
 }
