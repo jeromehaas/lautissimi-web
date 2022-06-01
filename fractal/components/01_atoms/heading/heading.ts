@@ -21,7 +21,7 @@ class Heading {
 	setupAnimation = () => {
 		const elements: any[] = gsap.utils.toArray(this.elements.headings.h2);
 		elements.forEach((item, index) => {
-			gsap.to(item, { x: 180, duration: 30, yoyo: true, repeat: -1, ease: 'power2.easeInOut', delay: -index * 3 });
+			gsap.to(item, { x: 160, duration: 30, yoyo: true, repeat: -1, ease: 'power2.easeInOut', delay: -index * 3 });
 		});
 	};
 

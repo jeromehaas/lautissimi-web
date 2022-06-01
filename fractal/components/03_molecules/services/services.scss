@@ -16,6 +16,7 @@
 	&__heading {
 		grid-area: heading;
 		position: relative;
+		left: -80px;
  
 		&::before {
 		 content: "";

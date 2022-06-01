@@ -104,18 +104,18 @@
 		grid-area: heading;
 		position: absolute;
 		height: auto;
-		left: -160px;
+		left: -320px;
 
-		&::after {
-			content: "";
-			position: absolute;
-			width: 33%;
-			height: 2px;
-			background-color: $white;
-			z-index: 5;
-			top: calc(100% - 2px);
-			left: 180px;
-		 }
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	width: 33%;
+		// 	height: 2px;
+		// 	background-color: $white;
+		// 	z-index: 5;
+		// 	top: calc(100% - 2px);
+		// 	left: 180px;
+		//  }
 
 	}
 
@@ -134,7 +134,7 @@
 
 		&__heading {
 			left: unset;
-			right: -50%;
+			// right: -50%;
 		}
 
 		&__contact-form {

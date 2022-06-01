@@ -34,6 +34,8 @@
    grid-area: heading; 
 	 position: relative;
 	 margin-bottom: 64px;
+	 left: -80px;
+	 z-index: 15;
 
 	 &::after {
 		content: "";
