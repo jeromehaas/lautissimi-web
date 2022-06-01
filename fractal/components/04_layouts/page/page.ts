@@ -1,4 +1,5 @@
 import { gsap } from 'gsap';
+import { NoEmitOnErrorsPlugin } from 'webpack';
 
 class Page {
 	name: string;
@@ -8,28 +9,22 @@ class Page {
 	constructor() {
 		this.name = 'page';
 		this.elements = {
-			body: document.querySelector('.body')
+			body: document.querySelector('.page'),
+			transitionLayer: document.querySelector('.page__transition-layer')
 		};
-		this.height = this.elements.body.clientHeight;
 	}
 
 	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
-		// this.setupSmoothScroll();
+		this.removeTransitionLayer();
 	};
 
-	setupSmoothScroll = () => 	{
-		gsap.to(this.elements.body, {
-			y: -(this.height - document.documentElement.clientHeight),
-			ease: 'none',
-			scrollTrigger: {
-				trigger: this.elements.body,
-				start: 'top top',
-				end: 'bottom bottom',
-				// scrub: 1
-			}
-		});
+	removeTransitionLayer = () => {
+		const timeline = gsap.timeline();
+		timeline.to(this.elements.transitionLayer, { opacity: 0, duration: 0.6, delay: 0.2, ease: 'circ.easeOut' });
+		timeline.set(this.elements.transitionLayer, { display: 'none' });
 	};
+
 
 };
 
