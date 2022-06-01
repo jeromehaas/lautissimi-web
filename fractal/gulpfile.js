@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const cache = require('gulp-cache');
 const plumber = require('gulp-plumber');
+const uglify = require('gulp-uglify');
 const notifier = require('gulp-notifier');
 const svgmin = require('gulp-svgmin');
 const sass = require('gulp-sass')(require('sass'));
@@ -17,6 +18,7 @@ const webpackStream = require('webpack-stream');
 const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const ttf2eot = require('gulp-ttf2eot');
+const cleanCSS = require('gulp-clean-css');
 
 // SOURCE PATHS
 const filePaths = {
@@ -60,6 +62,7 @@ const scssTask = (done) => {
 		.pipe(autoprefixer())
 		.pipe(cssnano())
 		.pipe(sourcemaps.write('.'))
+		.pipe(cleanCSS())
 		.pipe(dest(filePaths.scss.dist[0]))
 		.pipe(dest(filePaths.scss.dist[1]));
 	done();
@@ -70,6 +73,8 @@ const jsTask = (done) => {
 	gulp.src(filePaths.js.src)
 		.pipe(plumber({ errorHandler: notifier.error }))
 		.pipe(webpackStream(webpackConfig))
+		.pipe(sourcemaps.write('.'))
+		.pipe(uglify())
 		.pipe(dest(filePaths.js.dist[0]))
 		.pipe(dest(filePaths.js.dist[1]));
 	done();

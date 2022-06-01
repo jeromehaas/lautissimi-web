@@ -5,14 +5,14 @@
 {% for item in contactForm.contactFormInputs %}
 	{% if item.kind == 'text' or item.kind == 'email' or item.kind == 'mobile' %}
 		<div class="text-input contact-form__input contact-form__input--{{ item.identifier }}">
-			<input class="text-input__input" type="text" placeholder=" ">
-			<label class="text-input__label">{{ item.label }} {{ item.required == 'true' ? '*' : '' }}</label>
+			<input class="text-input__input" type="text" placeholder=" " id="{{ item.identifier }}">
+			<label class="text-input__label" for="{{ item.identifier }}">{{ item.label }} {{ item.required == 'true' ? '*' : '' }}</label>
 			<p class="text-input__error-message">{{ item.errorMessage }}</p>
 		</div>
 	{% else %}
 		<div class="textarea contact-form__textarea contact-form__textarea--{{ item.identifier }}">
-			<textarea class="textarea__input" rows="4" placeholder=" "></textarea>
-			<label class="textarea__label">{{ item.label }} {{ item.required == 'true' ? '*' : '' }}</label>
+			<textarea class="textarea__input" rows="4" placeholder=" " id="{{ item.identifier }}"></textarea>
+			<label class="textarea__label" for="{{ item.identifier }}">{{ item.label }} {{ item.required == 'true' ? '*' : '' }}</label>
 			<p class="text-input__error-message">{{ item.errorMessage }}</p>
 		</div> 
 	{% endif %}
