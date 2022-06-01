@@ -3,19 +3,19 @@
 {% set ctas = navigation.navigationCta %}
 
 <nav class="desktop-navigation 	{% if class is defined %} {{ class }} {% endif %}  js-desktop-navigation">
-		    <a class="desktop-navigation__logo logo" href="/{{ currentSite.language }}">
-		        <img class="logo__image" src="/media/graphics/logos/logo-lautissimi.svg" alt="LAUTISSIMI"></img>
-		    </a>
+		<a class="desktop-navigation__logo logo" href="/{{ currentSite.language }}">
+			<img class="logo__image" src="/media/graphics/logos/logo-lautissimi.svg" alt="LAUTISSIMI"></img>
+		</a>
 		 
 				<div class="desktop-navigation__link-wrapper">	
-					{% for item in links %}
+					{% for item in links.all() %}
 						<a class="gravity-link desktop-navigation__link" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
 							{{ item.text }}
 		  	    </a>	 
 					{% endfor %}
 		    </div>
 
-				{% for item in ctas %}	
+				{% for item in ctas.all() %}	
 		    	<a class="circle-link circle-link--arrow  desktop-navigation__button" href="/{{ currentSite.language }}/#{{ item.href }}"  data-target="{{ item.target }}">
 						{{ item.text }}
 					</a>

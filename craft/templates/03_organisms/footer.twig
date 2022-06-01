@@ -50,7 +50,7 @@
 							{{ footer.footerCopyright }}
 						</p> 
 					{% endif %}
-					{% for item in links %}
+					{% for item in links.all() %}
 						<a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language }}{{ item.href }}">
 							{{ item.text }}
 						</a> 

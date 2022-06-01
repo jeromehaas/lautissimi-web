@@ -14,7 +14,7 @@
 				</div>
 
         <div class="about__statements statements ">
-				{% for item in values %}
+				{% for item in values.all() %}
 					<div class="statements__item item">
 						<h4 class="heading  heading--h4   heading--black  item__heading">
 							{{ item.heading }}

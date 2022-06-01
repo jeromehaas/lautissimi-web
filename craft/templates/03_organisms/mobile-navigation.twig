@@ -16,12 +16,12 @@
 	</div>
 	<div class="mobile-navigation__panel panel">
 		<div class='panel__links'>
-		{% for item in links %}
+		{% for item in links.all() %}
 			<a class="gravity-link gravity-link--white links__item" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
 				{{ item.text }}
 			</a>
 		{% endfor %}
-		{% for item in ctas %}
+		{% for item in ctas.all() %}
 			<a class="gravity-link gravity-link--white links__item" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
 				{{ item.text }}
 			</a>

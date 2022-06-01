@@ -2,7 +2,7 @@
 
 <form class="contact-form js-contact-form footer__contact-form">
 
-{% for item in contactForm.contactFormInputs %}
+{% for item in contactForm.contactFormInputs.all() %}
 	{% if item.kind == 'text' or item.kind == 'email' or item.kind == 'mobile' %}
 		<div class="text-input contact-form__input contact-form__input--{{ item.identifier }}">
 			<input class="text-input__input" type="text" placeholder=" " id="{{ item.identifier }}">
