@@ -1,16 +1,19 @@
 columnSuffix: borugujf
-contentColumnType: string(255)
+contentColumnType: text
 fieldGroup: 785c8054-7a1d-49c1-87f5-75de0bc45d9f # Team Member
 handle: teamMemberEmail
 instructions: ''
 name: 'Team Member Email'
 searchable: false
 settings:
-  maxLength: '255'
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
   placeholder: null
-  types:
-    - url
-    - email
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Url
+type: craft\fields\PlainText

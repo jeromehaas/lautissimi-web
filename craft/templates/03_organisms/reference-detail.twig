@@ -49,7 +49,7 @@
 				<div class="showcase__wrapper swiper-wrapper">
 					{% for item in entry.projectImages %}
 						<div class="showcase__slide swiper-slide">
-							<img class="showcase__image" src="/{{ item.url }}" alt="{{ item.title }}"/>
+							<img class="showcase__image" src="/{{ item.url }}" alt="{{ item.assetAltTag }}"/>
 						</div>
 					{% endfor %}
 				</div>
@@ -63,7 +63,7 @@
 
 			{% if entry['projectNext'].one().url() is defined %}
 			<a class="switcher showcase__switcher" href="{{ entry.projectNext.one().url }}">
-				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="Next">
+				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="{{ entry.projectNext.one().projectPreviewImage.one().assetAltTag }}">
 				<div class="switcher__label label">
 					<p class="paragraph  paragraph--white   label__text">
 						{{ currentSite.language == 'de' ? 'weiter' : 'next' }}

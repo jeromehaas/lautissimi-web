@@ -10,7 +10,7 @@
             <h3 class="heading  heading--p   heading--white  panel__teaser">
 						{{ hero['heroTeaser'] is defined ? hero.heroTeaser : '' }}
             </h3> <i class="panel__scroller icon icon--arrow"></i>
-            <img class="panel__leave" src="/media/graphics/logos/logo-lautissimi-leave-white.svg"></img>
+            <img class="panel__leave" src="/media/graphics/logos/logo-lautissimi-leave-white.svg" alt="LAUTISSIMI"></img>
         </div>
 
         <div class="hero__showcase showcase">
@@ -19,7 +19,7 @@
                 <div class="showcase__wrapper swiper-wrapper">
 									{% for item in hero.heroImages.all() %}
                     <div class="showcase__slide swiper-slide">
-                        <img class="showcase__image" src="/{{ item.url() }}" alt="Rupa Restaurant" />
+                        <img class="showcase__image" src="/{{ item.url() }}" alt="{{ item.assetAltTag }}" />
                     </div>
 									{% endfor %}
                 </div>
