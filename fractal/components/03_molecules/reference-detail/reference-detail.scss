@@ -8,7 +8,6 @@
 		grid-template-areas: 
 		"panel showcase";
     padding: 0;
-		max-width: unset;
 	}
 	
 	&__panel, .panel {
@@ -168,7 +167,7 @@
 
 		&__panel, .panel {
 			min-height: unset;
-			height: calc(100vh - 100vw);
+			// height: calc(100vh - 100vw);
 			padding: $padding-page-vertical-medium;
 
 			&__heading {

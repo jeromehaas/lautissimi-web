@@ -75,11 +75,6 @@
 				padding: 120px 64px;
 			}
 
-			&__close-button {
-				top: 24px;
-				right: 24px;
-			}
-
 	 }
 
 	 @media (max-width: 950px ) {
@@ -104,7 +99,13 @@
 			
 			&__text-content, .text-content {
 				padding: 32px $padding-page-vertical-small;
-		}
+				
+				&__close-button {
+					top: 32px;
+					right: 32px;
+				}
+			
+			}
 
 	}
 
