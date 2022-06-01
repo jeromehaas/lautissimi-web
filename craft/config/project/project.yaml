@@ -1,4 +1,4 @@
-dateModified: 1654080395
+dateModified: 1654089106
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -116,6 +116,7 @@ meta:
     bce90d5a-9c1f-46bd-95a5-bd54df05ff3b: 'Contact Form Error Message' # Contact Form Error Message
     bd3e18d5-c14b-4707-8476-07195ae8c015: 'Data Privacy Heading' # Data Privacy Heading
     bd99e6a7-bca7-48ba-bf7a-ed4f05f3eec7: 'Hero Teaser' # Hero Teaser
+    bd105a87-cefe-486a-a97e-4ab63a79798c: Logos # Logos
     bfb1e524-d384-40ae-afed-58c6612cfea2: References # References
     bfcdff86-6bfe-4ca8-926c-6f11f4832bb6: 'Team Member Image' # Team Member Image
     c0c121e0-efa6-446c-8c75-b42a8ee1436a: Services # Services

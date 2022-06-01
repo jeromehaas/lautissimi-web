@@ -9,6 +9,7 @@ import MobileNavigation from '../../components/03_molecules/mobile-navigation/mo
 import Services from '../../components/03_molecules/services/services';
 import ReferenceDetail from '../../components/03_molecules/reference-detail/reference-detail';
 import DesktopNavigation from '../../components/03_molecules/desktop-navigation/desktop-navigation';
+import Heading from '../../components/01_atoms/heading/heading';
 
 const cursor = new Cursor();
 cursor.init();
@@ -42,3 +43,6 @@ referenceDetail.init();
 
 const desktopNavigation = new DesktopNavigation();
 desktopNavigation.init();
+
+const heading = new Heading();
+heading.init();
