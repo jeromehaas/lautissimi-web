@@ -1,4 +1,7 @@
 {% extends '04_layouts/page' %}
+{% set referencesOverview = craft.entries.section('pages').slug('references-overview').one() %}
+{% set metaTitle = referencesOverview.metaTitle %}
+{% set metaDescription = referencesOverview.metaDescription %} 
 
 {% block main %}
 	{% include "03_organisms/mobile-navigation" %}

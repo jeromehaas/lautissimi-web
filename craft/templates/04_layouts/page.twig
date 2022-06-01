@@ -1,3 +1,6 @@
+{% set metaTitle = metaTitle is defined ? metaTitle : 'LAUTISSIMI' %}
+{% set metaDescription = metaDescription is defined ? metaDescription : '' %}
+
 <!DOCTYPE html>
 <html lang="{{ currentSite.language }}">
 
@@ -7,8 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/media/favicons/favicon.ico">
-    <title>Lautissimi</title>
-
+    <title>{{ metaTitle }}</title>
+		<meta name="description" content="{{ metaDescription }}">
 </head>
 
 <body class="body page js-page">

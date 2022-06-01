@@ -1,4 +1,7 @@
 {% extends '04_layouts/page' %}
+{% set dataPrivacy = craft.entries.section('pages').slug('data-privacy').one() %}
+{% set metaTitle = dataPrivacy.metaTitle %}
+{% set metaDescription = dataPrivacy.metaDescription %} 
 
 {% block main %}
 	{% include "03_organisms/desktop-navigation" %}

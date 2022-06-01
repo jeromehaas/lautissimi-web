@@ -1,4 +1,7 @@
 {% extends '04_layouts/page' %}
+{% set start = craft.entries.section('pages').slug('start').one() %}
+{% set metaTitle = start.metaTitle %}
+{% set metaDescription = start.metaDescription %} 
 
 {% block main %}
 	{% include "03_organisms/mobile-navigation" %}

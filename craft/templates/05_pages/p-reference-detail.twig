@@ -1,4 +1,6 @@
 {% extends '04_layouts/page' %}
+{% set metaTitle = entry.parent.title ~ " | LAUTISSIMI" %}
+{% set metaDescription = entry.projectText  %} 
 
 {% block main %}
 	{% include "03_organisms/reference-detail" %}
