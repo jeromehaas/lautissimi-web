@@ -16,7 +16,6 @@
 		z-index: 15;
 	}
 
-
 	 &__portrait {
 		 grid-area: portrait;
 		 height: 100%;
@@ -38,10 +37,6 @@
 			 margin-bottom: 16px;
 		 }
 
-		 &__role {
-			 
-		 }
-
 		 &__contact-details, .contact-details {
 			 display: flex;
 			 flex-direction: row;
@@ -59,6 +54,7 @@
 				 }
 				 
 			 }
+
 		 }
 
 		 &__close-button {
@@ -95,17 +91,17 @@
 			
 		}
 		
-		@media (max-width: 650px ) {
+	@media (max-width: 650px ) {
 			
-			&__text-content, .text-content {
-				padding: 32px $padding-page-vertical-small;
+		&__text-content, .text-content {
+			padding: 32px $padding-page-vertical-small;
 				
-				&__close-button {
-					top: 32px;
-					right: 32px;
-				}
-			
+			&__close-button {
+				top: 32px;
+				right: 32px;
 			}
+			
+		}
 
 	}
 

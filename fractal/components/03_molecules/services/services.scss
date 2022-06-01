@@ -109,7 +109,7 @@
 				}
 
 				.item__content {
-						transition: opacity 0.6s ease 0.05s;
+					transition: opacity 0.6s ease 0.05s;
 				}
 				
 			}
@@ -168,7 +168,6 @@
 			padding: 120px $padding-page-vertical-medium 0 $padding-page-vertical-medium;
 		}
 		
-
 		&__accordion, .accordion {
 			margin-left: 0;
 	
@@ -212,17 +211,17 @@
 			}
 
 		}
-		@media (max-width: 650px) {
 
-			&__inner {
-				padding: 120px $padding-page-vertical-small 0 $padding-page-vertical-small;
-			}
+	@media (max-width: 650px) {
 
-			&__statement {
-				// padding: 0;
-				margin-bottom: 64px;
-			}
-
+		&__inner {
+			padding: 120px $padding-page-vertical-small 0 $padding-page-vertical-small;
 		}
+
+		&__statement {
+			margin-bottom: 64px;
+		}
+
+	}
 
 }
