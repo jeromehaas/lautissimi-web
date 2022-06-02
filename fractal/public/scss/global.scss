@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 	scrollbar-width: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 *::selection {
@@ -14,6 +17,8 @@
 	display: none;
 	-webkit-appearance: none;
 }
+
+
 
 .body {
 	width: 100%;
