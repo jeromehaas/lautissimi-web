@@ -81,7 +81,7 @@
 			"text-content";
 			
 			&__portrait {
-				aspect-ratio: 1;
+				height: 800px;
 			}
 
 			&__text-content, .text-content {
@@ -100,7 +100,19 @@
 				top: 32px;
 				right: 32px;
 			}
+
+		}
+	
+		&__portrait {
+			height: 600px;
+		}
+
+	}
+		
+	@media (max-width: 450px ) {
 			
+		&__portrait {
+			height: 400px;
 		}
 
 	}
