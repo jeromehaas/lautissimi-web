@@ -26,7 +26,7 @@ class Services {
 	};
 
 	addEventListener = () => { 
-		window.addEventListener('resize', this.updateAccordion);
+		// window.addEventListener('resize', this.updateAccordion);
 		window.addEventListener('load', this.updateAccordion);
 		this.elements.accordion.items.forEach((item: HTMLElement) => {
 			item.addEventListener('click', () => {

@@ -21,11 +21,12 @@
 				{{ item.text }}
 			</a>
 		{% endfor %}
-		{% for item in ctas.all() %}
+		{% for item in ctas %}
 			<a class="gravity-link gravity-link--white links__item" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
-				{{ item.text }}
+				{{ item.text }} 
 			</a>
 		{% endfor %}
+
 		</div>
 	</div>
 </div></nav>

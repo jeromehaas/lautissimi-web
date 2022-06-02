@@ -87,6 +87,14 @@
 
 	}
 
+	@media (max-width: 1150px) {
+		
+		&__links, .links {
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+
+	}
 
 	@media (max-width: 950px) {
 
@@ -118,6 +126,11 @@
 		}
 
 		&__links, .links {
+
+			&__links, .links {
+				flex-direction: row;
+				justify-content: space-between;
+			}
 	
 			&__item:last-child {
 				margin-right: 0;

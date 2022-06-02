@@ -6,10 +6,10 @@
 	z-index: 30;
 
 	&__logo, .logo {
-		margin-right: calc((400px - 160px - 96px) + 64px);
+		margin-right: calc((400px - 200px - 96px) + 64px);
 		
 		&__image {
-			width: 160px;			
+			width: 200px;			
 		}
 
 	}
@@ -27,14 +27,14 @@
 	}
 
 	@media (max-width: 1050px) {
-		padding: 64px 32px 32px 64px;
+		padding: 64px 32px 32px 96px;
 
 		&__link {
 			padding: 16px 12px;
 		}
 
 		&__logo {
-			margin-right: calc((400px - 160px - 96px) + 64px + 32px) !important;
+			margin-right: calc((400px - 200px - 96px) + 64px) !important;
 			width: 160px;
 		}
 

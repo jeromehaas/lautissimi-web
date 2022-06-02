@@ -218,7 +218,6 @@
 				&__image, 
 				&--show-more {
 					height: 600px !important;
-					max-height: 50vh !important;
 				}
 
 				&--empty:last-child {
@@ -256,6 +255,19 @@
 
 		&__controls, .controls {
 			padding: 32px $padding-page-vertical-small;
+		}
+
+		&__slider, .slider {
+
+			&__item, .item {
+				
+				&__image, 
+				&--show-more {
+					height: 400px !important;
+				}
+
+			}
+
 		}
 
 	}
