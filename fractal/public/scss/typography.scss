@@ -1,20 +1,21 @@
 * {
-	font-family: "Heebo", Helvetica, sans-serif;
+	font-family: "Gazpacho", Helvetica, sans-serif;
 	font-weight: 300;
 	line-height: 1.5;
 	font-size: 10px;
 }
 
 .heading, h1, h2, h3, h4, h5 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Gazpacho', serif;
   font-weight: 400;
   color: $blue-dark;
 }
 
 .heading--h1 {
   font-size: 80px;
-  font-weight: 600;	
+  font-weight: 700;	
 	line-height: 1.2;
+	font-family: 'Gazpacho', serif;
 }
 
 .heading--h2 {
@@ -41,13 +42,13 @@
 .heading--p {
 	font-size: 18px;
 	font-weight: 300;
-	font-family: "Heebo", Helvetica, sans-serif;
+	font-family: "Gazpacho", Helvetica, sans-serif;
 }
 
 .paragraph, p {
 	font-size: 18px;
 	font-weight: 300;
-	font-family: "Heebo", Helvetica, sans-serif;
+	font-family: "Gazpacho", Helvetica, sans-serif;
 
 	&--bold { font-weight: 600; }
 	&--small { font-size: 14px; }
@@ -57,7 +58,7 @@
 }
 
 .link, a {
-	font-family: "Heebo", Helvetica, sans-serif;
+	font-family: "Gazpacho", Helvetica, sans-serif;
 	font-size: 18px;
 	line-height: 26px;
 	line-height: 1.2;
@@ -69,7 +70,7 @@
 	}
 
 	&--serif {
-		font-family: 'Playfair Display', serif;
+		font-family: 'Gazpacho', serif;
 		font-weight: 400;
 		font-size: 32px;
 	}
@@ -104,7 +105,7 @@
 .intro .paragraph, 
 .about__intro .paragraph, 
 .services__teaser .paragraph {
-	font-size: 32px; font-family: "Playfair Display";
+	font-size: 32px; font-family: "Gazpacho";
 	color: $beige-medium;
 
 	strong {
@@ -150,7 +151,7 @@
 	.intro .paragraph, 
 	.about__intro .paragraph, 
 	.services__teaser .paragraph {
-		font-size: 24px; font-family: "Playfair Display";
+		font-size: 24px; font-family: "Gazpacho";
 
 		strong {
 			color: $black;

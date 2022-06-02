@@ -12,7 +12,7 @@ import DesktopNavigation from '../../components/03_molecules/desktop-navigation/
 import Heading from '../../components/01_atoms/heading/heading';
 
 const cursor = new Cursor();
-cursor.init();
+// cursor.init();
 
 const contactForm = new ContactForm();
 contactForm.init();
