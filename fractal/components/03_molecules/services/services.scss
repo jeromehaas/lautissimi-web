@@ -85,7 +85,7 @@
 			}
 
 			&__image {
-				aspect-ratio: 2 / 1;
+				height: 320px;
 				width: 100%;
 				display: none;
 				object-fit: cover;
@@ -225,6 +225,18 @@
 
 		&__statement {
 			margin-bottom: 64px;
+		}
+
+		&__accordion, .accordion {
+	
+			&__item, .item {
+
+				&__image {
+					height: 240px;
+				}
+				
+			}
+
 		}
 
 	}
