@@ -14,7 +14,9 @@
 
 					{% for item in projects.all() %}
 						<a class="slider__item item cell swiper-slide" href="{{ item.url }}">
-							<img class="item__image" src="/{{ item.projectPreviewImage.one().url() }}" alt="{{ item.parent.title }} ">
+							<span class="item__image-limitter">
+								<img class="item__image" src="/{{ item.projectPreviewImage.one().url() }}" alt="{{ item.parent.title }} ">
+							</span>
 							<h4 class="heading  heading--h4   heading--white  item__heading">
 								{{ item.parent.title }}
 							</h4>
@@ -33,17 +35,11 @@
 		</div>
 
 		<div class="references__controls controls">
-			<div class="controls__scrollbar swiper-scrollbar"></div>
 			<div class="controls__arrow-wrapper">
 				<div class="controls__arrow controls__arrow--prev swiper-button-prev"></div>
 				<div class="controls__arrow controls__arrow--next swiper-button-next"></div>
 			</div>
-		</div>
-
-		<div class="references__description">
-			<p class="description__text paragraph">
-				{{ references['referencesDescription'] ? references.referencesDescription|nl2br : '' }}
-			</p>
+			<div class="controls__scrollbar swiper-scrollbar"></div>
 		</div>
 
 	</div>
