@@ -57,7 +57,7 @@
 	&__showcase, .showcase {
 		grid-area: showcase;
 		max-width: calc(100vw - 400px);
-		height: 100vh;
+		height: 100%;
 
 		&__navigation {
 			position: absolute;
