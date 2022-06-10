@@ -17,6 +17,7 @@
 		grid-area: heading;
 		position: relative;
 		left: -80px;
+
  
 		&::before {
 		 content: "";
@@ -34,10 +35,11 @@
 	&__accordion, .accordion {
 		grid-area: accordion;
 		z-index: 5;
-		margin-left: 40px;
+		margin-left: 80px;
 
 		&__item, .item {
 			margin-bottom: 40px;
+			cursor: pointer;
 
 			&__heading {
 				color: transparentize($color: $beige-medium, $amount: 0.25);
@@ -48,11 +50,11 @@
 				&::before {
 					content: "";
 					position: absolute;	
-					left: -40px;
+					left: -80px;
 					top: 32px;
 					transform: translateY(-50%);
-					width: 32px;
-					height: 32px;
+					width: 64px;
+					height: 64px;
 					display: block;
 					background-repeat: no-repeat;
 					background-size: contain;
