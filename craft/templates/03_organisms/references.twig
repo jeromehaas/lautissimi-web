@@ -4,9 +4,14 @@
 <div class="references section" id="references">
 	<div class=" references__inner section__inner">
 
-		<h2 class="heading  heading--h2   heading--white  references__heading js-heading">
-			{{ references['referencesHeading'] is defined ? references.referencesHeading : '' }}
-		</h2>
+		<div class="heading  heading--h2 heading--white references__heading js-heading">
+					{% if currentSite.language == 'de' %}
+			   		<h2 class="heading__title">Referenzen</h2>
+					{% endif %}
+			    <p class="heading__shadow">{{ references['referencesHeading'] is defined ? references.referencesHeading : '' }}</p>
+			    <figure class="heading__line"></figure>
+			</div>
+
 		<div class="references__slider slider js-slider">
 			<div class="slider__container">
 				<div class="slider__wrapper swiper-wrapper">

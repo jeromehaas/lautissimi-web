@@ -13,22 +13,19 @@
 			padding: 64px 0 0 $padding-page-vertical-big;
 	}
 
-	&__heading {
+	&__heading, .heading {
 		grid-area: heading;
 		position: relative;
-		left: -80px;
 		color: $beige-bright;
 
- 
-		&::before {
-		 content: "";
-		 position: absolute;
-		 width: 33%;
-		 height: 2px;
-		 background-color: $beige-medium;
-		 z-index: 5;
-		 top: calc(100% - 2px);
-		 right: 64px;
+		&__title {
+			color: $beige-dark;
+			text-align: right;
+			right: 96px;
+		}
+
+		&__line {
+			background-color: $beige-dark;
 		}
 
 	}
@@ -170,6 +167,14 @@
 			grid-gap: 64px;
 			padding: 120px $padding-page-vertical-medium 0 $padding-page-vertical-medium;
 		}
+
+		&__heading, .heading {
+	
+			&__title {
+				right: 0;
+			}
+	
+		}
 		
 		&__accordion, .accordion {
 			margin-left: 0;
@@ -228,7 +233,7 @@
 	@media (max-width: 650px) {
 
 		&__inner {
-			padding: 120px $padding-page-vertical-small 0 $padding-page-vertical-small;
+			padding: 40px $padding-page-vertical-small 0 $padding-page-vertical-small;
 		}
 
 		&__statement {

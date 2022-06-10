@@ -8,7 +8,8 @@ class Heading {
 		this.name = 'heading';
 		this.elements = {
 			headings: {
-				h2: document.querySelectorAll('.heading--h2')
+				h2: document.querySelectorAll('.heading--h2 .heading__shadow'),
+				lines: document.querySelectorAll('.heading--h2 .heading__line')
 			}
 		};
 	};
@@ -19,9 +20,13 @@ class Heading {
 	};
 
 	setupAnimation = () => {
-		const elements: any[] = gsap.utils.toArray(this.elements.headings.h2);
-		elements.forEach((item, index) => {
+		const headings: any[] = gsap.utils.toArray(this.elements.headings.h2);
+		const lines: any[] = gsap.utils.toArray(this.elements.headings.lines);
+		headings.forEach((item, index) => {
 			gsap.to(item, { x: 160, duration: 30, yoyo: true, repeat: -1, ease: 'power2.easeInOut', delay: -index * 3 });
+		});
+		lines.forEach((item, index) => {
+			gsap.to(item, { x: -160, duration: 30, yoyo: true, repeat: -1, ease: 'power2.easeInOut', delay: -index * 3 });
 		});
 	};
 

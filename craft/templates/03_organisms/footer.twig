@@ -56,8 +56,16 @@
 					{% endif %}
         </div>
 
-        <h2 class="heading  heading--h2   heading--white  footer__heading js-heading">
-					{{ footer['footerHeading'] is defined ? footer.footerHeading : '' }}
-        </h2>
+				<div class="heading  heading--h2 heading--white footer__heading js-heading">
+					{% if currentSite.language == 'de' %}
+				    <h2 class="heading__title">Kontakt</h2>
+					{% endif %}
+			    <p class="heading__shadow">{{ footer['footerHeading'] is defined ? footer.footerHeading : '' }}</p>
+			    <figure class="heading__line"></figure>
+				</div>
+
+				
+
+
     </div>
 </footer>

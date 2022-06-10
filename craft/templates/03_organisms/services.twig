@@ -3,9 +3,15 @@
 
 <div class="services section js-services" id="services">
     <div class="services__inner section__inner">
-        <h2 class="heading  heading--h2   services__heading js-heading">
-            {{ services['servicesHeading'] is defined ? services.servicesHeading : ''}}
-        </h2>
+		
+				<div class="heading  heading--h2 services__heading js-heading">
+					{% if currentSite.language == 'de' %}
+			   		<h2 class="heading__title">Leistungen</h2>
+					{% endif %}
+			    <p class="heading__shadow">{{ services['servicesHeading'] is defined ? services.servicesHeading : ''}}</p>
+			    <figure class="heading__line"></figure>
+				</div>
+
         <div class="services__accordion accordion">
            
 				{% for item in links.all() %}

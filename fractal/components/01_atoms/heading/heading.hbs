@@ -1,3 +1,11 @@
-<{{ type }} class="heading {{#if looklike}} heading--{{ looklike }} {{else}} heading--{{ type }} {{/if}} {{#if color}} heading--{{ color }} {{/if}} {{ class }} js-heading">
-	{{ content }}
-</{{ type }}>
+	{{#if showShadow}}
+			<div class="heading {{#if looklike}} heading--{{ looklike }} {{else}} heading--{{ type }} {{/if}} {{#if color}} heading--{{ color }} {{/if}} {{ class }} js-heading">
+				<h2 class="heading__title">{{ content }}</h2>	
+				<p class="heading__shadow">{{ content }}</p>
+				<figure class="heading__line"></figure>
+			</div>
+	{{else}}
+		<{{ type }} class="heading {{#if looklike}} heading--{{ looklike }} {{else}} heading--{{ type }} {{/if}} {{#if color}} heading--{{ color }} {{/if}} {{ class }} js-heading">
+			{{ content }}
+		</{{ type }}>
+	{{/if}}

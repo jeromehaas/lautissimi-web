@@ -17,22 +17,22 @@
 		position: relative;
   }
 
-  &__heading {
+  &__heading, .heading {
    grid-area: heading; 
 	 position: relative;
 	 margin-bottom: 64px;
-	 left: -80px;
+	 left: 96px;
 	 z-index: 15;
+	 color: $white;
 
-	 &::after {
-		content: "";
-		position: absolute;
-		width: 33%;
-		height: 2px;
-		background-color: $white;
-		z-index: 5;
-		top: calc(100% - 2px);
-		left: 64px;
+	 &__title {
+		 color: $white;
+		 left: 48px;
+		 width: 100%;
+	 }
+
+	 &__line {
+		 background-color: $white;
 	 }
 
   }
@@ -200,24 +200,18 @@
 			"slider"
 			"controls"; 
 			grid-template-columns: 100%;
-			grid-template-rows: 224px auto auto;
-
-			&::before {
-				display: none;
-			}
+			grid-template-rows: auto auto auto;
 
 		}
 
-		&__heading {
+		&__heading, .heading {
+			left: 48px;
 	 
-			&::after {
-			 content: "";
-			 height: 2px;
-			 top: calc(100% - 2px);
-			 left: 64px;
+			&__title {
+				left: 0px;
 			}
-	 
-		 }
+
+		}
 
 		&__slider, .slider {
 
@@ -258,6 +252,10 @@
 	}
 
 	@media (max-width: 650px) {
+
+		&__heading, .heading {
+			left: 32px;
+		}
 
 	  &__description, .description {
 			padding: 64px 32px 32px $padding-page-vertical-small;

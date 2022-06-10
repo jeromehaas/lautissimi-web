@@ -5,10 +5,13 @@
 <div class="about section js-about" id="about">
     <div class="about__inner section__inner">
 
-        <h2 class="heading  heading--h2   heading--beige-medium  about__heading js-heading">
-            {{ about['aboutHeading'] is defined ? about.aboutHeading : '' }}
-        </h2>
-        
+				<div class="heading  heading--h2 heading--beige-medium about__heading js-heading">
+					{% if currentSite.language == 'de' %}
+			    	<h2 class="heading__title">Über Uns</h2>
+					{% endif %}
+			    <p class="heading__shadow">{{ about['aboutHeading'] is defined ? about.aboutHeading : '' }}</p>
+			    <figure class="heading__line"></figure>
+				</div>
 
         <div class="about__statements statements ">
 				{% for item in values.all() %}

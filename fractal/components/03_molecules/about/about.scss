@@ -11,29 +11,29 @@
     grid-template-rows: auto auto auto;
 		grid-row-gap: 32px;
 		grid-column-gap: 120px;
-		overflow: hidden;
 		padding-right: 0;
 		padding-top: 64px;
 	}
 
-	&__heading {
+	&__heading, .heading {
 		grid-area: heading;
 		position: relative;
 		margin-bottom: 32px;
-		left: -80px;
 		color: $beige-bright;
- 
-		&::after {
-		 content: "";
-		 position: absolute;
-		 width: 33%;
-		 height: 2px;
-		 background-color: $beige-medium;
-		 z-index: 5;
-		 top: calc(100% - 2px);
-		 left: 64px;
+
+		&__title {
+			color: $beige-dark;
+			text-align: right;
+			right: 96px;
+			width: 100%;
+			text-align: right;
+			right: 96px;
 		}
 
+		&__line {
+			background-color: $beige-dark;
+		}
+ 
 	}
 
 
@@ -102,7 +102,15 @@
 			"team-members";
 			grid-template-columns: 100%;
 			grid-template-rows: auto auto auto auto auto auto;
-			padding: 120px $padding-page-vertical-medium 0 $padding-page-vertical-medium;
+			padding: 80px $padding-page-vertical-medium 0 $padding-page-vertical-medium;
+		}
+
+		&__heading, .heading {
+	
+			&__title {
+				right: 0;
+			}
+
 		}
 
 		&__intro {
@@ -136,7 +144,7 @@
 	@media (max-width: 650px) {
 	
 		&__inner {
-			padding: 120px $padding-page-vertical-small 0 $padding-page-vertical-small;
+			padding: 80px $padding-page-vertical-small 0 $padding-page-vertical-small;
 		}
 
 	}

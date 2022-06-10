@@ -19,12 +19,35 @@
 }
 
 .heading--h2 {
-  font-size: 240px;
-  font-weight: 400;
-	line-height: 1;
-	opacity: 0.08;
-	white-space: nowrap;
-	text-transform: uppercase;
+	position: relative;
+	
+	& .heading__title {
+		position: absolute;
+		top: calc(50% - 25px);
+		font-size: 60px;
+		line-height: 40px;
+		color: inherit;
+		width: 100%;
+	}
+	
+	& .heading__shadow {
+		font-size: 240px;
+		font-weight: 400;
+		line-height: 1;
+		opacity: 0.08;
+		white-space: nowrap;
+		text-transform: uppercase;
+		color: inherit;
+	}
+	
+	& .heading__line {
+		position: absolute;
+		left: 480px;
+		width: 240px;
+		height: 2px;
+		opacity: 0.08;
+	}
+
 }
 
 .heading--h3 {
@@ -145,7 +168,24 @@
 	}
 	
 	.heading--h2 {
-		font-size: 120px;
+			position: relative;
+			
+			& .heading__title {
+				font-size: 40px;
+			}
+			
+			& .heading__shadow {
+				font-size: 160px;
+			}
+			
+			& .heading__line {
+				position: absolute;
+				left: 480px;
+				width: 240px;
+				height: 2px;
+				opacity: 0.08;
+			}
+		
 	}
 
 	.heading--h3 {
