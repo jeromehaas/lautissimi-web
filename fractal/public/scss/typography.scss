@@ -120,6 +120,11 @@
 
 }
 
+.team-member .text-content__introduction, 
+.team-member .paragraph {
+	font-weight: 300;
+}
+
 @media (max-width: 950px) {
 
 	.reference-detail .panel__heading {

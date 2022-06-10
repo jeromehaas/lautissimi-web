@@ -38,21 +38,13 @@
 		 }
 
 		 &__contact-details, .contact-details {
-			 display: flex;
-			 flex-direction: row;
-			 flex-wrap: wrap;
 			 margin-bottom: 48px;
 
-			 &__phone, &__email {
+
+			 &__phone, &__email, &__role {
 				 padding: 0;
-				 display: contents;
-				 
-				 &:not(:last-child)::after {
-					 content: ",";
-					 display: inline-block;
-					 margin: 0 8px 0 0 ;
-				 }
-				 
+				 display: block;
+				 line-height: 1.5;
 			 }
 
 		 }
