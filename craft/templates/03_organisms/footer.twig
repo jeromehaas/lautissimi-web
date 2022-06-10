@@ -37,11 +37,9 @@
 							{{ contactDetails.contactDetailsEmail }}
 						</a> 
 					{% endif %}
-					{% if contactDetails['contactDetailsLinkedin'] %}
-						<a class="address__item item" href="{{ contactDetails.contactDetailsLinkedin }}">
-							<i class="item__icon icon icon--linkedin"></i>
-						</a>
-					{% endif %}
+					<a class="address__item" href="https://www.hotelleriesuisse.ch/" target="_blank">
+						<img src="/media/graphics/logos/logo-hotellerie-suisse.svg" alt="Hotellerie Suisse - Trusted Start-Up">
+					</a>	
         </address>
 
         <div class="footer__links">
@@ -58,9 +56,12 @@
 						<a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language == 'de' ? 'en' : 'de' }}">
 							{{ currentSite.language == 'de' ? 'Englisch' : 'Deutsch' }}
             </a>
-						<a class="links__item" href="https://www.hotelleriesuisse.ch/" target="_blank">
-							<img src="/media/graphics/logos/logo-hotellerie-suisse.svg" alt="Hotellerie Suisse - Trusted Start-Up">
-						</a>	
+
+						{% if contactDetails['contactDetailsLinkedin'] %}
+						<a class="links__item item" href="{{ contactDetails.contactDetailsLinkedin }}">
+							<i class="item__icon icon icon--linkedin"></i>
+						</a>
+					{% endif %}
         </div>
 
         <h2 class="heading  heading--h2   heading--white  footer__heading js-heading">
