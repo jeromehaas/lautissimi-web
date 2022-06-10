@@ -9,8 +9,8 @@
 		position: relative;
 		display: grid;
 		grid-template-areas:
-			"text heading"
-			"text contact-form"
+			"heading heading"
+			"address contact-form"
 			"address contact-form"
 			"address contact-form"
 			"links links";
@@ -20,21 +20,13 @@
 		grid-column-gap: 64px;
 	}
 
-	&__text, .text {
-		grid-area: text;
-
-		&__heading {
-			margin-top: 64px;
-			margin-bottom: 32px;
-		}
-
-	}
 
 	&__contact-form {
 		grid-area: contact-form;
 	}
 	
 	&__address, .address {
+		margin-top: 40px;
 		grid-area: address;
 		font-style: normal;
 		
