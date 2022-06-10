@@ -10,7 +10,7 @@
 			"accordion preview"
 			"statement statement";
 			grid-gap: 64px;
-			padding: 120px 0 0 $padding-page-vertical-big;
+			padding: 64px 0 0 $padding-page-vertical-big;
 	}
 
 	&__heading {
@@ -213,7 +213,6 @@
 			&__statement {
 				grid-area: statement;
 				padding: 24px 0 64px 0 !important;
-				border: 10px solid red;
 			}
 
 			&__teaser {

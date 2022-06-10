@@ -55,6 +55,10 @@
 	&--big { font-size: 32px; font-family: "Gazpacho"; }
 	&--serif { font-family: "Gazpacho"; }
 
+	strong {
+		font-weight: inherit;
+	}
+
 }
 
 .link, a {

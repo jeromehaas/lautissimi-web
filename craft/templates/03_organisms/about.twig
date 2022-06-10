@@ -9,9 +9,6 @@
             {{ about['aboutHeading'] is defined ? about.aboutHeading : '' }}
         </h2>
         
-				<div class="about__intro">
-					{{ about['aboutIntro'] is defined ? about.aboutIntro : '' }}
-				</div>
 
         <div class="about__statements statements ">
 				{% for item in values.all() %}
