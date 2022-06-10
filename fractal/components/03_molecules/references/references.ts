@@ -18,7 +18,7 @@ class References {
 			configs: {
 				modules: [Navigation, Scrollbar],
 				speed: 400,
-				slidesPerView: 1.6,
+				slidesPerView: 1.8,
 				spaceBetween: 32,
 				navigation: {
 					nextEl: '.swiper-button-next',
@@ -31,8 +31,8 @@ class References {
 				breakpoints: {
 					650: { slidesPerView: 3, spaceBetween: 32, },
 					950: { slidesPerView: 4, spaceBetween: 32, },
-					1200: { slidesPerView: 4, spaceBetween: 32, },
-					1600: { slidesPerView: 5, spaceBetween: 32, },
+					1200: { slidesPerView: 6, spaceBetween: 32, },
+					1600: { slidesPerView: 6, spaceBetween: 32, },
 				},	
 			}
 		};
@@ -51,8 +51,9 @@ class References {
 		this.slider.element.on('slideChange', () => {
 			const index = this.slider.element.activeIndex;
 			const itemsToHide = [...this.elements.slider.items].slice(0, index);
+			const itemsToShow = [...this.elements.slider.items].slice(index, this.elements.slider.items.lenght);
 			const items = [...this.elements.slider.items];
-			gsap.to(items, { opacity: 1, duration: 1});
+			gsap.to(itemsToShow, { opacity: 1, duration: 1});
 			gsap.to(itemsToHide, { opacity: 0, duration: 1});
 		});
 	};
