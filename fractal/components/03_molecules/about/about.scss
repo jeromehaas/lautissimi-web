@@ -4,8 +4,7 @@
 		display: grid;
     grid-template-areas:
 		"heading heading"
-    "intro intro"
-    "statements portrait"
+		"statements portrait"
     "statements links"
 		"team-members team-members";
     grid-template-columns: 1fr 1fr;
@@ -36,17 +35,10 @@
 
 	}
 
-	&__intro {
-		grid-area: intro;
-		max-width: 800px;
-		align-self: end;
-		justify-self: end;
-		margin-bottom: 64px;
-	}
 
 	&__statements, .statements {
 		grid-area: statements;
-		margin: 40px 0 40px 80px;
+		margin: 0 0 40px 80px;
 		
 		&__item, .item {
 			margin-bottom: 64px;
