@@ -82,6 +82,14 @@
 				}			
 
 		}
+
+		&:hover {
+			
+			& .item__image {
+				transform: scale(1.1);
+			}
+
+		}
 	
 		&__image-limitter {
 			width: 100%;
@@ -99,6 +107,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
+			transition: all 1s ease;
 		}
 
 		&__heading {	
