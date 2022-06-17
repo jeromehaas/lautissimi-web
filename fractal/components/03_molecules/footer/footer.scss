@@ -100,10 +100,8 @@
 
 	 &__title {
 		 color: $white;
-		 right: 0;
 		 position: absolute;
 		 width: 100%;
-		 text-align: right;
 	 }
 
 	 &__line {
@@ -125,9 +123,6 @@
 			grid-template-columns: 100%;	
 		}
 		
-		// &__heading {
-		// 	left: unset;
-		// }
 		
 		&__contact-form {
 			grid-area: contact-form;

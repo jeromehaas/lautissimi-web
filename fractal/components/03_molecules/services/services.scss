@@ -20,8 +20,7 @@
 
 		&__title {
 			color: $beige-dark;
-			text-align: right;
-			right: 96px;
+			text-align: left;
 		}
 
 		&__line {
@@ -168,14 +167,6 @@
 			padding: 120px $padding-page-vertical-medium 0 $padding-page-vertical-medium;
 		}
 
-		&__heading, .heading {
-	
-			&__title {
-				right: 0;
-			}
-	
-		}
-		
 		&__accordion, .accordion {
 			margin-left: 0;
 	

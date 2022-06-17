@@ -23,7 +23,8 @@
 	
 	& .heading__title {
 		position: absolute;
-		top: calc(50% - 25px);
+		bottom: 56px;
+		left: 124px;
 		font-size: 60px;
 		line-height: 40px;
 		color: inherit;
@@ -70,7 +71,7 @@
 
 .paragraph, p {
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 300;
 	font-family: "Gazpacho", Helvetica, sans-serif;
 
 	&--bold { font-weight: 600; }
@@ -134,6 +135,7 @@
 .services__teaser .paragraph {
 	font-size: 32px; font-family: "Gazpacho";
 	color: $beige-medium;
+	font-weight: 400;
 
 	strong {
 		color: $black;
@@ -155,7 +157,11 @@
 	}
 
 	.heading--h2 {
-		font-size: 160px;
+		
+		& .heading__title {
+			left: 48px;
+		}
+		
 	}
 	
 }
@@ -172,6 +178,8 @@
 			
 			& .heading__title {
 				font-size: 40px;
+				left: 48px;
+				bottom: 32px;
 			}
 			
 			& .heading__shadow {
@@ -209,6 +217,19 @@
 
 	}
 	
+}
+
+
+@media (max-width: 450px) {
+	
+	.heading--h2 {
+		font-size: 80px;
+		
+		& .heading__title {
+			left: 0;
+		}
+	}	
+
 }
 
 @media (max-width: 350px) {

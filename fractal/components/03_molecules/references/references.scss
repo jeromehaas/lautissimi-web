@@ -1,33 +1,26 @@
 .references {
-  max-width: 100%;
   background-color: $beige-dark;
-  overflow: hidden;
-	position: relative;
-	margin-bottom: 64px;
   
   &__inner {
     display: grid;
     grid-template-areas:
-		"heading heading"
-    "slider slider"
-    "controls controls";
-    grid-template-columns: 400px 100%;
-    grid-template-rows: 300px auto auto;
-		padding: 64px 0 32px 0; 
-		position: relative;
+		"heading"
+    	"grid";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+	padding-bottom: 40px;
   }
 
   &__heading, .heading {
    grid-area: heading; 
 	 position: relative;
 	 margin-bottom: 64px;
-	 left: 96px;
 	 z-index: 15;
 	 color: $white;
 
 	 &__title {
 		 color: $white;
-		 left: 48px;
+		 left: 220px;
 		 width: 100%;
 	 }
 
@@ -36,161 +29,229 @@
 	 }
 
   }
-  
-  &__slider, .slider { 
-    grid-area: slider;
-    max-width: unset;
-    width: 100%;
-    
-    &__container {
-      height: 100%;
-      display: flex;
-    }
-    
-    &__wrapper {
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    
-    &__item, .item {
-      margin-left: 32px;
-			width: 120px;
-			height: 480px;
-      margin-right: 0 !important;
-		
-			&:first-child {
-				margin-left: 96px;
-			}
-			
-			&:hover {
 
-				& .item__image {
-					transform: scale(1.1);
-				}
+  &__grid, .grid{
+	grid-area: grid;
+	border: 10px solid green;
+	height: 560px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 16px;
 
-			}
-
-			&--show-more {
-				width: 300px;
-				border: 1px solid $white;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-
-				& .item__icon {
-					color: $white;
-					width: 48px;
-					height: 48px;
-					transform: rotate(235deg);
-					border: 1px solid $white;
-					border-radius: 50%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					margin-bottom: 24px;
-				}
-
-				& .item__text {
-					text-align: center;
-				}
-
-			}
-
-			&__image-limitter {
-				overflow: hidden;
-				display: block;
-				height: 100%;
-			}
-
-      &__image {
-        height: 100%;
-				width: 100%;
-        display: block;
-        object-fit: cover;
-				transition: all 1s ease;
-      }
-
-      &__heading {
-        color: #FFFFFF;
-				margin-top: 16px;
-				left: 0 !important;
-      }
-
-    }
-    
-  }
-
-  &__controls, .controls {
-    grid-area: controls;
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-		padding: 32px 32px 32px 96px;
-    background-color: #655953f2;
-    z-index: 10;
-		justify-self: start;
+	&__item, .item {
+		display: block;
+		height: 100%;
+		width: 100%;
+		border: 1px solid blue;
+		overflow: hidden;
 		position: relative;
-		margin-top: 120px;
-    
-    &__scrollbar {
-      width: 100% !important;
-      height: 4px;
-      
-      .swiper-scrollbar-drag {
-        background: #FFFFFF;
-      }
-      
-    }
-    
-    &__arrow-wrapper {
-      margin-right: 16px;
-      height: 16px;
-      width: 48px;
-      position: relative;
-    }
-    
-    &__arrow {
-      width: 16px;
-      height: 16px;
-      margin-top: unset;
-      top: 0;
-			cursor: pointer;
-      
-      &--prev {
-        left: 0;
-      }
-      
-      &--next {
-        right: 0;
-      }
-      
-      &::after {
-        font-size: 16px;
-        height: 16px;
-        color: white;
-      }
 
-    }
+		&--big {
+			border: 10px solid red !important;
+			grid-column: span 2;
+			grid-row: span 2;
+		}
 
-  }
+		&--wide {
+			grid-column: span 2;
+		}
+
+		&--small {
+			grid-column: span 1;
+		}
+
+		&--show-more {
+			border: 1px solid green;
+		}
+	
+		&__image-limitter {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+
+		&__image {
+			position: absolute;
+			display: block;
+			object-fit: cover;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		&__heading {	
+			position: absolute;
+			left: 32px;
+			bottom: 32px;
+			margin-bottom: 0;
+			width: calc(100% - (2 * 32px))
+		}
+
+	
+	}
+
+}
   
-  &__description, .description {
-    z-index: 10;
-    width: auto;
-    width: 100%;
-    background-color: rgba(101, 89, 83, 0.95);
-    grid-area: description;
-		padding: 64px 32px 32px $padding-page-vertical-big;
+  
+//   &__slider, .slider { 
+//     grid-area: slider;
+//     max-width: unset;
+//     width: 100%;
     
-    &__text {
-      color: white;
-    }
+//     &__container {
+//       height: 100%;
+//       display: flex;
+//     }
+    
+//     &__wrapper {
+//       flex-direction: row;
+//       justify-content: flex-start;
+//       align-items: center;
+//     }
+    
+//     &__item, .item {
+//       margin-left: 32px;
+// 			width: 120px;
+// 			height: 480px;
+//       margin-right: 0 !important;
+		
+// 			&:first-child {
+// 				margin-left: 96px;
+// 			}
+			
+// 			&:hover {
 
-  }
+// 				& .item__image {
+// 					transform: scale(1.1);
+// 				}
+
+// 			}
+
+// 			&--show-more {
+// 				width: 300px;
+// 				border: 1px solid $white;
+// 				display: flex;
+// 				flex-direction: column;
+// 				justify-content: center;
+// 				align-items: center;
+
+// 				& .item__icon {
+// 					color: $white;
+// 					width: 48px;
+// 					height: 48px;
+// 					transform: rotate(235deg);
+// 					border: 1px solid $white;
+// 					border-radius: 50%;
+// 					display: flex;
+// 					justify-content: center;
+// 					align-items: center;
+// 					margin-bottom: 24px;
+// 				}
+
+// 				& .item__text {
+// 					text-align: center;
+// 				}
+
+// 			}
+
+// 			&__image-limitter {
+// 				overflow: hidden;
+// 				display: block;
+// 				height: 100%;
+// 			}
+
+//       &__image {
+//         height: 100%;
+// 				width: 100%;
+//         display: block;
+//         object-fit: cover;
+// 				transition: all 1s ease;
+//       }
+
+//       &__heading {
+//         color: #FFFFFF;
+// 				margin-top: 16px;
+// 				left: 0 !important;
+//       }
+
+//     }
+    
+//   }
+
+//   &__controls, .controls {
+//     grid-area: controls;
+//     width: 400px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+// 		padding: 32px 32px 32px 96px;
+//     background-color: #655953f2;
+//     z-index: 10;
+// 		justify-self: start;
+// 		position: relative;
+// 		margin-top: 120px;
+    
+//     &__scrollbar {
+//       width: 100% !important;
+//       height: 4px;
+      
+//       .swiper-scrollbar-drag {
+//         background: #FFFFFF;
+//       }
+      
+//     }
+    
+//     &__arrow-wrapper {
+//       margin-right: 16px;
+//       height: 16px;
+//       width: 48px;
+//       position: relative;
+//     }
+    
+//     &__arrow {
+//       width: 16px;
+//       height: 16px;
+//       margin-top: unset;
+//       top: 0;
+// 			cursor: pointer;
+      
+//       &--prev {
+//         left: 0;
+//       }
+      
+//       &--next {
+//         right: 0;
+//       }
+      
+//       &::after {
+//         font-size: 16px;
+//         height: 16px;
+//         color: white;
+//       }
+
+//     }
+
+//   }
+  
+//   &__description, .description {
+//     z-index: 10;
+//     width: auto;
+//     width: 100%;
+//     background-color: rgba(101, 89, 83, 0.95);
+//     grid-area: description;
+// 		padding: 64px 32px 32px $padding-page-vertical-big;
+    
+//     &__text {
+//       color: white;
+//     }
+
+//   }
 
 	@media (max-width: 950px) {
 
@@ -198,64 +259,93 @@
 			display: grid;
 			grid-template-areas:
 			"heading"
-			"slider"
-			"controls"; 
+			"grid"; 
 			grid-template-columns: 100%;
-			grid-template-rows: auto auto auto;
+			grid-template-rows: auto auto;
 
 		}
 
 		&__heading, .heading {
-			left: 48px;
-	 
+		 
 			&__title {
-				left: 0px;
+				left: 120px;
 			}
-
+		 
 		}
 
-		&__slider, .slider {
-
-			&__wrapper {
-				flex-direction: row;
-				justify-content: flex-start;
-				align-items: flex-start;
-			}
-
-			&__item, .item {
-				
-				&:first-child {
-					margin-left: 64px;
-				}
-				
-				&--empty:last-child {
-					display: none;
-				}
-				
-				&:nth-child(2n) {
-					margin-top: 0 !important;
-				}
-				
-			}
-		
-		}
-
-		&__controls, .controls {
-			padding: 32px $padding-page-vertical-medium;
+		 &__grid, .grid{
+			height: 800px;
 			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			grid-gap: 16px;
 
-		}
 
-		&__description, .description {
-			padding: 32px $padding-page-vertical-medium;
-		}
+				&__item, .item {
+				
+					&--big {
+						grid-row: span 3;
+					}
+
+					&--small {
+						grid-column: span 2;
+					}
+						
+					&--show-more {
+						grid-column: span 2;
+				}
+
+			}
+
+		 }
+
+		// &__slider, .slider {
+
+		// 	&__wrapper {
+		// 		flex-direction: row;
+		// 		justify-content: flex-start;
+		// 		align-items: flex-start;
+		// 	}
+
+		// 	&__item, .item {
+				
+		// 		&:first-child {
+		// 			margin-left: 64px;
+		// 		}
+				
+		// 		&--empty:last-child {
+		// 			display: none;
+		// 		}
+				
+		// 		&:nth-child(2n) {
+		// 			margin-top: 0 !important;
+		// 		}
+				
+		// 	}
+		
+		// }
+
+		// &__controls, .controls {
+		// 	padding: 32px $padding-page-vertical-medium;
+		// 	width: 100%;
+
+		// }
+
+		// &__description, .description {
+		// 	padding: 32px $padding-page-vertical-medium;
+		// }
 
 	}
 
 	@media (max-width: 650px) {
 
 		&__heading, .heading {
-			left: 32px;
+		 
+			  &__title {
+				  left: 80px;
+			  }
+			
 		}
 
 	  &__description, .description {
@@ -266,20 +356,31 @@
 			padding: 32px $padding-page-vertical-small;
 		}
 
-		&__slider, .slider {
+		// &__slider, .slider {
 
-			&__item, .item {
+		// 	&__item, .item {
 
-				&:first-child {
-					margin-left: 32px;
-				}
+		// 		&:first-child {
+		// 			margin-left: 32px;
+		// 		}
 
-			}
+		// 	}
 
-		}
+		// }
 
 	}
 
+	@media (max-width: 450px) {
+
+		&__heading, .heading {
+		 
+			  &__title {
+				  left: 32px;
+			  }
+			
+		}
+	}
+	
 	@media (max-width: 350px) {
 
 		&__controls, .controls {

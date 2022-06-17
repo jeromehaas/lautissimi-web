@@ -9,7 +9,6 @@ class Heading {
 		this.elements = {
 			headings: {
 				h2: document.querySelectorAll('.heading--h2 .heading__shadow'),
-				lines: document.querySelectorAll('.heading--h2 .heading__line')
 			}
 		};
 	};
@@ -24,9 +23,6 @@ class Heading {
 		const lines: any[] = gsap.utils.toArray(this.elements.headings.lines);
 		headings.forEach((item, index) => {
 			gsap.to(item, { x: 160, duration: 30, yoyo: true, repeat: -1, ease: 'power2.easeInOut', delay: -index * 3 });
-		});
-		lines.forEach((item, index) => {
-			gsap.to(item, { x: -160, duration: 30, yoyo: true, repeat: -1, ease: 'power2.easeInOut', delay: -index * 3 });
 		});
 	};
 
