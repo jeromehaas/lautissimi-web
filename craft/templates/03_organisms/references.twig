@@ -1,51 +1,56 @@
 {% set references = craft.entries.section('references').one() %}
 {% set projects = references.referencesItems %}
+{% set firstProject = projects.nth(0) %}
+{% set secondProject = projects.nth(1) %}
+{% set thirdProject = projects.nth(2) %}
+{% set fourthProject = projects.nth(3) %}
 
 <div class="references section" id="references">
 	<div class=" references__inner section__inner">
 
 		<div class="heading  heading--h2 heading--white references__heading js-heading">
-					{% if currentSite.language == 'de' %}
-			   		<h2 class="heading__title">Referenzen</h2>
-					{% endif %}
-			    <p class="heading__shadow">{{ references['referencesHeading'] is defined ? references.referencesHeading : '' }}</p>
-			    <figure class="heading__line"></figure>
-			</div>
-
-		<div class="references__slider slider js-slider">
-			<div class="slider__container">
-				<div class="slider__wrapper swiper-wrapper">
-
-
-					{% for item in projects.all() %}
-						<a class="slider__item item cell swiper-slide" href="{{ item.url }}">
-							<span class="item__image-limitter">
-								<img class="item__image" src="/{{ item.projectPreviewImage.one().url() }}" alt="{{ item.parent.title }} ">
-							</span>
-							<h4 class="heading  heading--h4   heading--white  item__heading">
-								{{ item.parent.title }}
-							</h4>
-						</a>
-					{% endfor %}
-
-					<a class="slider__item slider__item--show-more item cell swiper-slide" href="/{{ currentSite.language }}/reference-overview">
-						<i class="item__icon icon icon--arrow"></i>
-						<p class="paragraph  paragraph--white   item__text">{{ currentSite.language == 'de' ? 'weitere Referenzen' : 'further references' }}</p>
-					</a>
-					<a class="slider__item item slider__item--empty cell swiper-slide" href="#"></a>
-					<a class="slider__item item slider__item--empty cell swiper-slide" href="#"></a>
-
-				</div>
-			</div>
+			{% if currentSite.language == 'de' %}
+				<h2 class="heading__title">Referenzen</h2>
+			{% endif %}
+			<p class="heading__shadow">{{ references['referencesHeading'] is defined ? references.referencesHeading : '' }}</p>
+			<figure class="heading__line"></figure>
 		</div>
 
-		<div class="references__controls controls">
-			<div class="controls__arrow-wrapper">
-				<div class="controls__arrow controls__arrow--prev swiper-button-prev"></div>
-				<div class="controls__arrow controls__arrow--next swiper-button-next"></div>
-			</div>
-			<div class="controls__scrollbar swiper-scrollbar"></div>
-		</div>
+		    <div class="references__grid grid">
+
+		    <a href="#" class="grid__item grid__item--big item">
+            <span class="item__image-limitter">
+			  <img class="item__image" src="/{{ firstProject.projectPreviewImage.one().url() }}" alt="{{ firstProject.parent.title }} ">
+				<h4 class="heading  heading--h4   heading--white  item__heading">
+					{{ firstProject.parent.title }}
+				</h4> 
+            </span>
+          </a>
+
+          <a href="#" class="grid__item grid__item--wide item">
+            <span class="item__image-limitter">
+			  <img class="item__image" src="/{{ secondProject.projectPreviewImage.one().url() }}" alt="{{ secondProject.parent.title }} ">
+				<h4 class="heading  heading--h4   heading--white  item__heading">
+					{{ secondProject.parent.title }}
+				</h4> 
+            </span>
+          </a>
+
+          <a href="#" class="grid__item grid__item--small item">
+             <span class="item__image-limitter">
+			  <img class="item__image" src="/{{ thirdProject.projectPreviewImage.one().url() }}" alt="{{ thirdProject.parent.title }} ">
+				<h4 class="heading  heading--h4   heading--white  item__heading">
+					{{ thirdProject.parent.title }}
+				</h4> 
+            </span>
+          </a> 
+
+          <a href="#" class="grid__item grid__item--show-more item">
+            <i class="item__icon icon icon--arrow"></i>
+			<p class="paragraph  paragraph--white   item__text">{{ currentSite.language == 'de' ? 'weitere Referenzen' : 'further references' }}</p>
+          </a> 
+
+        </div>
 
 	</div>
 </div>
