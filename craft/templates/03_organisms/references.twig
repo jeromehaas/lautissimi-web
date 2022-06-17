@@ -18,7 +18,7 @@
 
 		    <div class="references__grid grid">
 
-		    <a href="#" class="grid__item grid__item--big item">
+		    <a href="{{ firstProject.url }}" class="grid__item grid__item--big item">
             <span class="item__image-limitter">
 			  <img class="item__image" src="/{{ firstProject.projectPreviewImage.one().url() }}" alt="{{ firstProject.parent.title }} ">
 				<h4 class="heading  heading--h4   heading--white  item__heading">
@@ -27,7 +27,7 @@
             </span>
           </a>
 
-          <a href="#" class="grid__item grid__item--wide item">
+          <a href="{{ secondProject.url }}" class="grid__item grid__item--wide item">
             <span class="item__image-limitter">
 			  <img class="item__image" src="/{{ secondProject.projectPreviewImage.one().url() }}" alt="{{ secondProject.parent.title }} ">
 				<h4 class="heading  heading--h4   heading--white  item__heading">
@@ -36,7 +36,7 @@
             </span>
           </a>
 
-          <a href="#" class="grid__item grid__item--small item">
+          <a href="{{ thirdProject.url }}" class="grid__item grid__item--small item">
              <span class="item__image-limitter">
 			  <img class="item__image" src="/{{ thirdProject.projectPreviewImage.one().url() }}" alt="{{ thirdProject.parent.title }} ">
 				<h4 class="heading  heading--h4   heading--white  item__heading">
@@ -45,7 +45,7 @@
             </span>
           </a> 
 
-          <a href="#" class="grid__item grid__item--show-more item">
+          <a href="/{{ currentSite.language }}/reference-overview" class="grid__item grid__item--show-more item">
             <i class="item__icon icon icon--arrow"></i>
 			<p class="paragraph  paragraph--white   item__text">{{ currentSite.language == 'de' ? 'weitere Referenzen' : 'further references' }}</p>
           </a> 
