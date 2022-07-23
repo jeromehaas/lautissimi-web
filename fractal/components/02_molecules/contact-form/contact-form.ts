@@ -102,7 +102,7 @@ class ContactForm {
 
 	send = async () => {
 		if (this.errors.length === 0) {
-			const res = await emailjs.send('yellowreach','lautissimi',{
+			const res = await emailjs.send('lautissimi','lautissimi',{
 				name: this.inputs.name.element.value,
 				email: this.inputs.email.element.value,
 				phone: this.inputs.phone.element.value,
