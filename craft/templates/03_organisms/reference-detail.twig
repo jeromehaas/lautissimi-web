@@ -3,7 +3,7 @@
 
 		<div class="reference-detail__panel panel">
 			<h1 class="heading  heading--h1   heading--white  panel__heading">
-				{{ entry.parent.title }}
+				{{ entry.parent.title }} 
 			</h1>
 			<p class="paragraph  paragraph--white   panel__description">
 				{{ entry.projectText }}
@@ -55,11 +55,13 @@
 				</div>
 			</div>
 
+			{% if entry.projectImages|length > 1  %}
 			<div class="showcase__controls controls">
 				<div class="controls__pagination"></div>
 				<i class="controls__angle controls__angle--previous icon icon--angle"></i>
 				<i class="controls__angle controls__angle--next icon icon--angle"></i>
 			</div>
+			{% endif %}
 
 			{% if entry['projectNext'].one().url() is defined %}
 			<a class="switcher showcase__switcher" href="{{ entry.projectNext.one().url }}">
