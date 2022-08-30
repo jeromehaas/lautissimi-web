@@ -122,6 +122,6 @@ hasTitleField: false
 name: References
 section: 87da02c3-db0c-443c-bdd7-da8e5a97ed6d # Projects
 sortOrder: 1
-titleFormat: '{{ projectHeading }}'
+titleFormat: '{{ parent.title }} ({{ projectHeading }})'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
