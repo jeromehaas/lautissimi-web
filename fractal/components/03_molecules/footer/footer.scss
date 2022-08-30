@@ -12,9 +12,10 @@
 			"heading heading"
 			"address contact-form"
 			"address contact-form"
-			"address contact-form"
+			"office contact-form"
+			"office contact-form"
 			"links links";
-		grid-template-rows: auto auto auto auto;	
+		grid-template-rows: auto auto auto auto auto auto;	
 		grid-template-columns: 1fr 1fr;	
 		grid-row-gap: 32px;
 		grid-column-gap: 64px;
@@ -24,10 +25,18 @@
 	&__contact-form {
 		grid-area: contact-form;
 	}
-	
+
 	&__address, .address {
-		margin-top: 40px;
 		grid-area: address;
+	}
+
+	&__office, .office {
+		grid-area: office;
+	}
+	
+	&__address, .address, 
+	&__office, .office {
+		margin-top: 40px;
 		font-style: normal;
 		
 		&__logo {
@@ -41,12 +50,13 @@
 			line-height: 28px;
 			display: block;
 
-			&:last-child {
+		}
+			
+		&__image {
 				margin-top: 48px;
 				line-height: unset;
 			}
 
-		}
 		
 	}
 	
@@ -118,8 +128,9 @@
 				"heading"
 				"contact-form"
 				"address"
+				"office"
 				"links";
-			grid-template-rows: auto auto auto auto; 	
+			grid-template-rows: auto auto auto auto auto; 	
 			grid-template-columns: 100%;	
 		}
 		

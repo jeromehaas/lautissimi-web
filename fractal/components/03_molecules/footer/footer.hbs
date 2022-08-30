@@ -4,23 +4,52 @@
 
 			{{> @contact-form class="footer__contact-form"}}
 
-		<address class="footer__address address">
-			<img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg" ></img>
-			{{> @paragraph class="address__item" content="O&S Interior GmbH" color="white" }}
-			{{> @paragraph class="address__item" content="St. Johannes Strasse 23" color="white" }}
-			{{> @paragraph class="address__item" content="CH-6300 Zug" color="white" }}
-			{{> @link class="address__item" content="info@lautissimi.ch" href="mailto:info@lautissimi.ch" color="white" }}
-			<a class="address__item" href="https://www.hotelleriesuisse.ch/" target="_blank">
-				<img src="/media/graphics/logos/logo-hotellerie-suisse.svg" alt="Hotellerie Suisse">
-			</a>	
-		</address>	
+       <address class="footer__address address">
+            <img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+            <p class="paragraph  paragraph--beige-medium   address__item">
+                Adresse
+            </p>
+            <p class="paragraph  paragraph--white   address__item">
+                O&S Interior GmbH
+            </p> <a href="https://goo.gl/maps/dYHFNyzmofH7k3pZA" target="_blank">
+                <p class="paragraph  paragraph--white   address__item">
+                    St. Johannes Strasse 23
+                </p>
+            </a>
+            <p class="paragraph  paragraph--white   address__item">
+                CH-6300 Zug
+            </p> <a class="gravity-link  gravity-link--white    address__item" href="mailto:info@lautissimi.ch">
+                info@lautissimi.ch
+            </a>
+        </address>
+
+        <address class="footer__office office">
+            <p class="paragraph  paragraph--beige-medium   office__item">
+                Büro Adresse
+            </p>
+            <p class="paragraph  paragraph--white   office__item">
+                O&S Interior GmbH
+            </p>
+            <p class="paragraph  paragraph--white   office__item">
+                .kuia.office 3. OG
+            </p> <a href="https://goo.gl/maps/LMTgNsmTJJzCpAhw5" target="_blank">
+                <p class="paragraph  paragraph--white   office__item">
+                    Neudorfstrasse 12
+                </p>
+            </a>
+            <p class="paragraph  paragraph--white   office__item">
+                CH-6340 Baar
+            </p> <a class="office__item office__image" href="https://www.hotelleriesuisse.ch/" target="_blank">
+                <img src="/media/graphics/logos/logo-hotellerie-suisse.svg" alt="Hotellerie Suisse">
+            </a>
+        </address>
 
 		<div class="footer__links">
 			{{> @paragraph class="links__item" content="©2022 O&S Interior GmbH" color="white" }}
 			{{> @link class="links__item" content="Impressum" href="#" color="white" }}
 			{{> @link class="links__item" content="Datenschutz" href="#" color="white" }}
 			{{> @link class="links__item" content="Englisch" href="#" color="white" }}
-			<a class="links__item item">
+			<a class="links__item">
 				<i class="item__icon icon icon--linkedin"></i>
 			</a>
 		</div>
