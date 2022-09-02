@@ -7,8 +7,9 @@
 		grid-template: auto / 520px auto;
 		grid-template-areas: 
 		"panel showcase";
-    padding: 0;
+    	padding: 0;
 		max-width: unset;
+		height: 100vh;
 	}
 	
 	&__panel, .panel {
@@ -23,9 +24,9 @@
 		flex-direction: column;
 		align-items: flex-start;
 		z-index: 5;
+		overflow-x: scroll;
 
 		&__heading {
-			width: calc(100vw - (2 * 96px));
 			position: relative;
 			margin-bottom: 32px;
 		}
@@ -115,6 +116,7 @@
 	@media (max-width: 1050px) {
 
 		&__inner {
+			height: unset;
 			grid-template: auto / 400px auto;
 			grid-template-areas: 
 			"panel showcase";
