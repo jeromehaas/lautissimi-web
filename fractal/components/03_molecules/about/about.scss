@@ -4,8 +4,9 @@
 		display: grid;
     grid-template-areas:
 		"heading heading"
+		"intro intro"
 		"statements portrait"
-    "statements links"
+    	"statements links"
 		"team-members team-members";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -32,6 +33,14 @@
  
 	}
 
+	&__intro {
+		grid-area: intro;
+		max-width: 800px;
+		align-self: end;
+		justify-self: end;
+		margin-bottom: 64px;
+	}
+
 
 	&__statements, .statements {
 		grid-area: statements;
@@ -45,7 +54,7 @@
 			}
 
 		}
-
+		
 	}
 
 	&__portrait {
