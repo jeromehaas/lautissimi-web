@@ -10,15 +10,15 @@
 			</p>
 			<div class="panel__item item">
 				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
-					{{ currentSite.handle == 'de' ? 'Jahr' : 'Year' }}
+					{{ currentSite.handle == 'de' ? 'Fertigstellung:' : 'Completion:' }}
 				</p>
 				<p class="paragraph  paragraph--white   item__heading">
-					{{ entry.projectDate|date('Y') }}
+					{{ entry.projectDate }}
 				</p>
 			</div>
 			<div class="panel__item item">
 				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
-					{{ currentSite.handle == 'de' ? 'Ort' : 'Location' }}
+					{{ currentSite.handle == 'de' ? 'Ort:' : 'Location:' }}
 				</p>
 				<p class="paragraph  paragraph--white   item__heading">
 					{{ entry.projectLocation }}
@@ -27,7 +27,7 @@
 			{% if entry.projectCooperations|length > 0 %}
 			<div class="panel__item item">
 				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
-					{{ currentSite.handle == 'de' ? 'In Zusammenarbeit mit:' : 'In cooperation with:' }}
+					{{ currentSite.handle == 'de' ? 'In Zusammenarbeit mit:' : 'In collaboration with:' }}
 				</p>
 				{% for item in entry.projectCooperations %}
 					<p class="paragraph  paragraph--white   item__heading">

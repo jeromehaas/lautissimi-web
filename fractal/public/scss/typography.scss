@@ -146,6 +146,14 @@
 	font-weight: 300;
 }
 
+@media (max-width: 1050px) {
+
+	.reference-detail .panel__heading {
+		font-size: 32px;
+	}
+
+}
+
 @media (max-width: 950px) {
 
 	.reference-detail .panel__heading {
@@ -224,8 +232,13 @@
 		& .heading__title {
 			left: 0;
 		}
-	}	
 
+	}
+	
+	.reference-detail .panel__heading {
+		font-size: 32px;
+	}
+	
 }
 
 @media (max-width: 350px) {

@@ -19,7 +19,6 @@ class Hero {
 		this.createSlider();
 		this.animateScroller();
 		this.addEventListener();
-		this.showNextSlide();
 	};
 
 	addEventListener = () => {
@@ -32,8 +31,7 @@ class Hero {
 			modules: [ Autoplay, EffectFade ],
 			speed: 1500,
 			freeMode: false,
-			loop: true,
-			spaceBetween: 30,
+			loop: false,
 			effect: 'fade',
 			autoplay: {
 				delay: 15000,
