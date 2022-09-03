@@ -7,5 +7,8 @@
 				{{> @link class="desktop-navigation__link" content="Referenzen" target="references" }}
 				{{> @link class="desktop-navigation__link" content="Über uns" target="about" }}
 			</div>
-			{{> @circle-link class="desktop-navigation__button" content="Kontakt" icon="arrow" }}
+				<span class="desktop-navigation__shortcuts shortcuts">
+					{{> @circle-link class="shortcuts__button" content="Kontakt" icon="arrow" }}
+					{{> @link class="shortcuts__link" content="EN" target="/en" }}
+				</span>
 		</nav>

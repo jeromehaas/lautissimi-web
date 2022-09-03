@@ -14,11 +14,23 @@
 		  	    </a>	 
 					{% endfor %}
 		    </div>
-
+{# 
 				{% for item in ctas.all() %}	
 		    	<a class="circle-link circle-link--arrow  desktop-navigation__button" href="/{{ currentSite.language }}/#{{ item.href }}"  data-target="{{ item.target }}">
 						{{ item.text }}
 					</a>
-				{% endfor %}
+				{% endfor %} #}
+
+				<span class="desktop-navigation__shortcuts shortcuts">
+                    <a class="circle-link circle-link--arrow  shortcuts__button" href="footer">
+                		{{ currentSite.handle == 'de' ? 'Kontakt' : 'Contact' }}
+                    </a> 
+					{# <a class="gravity-link    shortcuts__link" href="" data-target="#/en">
+                        EN
+                    </a>  #}
+					<a class="gravity-link shortcuts__link" href="/{{ currentSite.language == 'de' ? 'en' : 'de' }}">
+						{{ currentSite.language == 'de' ? 'EN' : 'DE' }}
+                    </a>
+				</span>
 				
 		</nav>

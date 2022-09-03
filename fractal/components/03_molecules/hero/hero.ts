@@ -31,7 +31,7 @@ class Hero {
 			modules: [ Autoplay, EffectFade ],
 			speed: 1500,
 			freeMode: false,
-			loop: false,
+			loop: true,
 			effect: 'fade',
 			autoplay: {
 				delay: 15000,

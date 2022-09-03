@@ -59,6 +59,10 @@
 		max-width: calc(100vw - 400px);
 		height: 100%;
 
+		&__wrapper {
+			min-height: 240px;
+		}
+
 		&__navigation {
 			position: absolute;
 			top: 0;
@@ -77,6 +81,11 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
 		}
 
 		&__wrapper {
@@ -106,15 +115,13 @@
 		
 		&__showcase, .showcase {
 	
-			&__navigation {
-				padding: 64px 32px 64px 96px  !important ;
-			}
+
 		
 		}
 
 	}
 
-	@media (max-width: 950px) {
+	@media (max-width: 1050px) {
 
 		&__inner {
 			display: grid;
@@ -130,6 +137,11 @@
 			grid-area: showcase;
 			max-width: 100vw;
 			height: 100%;
+
+			&__navigation {
+				padding: 64px 32px 64px 96px  !important ;
+			}
+			
 		}
 
 		&__panel, .panel {

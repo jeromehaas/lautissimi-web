@@ -11,7 +11,7 @@ class DesktopNavigation {
 		this.links = {
 			all: document.querySelectorAll('.desktop-navigation__link'),
 			home: document.querySelector('.desktop-navigation__logo'),
-			contact: document.querySelector('.desktop-navigation__button'),
+			contact: document.querySelector('.desktop-navigation .shortcuts__button'),
 		};
 	}
 
