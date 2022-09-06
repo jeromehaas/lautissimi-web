@@ -17,9 +17,11 @@
 		</div>
 
 			<div class="references__teaser teaser" >
-				<p class="paragraph  paragraph--white   paragraph--big  teaser__text">
+				{# <p class="paragraph  paragraph--white   paragraph--big  teaser__text">
 					LAUTISSIMI bietet ganzheitliche, individuelle Einrichtungslösungen für die Gastronomie, Hotellerie, Büro, Gesundheitswesen sowie öffentliche Bereiche.
-				</p>
+				</p> #}
+				{{ references['referencesDescription'] is defined ? references.referencesDescription : '' }}
+
 			</div>
 
 		    <div class="references__grid grid">

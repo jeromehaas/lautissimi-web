@@ -128,8 +128,10 @@
 
 .intro .paragraph, 
 .about__intro .paragraph, 
+.references__teaser .paragraph, 
 .services__teaser .paragraph {
-	font-size: 32px; font-family: "Gazpacho";
+	font-size: 32px; 
+	font-family: "Gazpacho";
 	color: $beige-medium;
 	font-weight: 400;
 
@@ -210,6 +212,7 @@
 
 	.intro .paragraph, 
 	.about__intro .paragraph, 
+	.references__teaser .paragraph, 
 	.services__teaser .paragraph {
 		font-size: 24px; font-family: "Gazpacho";
 

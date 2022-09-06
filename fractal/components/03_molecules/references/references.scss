@@ -15,6 +15,15 @@
   &__teaser {
 	grid-area: teaser;
 	margin-bottom: 64px;
+
+		.paragraph {
+			color: $beige-bright;
+
+			strong {
+				color: $white;
+			}
+		}
+
   }
 
   &__heading, .heading {
