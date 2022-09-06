@@ -31,13 +31,10 @@
         </div>
 
         <div class="services__preview preview">
-				{% for item in links.all() %}
+			{% for item in links.all() %}
             <img class="preview__image {% if loop.first %} preview__image--active {% endif %}" data-preview-image="{{ loop.index }}" src="/{{ item.image.one().url() }}" alt="{{ item.heading }}" />
-				{% endfor %}
+			{% endfor %}
         </div>
 
-				<div class="services__teaser">				
-					{{ services['servicesTeaser'] is defined ? services.servicesTeaser : ''}}
-				</div>
     </div>
 </div>

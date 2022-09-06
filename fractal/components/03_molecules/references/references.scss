@@ -5,10 +5,16 @@
     display: grid;
     grid-template-areas:
 		"heading"
+		"teaser"
     	"grid";
     grid-template-columns: 100%;
     grid-template-rows: auto;
 	padding-bottom: 96px;
+  }
+
+  &__teaser {
+	grid-area: teaser;
+	margin-bottom: 64px;
   }
 
   &__heading, .heading {
@@ -31,13 +37,13 @@
 
   &__grid, .grid{
 	grid-area: grid;
+	margin-left: 80px;
 	height: 560px;
 	width: 100%;
 	display: grid;
 	grid-gap: 16px; 
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	
 	
 	&__item, .item {
 		display: block;
@@ -129,6 +135,7 @@
 			display: grid;
 			grid-template-areas:
 			"heading"
+			"teaser"
 			"grid"; 
 			grid-template-columns: 100%;
 			grid-template-rows: auto auto;
@@ -163,6 +170,13 @@
 		 }
 
 	}
+
+	@media (max-width: 850px) {
+
+		&__grid, .grid {
+			margin-left: 0;
+		}
+	}
 	
 	@media (max-width: 750px) {
 
@@ -177,7 +191,6 @@
 			grid-template-columns: repeat(1, 50%);
 			grid-template-rows: repeat(4, 150px);
 			grid-gap: 16px;
-
 
 				&__item, .item {
 				
