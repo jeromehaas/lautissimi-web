@@ -61,6 +61,10 @@
 
 		&__wrapper {
 			min-height: 240px;
+			animation-name: wander;
+			animation-duration: 50s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
 		}
 
 		&__navigation {
@@ -72,7 +76,7 @@
 		}
 
 		&__swiper {
-			width: 100%;
+			width: calc(100% + 400px);
 			height: 100%;
 		}
 
