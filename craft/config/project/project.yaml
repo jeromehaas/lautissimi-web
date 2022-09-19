@@ -1,4 +1,4 @@
-dateModified: 1662499488
+dateModified: 1663579561
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -76,6 +76,7 @@ meta:
     953f17ff-a718-42fa-b333-c914a8ab23e4: Text # Text
     1488e12a-fb5f-46e1-be5e-2c1d22dfb041: Heading # Heading
     1710e260-6d3a-4ad9-9f43-4a26382e3fb9: 'Data Privacy' # Data Privacy
+    4272ad3a-ba0a-4411-a3ff-ad06cfea004e: 'Project Employee Relationship' # Project Employee Relationship
     5088bb6c-5aba-4dda-8d0b-5ea078f0ee94: Item # Item
     5365b4bb-47ef-425d-8d42-75f6aba9c7b6: Service # Service
     7211b9ee-a35a-4754-8ef6-8f3765920384: 'Contact Details' # Contact Details
