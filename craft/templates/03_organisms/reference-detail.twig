@@ -56,6 +56,12 @@
 				<div class="showcase__wrapper swiper-wrapper">
 					{% for item in entry.projectImages %}
 						<div class="showcase__slide swiper-slide">
+							{% if item.assetPhotographer %}
+								<div class="showcase__photographer-tag photographer-tag">
+									<p class="photographer-tag__name">{{ item.assetPhotographer }}</p>
+								</div>
+							{% endif %}
+							
 							<img class="showcase__image" src="/{{ item.url }}" alt="{{ item.assetAltTag }}"/>
 						</div>
 					{% endfor %}

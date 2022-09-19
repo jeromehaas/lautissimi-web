@@ -1,4 +1,4 @@
-dateModified: 1663579561
+dateModified: 1663582114
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -11,6 +11,7 @@ meta:
     1c12ec36-432f-4e48-8098-0a4670531950: 'Data Privacy' # Data Privacy
     1cf93867-b1e9-4b75-b7ec-893e1facfd2b: Required # Required
     1e71d181-05fe-4542-b71b-9d3fd64f8dc4: 'Contact Form Inputs' # Contact Form Inputs
+    2ab69445-b115-4c05-a8dc-d3773db50306: 'Asset Photographer' # Asset Photographer
     2afa1137-8726-43ba-b165-2c55caca0b11: 'About Image' # About Image
     2b8bc827-62ad-45d9-b662-79adf6027924: 'Page Not Found Heading' # Page Not Found Heading
     2f5504ec-954c-4556-b14b-34cc70ef22f3: 'Page Not Found' # Page Not Found
