@@ -1,0 +1,18 @@
+<nav class='mobile-navigation js-mobile-navigation'>
+		<div class='mobile-navigation__inner'>
+			<div class='mobile-navigation__bar bar'>
+				<a class="bar__link" href="#">
+					<img class="bar__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+				</a>					
+				{{> @hamburger }}
+			</div>
+			<div class="mobile-navigation__panel panel">
+			<div class='panel__links'>												
+				{{> @link class="links__item" content="Leistungen" color="white" href="/" target="services"}}
+				{{> @link class="links__item" content="Referenzen" color="white" href="/" target="references"}}
+				{{> @link class="links__item" content="Über uns" color="white" href="/" target="about"}}
+				{{> @link class="links__item" content="Kontakt" color="white" href="/" target="footer"}}
+			</div>
+    </div>
+	</div>
+</nav>

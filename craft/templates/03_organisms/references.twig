@@ -1,0 +1,64 @@
+{% set references = craft.entries.section('references').one() %}
+{% set projects = references.referencesItems %}
+{% set firstProject = projects.nth(0) %}
+{% set secondProject = projects.nth(1) %}
+{% set thirdProject = projects.nth(2) %}
+{% set fourthProject = projects.nth(3) %}
+
+<div class="references section" id="references">
+	<div class=" references__inner section__inner">
+
+		<div class="heading  heading--h2 heading--white references__heading js-heading">
+			{% if currentSite.language == 'de' %}
+				<h2 class="heading__title">Referenzen</h2>
+			{% endif %}
+			<p class="heading__shadow">{{ references['referencesHeading'] is defined ? references.referencesHeading : '' }}</p>
+			<figure class="heading__line"></figure>
+		</div>
+
+			<div class="references__teaser teaser" >
+				{# <p class="paragraph  paragraph--white   paragraph--big  teaser__text">
+					LAUTISSIMI bietet ganzheitliche, individuelle Einrichtungslösungen für die Gastronomie, Hotellerie, Büro, Gesundheitswesen sowie öffentliche Bereiche.
+				</p> #}
+				{{ references['referencesDescription'] is defined ? references.referencesDescription : '' }}
+
+			</div>
+
+		    <div class="references__grid grid">
+
+		    <a href="{{ firstProject.url }}" class="grid__item grid__item--big item">
+            <span class="item__image-limitter">
+			  <img class="item__image" src="/{{ firstProject.projectPreviewImage.one().url() }}" alt="{{ firstProject.parent.title }} ">
+				<h4 class="heading  heading--h4   heading--white  item__heading">
+					{{ firstProject.parent.title }}
+				</h4> 
+            </span>
+          </a>
+
+          <a href="{{ secondProject.url }}" class="grid__item grid__item--wide item">
+            <span class="item__image-limitter">
+			  <img class="item__image" src="/{{ secondProject.projectPreviewImage.one().url() }}" alt="{{ secondProject.parent.title }} ">
+				<h4 class="heading  heading--h4   heading--white  item__heading">
+					{{ secondProject.parent.title }}
+				</h4> 
+            </span>
+          </a>
+
+          <a href="{{ thirdProject.url }}" class="grid__item grid__item--small item">
+             <span class="item__image-limitter">
+			  <img class="item__image" src="/{{ thirdProject.projectPreviewImage.one().url() }}" alt="{{ thirdProject.parent.title }} ">
+				<h4 class="heading  heading--h4   heading--white  item__heading">
+					{{ thirdProject.parent.title }}
+				</h4> 
+            </span>
+          </a> 
+
+          <a href="/{{ currentSite.language }}/reference-overview" class="grid__item grid__item--show-more item">
+            <i class="item__icon icon icon--arrow"></i>
+			<p class="paragraph  paragraph--white   item__text">{{ currentSite.language == 'de' ? 'weitere Referenzen' : 'further references' }}</p>
+          </a> 
+
+        </div>
+
+	</div>
+</div>

@@ -1,0 +1,6 @@
+name: Circle Link
+preview: "@page"
+context: 
+  content: Schliessen
+  icon: close
+  color: black

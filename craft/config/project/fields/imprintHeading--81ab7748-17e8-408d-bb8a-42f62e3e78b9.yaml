@@ -1,0 +1,19 @@
+columnSuffix: oynfzhws
+contentColumnType: text
+fieldGroup: 03a93c3b-918b-4335-a499-081b17ad9626 # Imprint
+handle: imprintHeading
+instructions: ''
+name: 'Imprint Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

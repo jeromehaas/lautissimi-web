@@ -1,0 +1,9 @@
+baseUrl: $BASE_URL_EN
+enabled: true
+handle: en
+hasUrls: true
+language: en
+name: 'Lautissimi (EN)'
+primary: false
+siteGroup: 59673e81-6588-42ea-94b1-82258efce574 # Lautissimi
+sortOrder: 2

@@ -1,0 +1,55 @@
+.desktop-navigation {
+
+	background-color: $green-dark;
+	display: flex;
+	padding: 64px $padding-page-vertical-big;
+	z-index: 30;
+
+	&__logo, .logo {
+		margin-right: calc((400px - 200px - 96px) + 64px);
+		
+		&__image {
+			width: 200px;			
+		}
+
+	}
+
+	&__link {
+		
+		&:first-child {
+			padding-left: 0 !important;
+		}
+
+	}
+
+	&__shortcuts, .shortcuts{
+		margin-left: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&__link {
+			color: $white;
+		}
+
+	}
+
+	@media (max-width: 1150px) {
+		padding: 64px 32px 32px 96px;
+
+		&__link {
+			padding: 16px 12px;
+		}
+
+		&__logo {
+			margin-right: calc((400px - 200px - 96px) + 64px) !important;
+			width: 160px;
+		}
+
+	}
+
+	@media (max-width: 1050px) {
+		display: none;
+	}
+
+}

@@ -1,0 +1,74 @@
+{% set about = craft.entries.section('about').one() %}
+{% set values = about.aboutValues %}
+{% set teamMembers = about.aboutTeamMembers %}
+
+<div class="about section js-about" id="about">
+    <div class="about__inner section__inner">
+
+		<div class="heading  heading--h2 heading--beige-medium about__heading js-heading">
+			{% if currentSite.language == 'de' %}
+			   	<h2 class="heading__title">Über Uns</h2>
+			{% endif %}
+		    <p class="heading__shadow">{{ about['aboutHeading'] is defined ? about.aboutHeading : '' }}</p>
+		    <figure class="heading__line"></figure>
+		</div>
+
+		<div class="about__intro">
+			{{ about['aboutIntro'] is defined ? about.aboutIntro : '' }}
+		</div>
+
+        <div class="about__statements statements ">
+				{% for item in values.all() %}
+					<div class="statements__item item">
+						<h4 class="heading  heading--h4   heading--black  item__heading">
+							{{ item.heading }}
+						</h4>
+					<p class="paragraph  paragraph--black   item__text paragraph">
+						{{ item.text }}
+					</p>
+					</div>
+				{% endfor %}
+        </div>
+
+				
+				{% if about['aboutImage'] is defined %}
+					 <img class="about__portrait" src="/{{ about.aboutImage.one().url() }}" alt="{{ about.aboutImage.one().assetAltTag }}">
+				{% endif %}
+
+        <div class="about__links links">
+					{% for item in teamMembers.orderBy('postDate ASC').all() %}
+            <a class="external-link links__item" href="#" data-name="{{ item.teamMemberFullName|kebab }}">{{ item.teamMemberFullName }}
+							<i class="external-link__icon icon icon--arrow"></i>
+						</a>
+					{% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% for item in teamMembers.orderBy('postDate ASC').all() %}
+
+<div class="team-member" data-name="{{ item.teamMemberFullName|kebab }}">
+<img class="team-member__portrait" src="/{{ item.teamMemberImage.one().url() }}" alt="{{ item.teamMemberFullName }}" class="team-member__portrait">
+    <div class="team-member__text-content text-content">
+		<h2 class="heading  heading--h3   heading--black  text-content__name">
+            {{ item.teamMemberFullName }}
+					</h2>
+        <p class="paragraph  paragraph--beige-medium   paragraph--serif  text-content__role">
+				{{ item.teamMemberRole }}
+        </p>
+        <div class="text-content__contact-details contact-details">
+            <a class="gravity-link  gravity-link--beige-medium contact-details__phone" href="tel:{{ item.teamMemberMobile|trim }}">
+						{{ item.teamMemberMobile }}
+            </a> 
+						<a class="gravity-link  gravity-link--beige-medium contact-details__email" href="mailto:{{ item.teamMemberEmail }}">
+						{{ item.teamMemberEmail }}
+					</a>
+        </div>
+			<p class="text-content__introduction">{{ item.teamMemberIntroduction | nl2br }}</p>
+			<a class="circle-link circle-link--close  circle-link--beige-medium  text-content__close-button" href="#">
+			
+		</a>
+	</div>
+</div>
+{% endfor %}

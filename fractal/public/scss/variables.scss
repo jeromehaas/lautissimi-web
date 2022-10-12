@@ -1,0 +1,21 @@
+/* COLORS */
+$white: #FFFFFF;
+$light-grey: #F6F4F4;
+$beige-bright: #a89b94;
+$beige-medium: #918178;
+$beige-dark: #655953;
+$blue-dark: #2F4858;
+$green-dark: #2F474B;
+$orange-brown: #A66A5E;
+$brown: #A28967;
+$black: #000000;
+$red: #D40D0D;
+$green: #049f44;
+
+// COLORS WITH TRANSPARENCY
+$transparent-white: transparentize($color: $white, $amount: 0.40);
+
+// LAYOUT CONFIGS
+$padding-page-vertical-big: 96px; // BIGGER THAN 950 PIXELS
+$padding-page-vertical-medium: 64px; // SMALLER THAN 950 PIXELS
+$padding-page-vertical-small: 32px; // SMALLER THAN 650 PIXELS

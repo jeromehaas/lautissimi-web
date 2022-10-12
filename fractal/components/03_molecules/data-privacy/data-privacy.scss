@@ -1,0 +1,34 @@
+.data-privacy {
+	background-color: $green-dark;
+
+	&__inner {
+		padding: 104px $padding-page-vertical-big;
+	}
+
+	&__heading {
+		margin-bottom: 64px;
+		max-width: 800px
+	}
+
+	&__item, .item {
+		margin-bottom: 46px;
+		max-width: 800px;
+	}
+
+	@media (max-width: 950px) {
+
+		&__inner {
+			padding: 104px $padding-page-vertical-medium;
+		}
+
+	}
+
+	@media (max-width: 650px) {
+
+		&__inner {
+			padding: 104px $padding-page-vertical-small;
+		}
+
+	}
+
+}

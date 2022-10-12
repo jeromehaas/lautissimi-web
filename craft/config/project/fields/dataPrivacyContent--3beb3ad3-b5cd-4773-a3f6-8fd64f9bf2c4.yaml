@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ecf27232-2d0a-4d9f-8a07-9f2331256eb1 # Data Privacy
+handle: dataPrivacyContent
+instructions: ''
+name: 'Data Privacy Content'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_dataprivacycontent}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

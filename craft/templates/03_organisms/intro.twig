@@ -1,0 +1,10 @@
+{% set intro = craft.entries.section('intro').one() %}
+
+<div class="intro section js-intro">
+    <div class="intro__inner section__inner">
+				{{ intro['introText'] is defined ? intro.introText : '' }}
+				{% if intro['introImage'] is defined %}
+				 	<img class="intro__image" src="/{{ intro.introImage.one().url() }}" alt="{{ intro.introImage.one().assetAltTag }}"/>
+				{% endif %}
+    </div>
+</div>

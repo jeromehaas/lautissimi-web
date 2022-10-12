@@ -1,0 +1,17 @@
+defaultPlacement: end
+enableVersioning: true
+handle: statement
+name: Statement
+propagationMethod: all
+siteSettings:
+  1c00b42a-dae4-4f15-a772-533bb5b53e7c: # Lautissimi (DE)
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  cbdca878-f920-45ad-9c48-262b21cf7421: # Lautissimi (EN)
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

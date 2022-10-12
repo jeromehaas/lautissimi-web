@@ -1,0 +1,81 @@
+fieldLayouts:
+  ed0eb2b0-d531-4363-81f4-ade861892fea:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7c7c65c3-1d0d-44a3-9169-c0381eece666 # Contact Details Company
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e8002a2e-7222-4b76-a712-ce5ac9131c4e # Contact Details Street
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a0fa242a-7dcc-4e24-b3ea-cd7f0c183706 # Contact Details ZIP
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c26450e9-e684-486c-ab84-17d42d3b2923 # Contact Details Town
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Address
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 211767df-d016-4750-93df-0c474312d621 # Contact Details Linkedin
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Social Media'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 86a26c5d-d5f2-4ed7-be41-fc4f5dbc4631 # Contact Details Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c4f40e7f-9124-4147-ab1d-634320c25a5e # Contact Details Mobile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Touch Points'
+        sortOrder: 3
+handle: contactDetails
+name: 'Contact Details'
+sortOrder: 1

@@ -1,0 +1,46 @@
+columnSuffix: rsfvgopf
+contentColumnType: string
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # Project
+handle: projectSize
+instructions: ''
+name: 'Project Size'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Small
+        -
+          - value
+          - small
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Wide
+        -
+          - value
+          - wide
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Big
+        -
+          - value
+          - big
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

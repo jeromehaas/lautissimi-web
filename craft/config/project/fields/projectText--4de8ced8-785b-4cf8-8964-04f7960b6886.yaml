@@ -1,0 +1,19 @@
+columnSuffix: mrxtebmk
+contentColumnType: text
+fieldGroup: 458a9587-6610-4f78-9592-5e56e1adfcf9 # Project
+handle: projectText
+instructions: ''
+name: 'Project Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '6'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

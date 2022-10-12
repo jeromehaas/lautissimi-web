@@ -1,0 +1,33 @@
+.cursor {
+	pointer-events: none;
+	z-index: 50;
+	position: absolute;
+	opacity: 0.75 !important;
+
+	&__main {
+		position: fixed;
+		top: -100px;
+		left: -100px;
+		width: 8px;
+		height: 8px;
+		background-color: transparent;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		border: 1px solid $white;
+		z-index: 100;
+		background-color: $beige-bright;
+	}
+	
+	&__follower {
+		position: fixed;
+		top: -100px;
+		left: -100px;
+		width: 32px;
+		height: 32px;
+		transform: translate(-50%, -50%);
+		background-color: $beige-bright;
+		z-index: -10;
+		border-radius: 50%;
+	}
+		
+}

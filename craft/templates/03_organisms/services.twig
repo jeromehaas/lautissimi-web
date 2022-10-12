@@ -1,0 +1,40 @@
+{% set services = craft.entries.section('services').one() %}
+{% set links = services.servicesCategories %}
+
+<div class="services section js-services" id="services">
+    <div class="services__inner section__inner">
+		
+				<div class="heading  heading--h2 services__heading js-heading">
+					{% if currentSite.language == 'de' %}
+			   		<h2 class="heading__title">Leistungen</h2>
+					{% endif %}
+			    <p class="heading__shadow">{{ services['servicesHeading'] is defined ? services.servicesHeading : ''}}</p>
+			    <figure class="heading__line"></figure>
+				</div>
+
+        <div class="services__accordion accordion">
+           
+				{% for item in links.all() %}
+					<div class="accordion__item item {% if loop.first %} accordion__item--active {% endif %}" data-preview-image="{{ loop.index }}">
+						<h3 class="heading  heading--h4   item__heading">
+								{{ item.heading }} 
+						</h3>
+						<div class="item__content">
+							<p class="paragraph   item__text">
+								{{ item.text }}
+							</p> 
+							<img class="item__image" src="/{{ item.image.one().url() }}" alt="{{ item.heading }}" />
+						</div>
+					</div>	
+				{% endfor %}
+
+        </div>
+
+        <div class="services__preview preview">
+			{% for item in links.all() %}
+            <img class="preview__image {% if loop.first %} preview__image--active {% endif %}" data-preview-image="{{ loop.index }}" src="/{{ item.image.one().url() }}" alt="{{ item.heading }}" />
+			{% endfor %}
+        </div>
+
+    </div>
+</div>

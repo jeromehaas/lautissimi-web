@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 35c059dd-2c2f-41ff-8d17-876dd7228f9d # Contact Form
+handle: contactFormInputs
+instructions: ''
+name: 'Contact Form Inputs'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_contactforminputs}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

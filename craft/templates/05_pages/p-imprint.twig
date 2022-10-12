@@ -1,0 +1,12 @@
+{% extends '04_layouts/page' %}
+{% set imprint = craft.entries.section('pages').slug('imprint').one() %}
+{% set metaTitle = imprint.metaTitle %}
+{% set metaDescription = imprint.metaDescription %} 
+
+{% block main %}
+	{% include "03_organisms/desktop-navigation" %}
+	{% include "03_organisms/mobile-navigation" %}
+	{% include "03_organisms/imprint" %}
+	{% include "03_organisms/footer" %}
+	{% include "01_atoms/cursor" %}
+{% endblock %}

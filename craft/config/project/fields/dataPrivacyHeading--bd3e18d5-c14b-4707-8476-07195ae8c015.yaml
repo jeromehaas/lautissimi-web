@@ -1,0 +1,19 @@
+columnSuffix: gojkujau
+contentColumnType: text
+fieldGroup: ecf27232-2d0a-4d9f-8a07-9f2331256eb1 # Data Privacy
+handle: dataPrivacyHeading
+instructions: ''
+name: 'Data Privacy Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,0 +1,19 @@
+columnSuffix: twrbdxii
+contentColumnType: text
+fieldGroup: e017ef02-242a-425e-89ed-99b67cd2d24d # Meta
+handle: metaTitle
+instructions: ''
+name: metaTitle
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,0 +1,48 @@
+.switcher {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 280px;
+	height: 120px;
+
+  &__preview {
+    display: block;
+    width: 50%;
+    height: 100%;
+	object-fit: cover;
+  }
+
+	&__label, .label {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		height: 100%;
+    	background-color: rgba(255, 255, 255, 0.3);
+		backdrop-filter: blur(10px);
+
+		&__text {
+			color: $white;
+		}
+
+		&__icon {
+			transform: rotate(270deg);
+			color: $white;
+			position: relative;
+			left: 0;
+			transition: left 0.1s ease-in-out;
+		}
+
+	}
+
+	&:hover {
+
+		.label__icon {
+			left: 8px;
+		}
+
+	}
+
+}

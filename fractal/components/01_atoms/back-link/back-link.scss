@@ -1,0 +1,16 @@
+.back-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: $beige-bright;
+
+	&__icon {
+		transform: rotate(90deg);
+		color: $beige-bright !important;
+	}
+
+	&__text {
+		color: $beige-bright;
+	}
+
+}

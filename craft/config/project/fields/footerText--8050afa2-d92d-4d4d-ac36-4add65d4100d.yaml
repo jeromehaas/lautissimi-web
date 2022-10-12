@@ -1,0 +1,19 @@
+columnSuffix: itikvtua
+contentColumnType: text
+fieldGroup: 16285aca-5a6c-469c-abb4-f13c8cbe8ecd # Footer
+handle: footerText
+instructions: ''
+name: 'Footer Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

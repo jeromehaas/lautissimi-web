@@ -1,0 +1,19 @@
+columnSuffix: zfelynzh
+contentColumnType: text
+fieldGroup: 89a176fa-8575-4f8a-a6e4-e4c34ec8b721 # Contact Details
+handle: contactDetailsCompany
+instructions: ''
+name: 'Contact Details Company'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

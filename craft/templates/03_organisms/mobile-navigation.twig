@@ -1,0 +1,32 @@
+{% set navigation = craft.entries.section('navigation').one() %}
+{% set links = navigation.navigationLinks %}
+{% set ctas = navigation.navigationCta %}
+
+<nav class='mobile-navigation js-mobile-navigation'>
+	<div class='mobile-navigation__inner'>
+		<div class='mobile-navigation__bar bar'>
+			<a class="bar__link" href="/">
+				<img class="bar__logo" src="/media/graphics/logos/logo-lautissimi.svg" alt="LAUTISSIMI"></img>
+		</a>
+		<button class="hamburger hamburger--squeeze" id="hamburger" aria-label="Menu Mobile Navigation" type='button'>
+			<span class='hamburger__box'>
+				<span class='hamburger__inner'/>
+			</span>
+		</button>
+	</div>
+	<div class="mobile-navigation__panel panel">
+		<div class='panel__links'>
+		{% for item in links.all() %}
+			<a class="gravity-link gravity-link--white links__item" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
+				{{ item.text }}
+			</a>
+		{% endfor %}
+		{% for item in ctas %}
+			<a class="gravity-link gravity-link--white links__item" href="/{{ currentSite.language }}/#{{ item.href }}" data-target="{{ item.target }}">
+				{{ item.text }} 
+			</a>
+		{% endfor %}
+
+		</div>
+	</div>
+</div></nav>

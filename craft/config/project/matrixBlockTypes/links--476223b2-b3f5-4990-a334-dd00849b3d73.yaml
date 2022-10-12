@@ -1,0 +1,66 @@
+field: d953b654-2a10-406b-9c6b-ab9f150f7b74 # Footer Links
+fieldLayouts:
+  946f37ab-f0f3-48f0-91a5-4116964f7998:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8c00cee5-9afa-41f9-899e-592a688bdf4b # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d0e74fd7-8203-4bb4-bae7-557513fc443f # Href
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8c00cee5-9afa-41f9-899e-592a688bdf4b: # Text
+    columnSuffix: oxeamybc
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  d0e74fd7-8203-4bb4-bae7-557513fc443f: # Href
+    columnSuffix: ozsazxnz
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: href
+    instructions: ''
+    name: Href
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: links
+name: links
+sortOrder: 1

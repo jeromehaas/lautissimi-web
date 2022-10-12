@@ -1,0 +1,34 @@
+<div class="about section js-about">
+	<div class="about__inner section__inner">
+
+
+		{{> @heading class="about__heading" color="beige-medium" type="h2" content="About" showShadow=true }}
+		{{> @paragraph class="about__intro paragraph--big" color="beige-medium" content="Um Ihnen und der Individualität, die sie suchen, gerecht zu werden, steht das Zuhören und achtsame Beraten bei uns an erster Stelle." }}
+
+		<div class="about__statements statements ">
+			<div class="statements__item item">
+				{{> @heading class="item__heading" color="black" type="h4" content="Menschen im Mittelpunkt" }}
+				{{> @paragraph class="item__text paragraph" color="black" content="Es sind die Menschen, die sich in den von uns eingerichteten Räumen wohl fühlen sollen. Für sie stecken wir Herzblut in unsere Produkte, Leistungen und Kundenbeziehungen. Dabei ist unser gesamtes Handeln auf Langfristigkeit ausgerichtet." }}
+			</div>
+
+			<div class="statements__item item">
+				{{> @heading class="item__heading" color="black" type="h4" content="Engagiert und gewissenhaft" }}
+				{{> @paragraph class="item__text paragraph" color="black" content="Innovation spornt uns an. Und diese suchen wir in jedem Auftrag neu. Dafür denken wir über die vertraglichen Rahmenbedingungen hinaus und geben uns nicht mit der erstbesten Lösung zufrieden. Versprochen und Hand drauf." }}
+			</div>
+		</div>
+
+		<img class="about__portrait" src="/media/images/team.webp" alt="">
+
+		<div class="about__links links">
+			<a class="external-link links__item" href="#" data-name="rene-sigrist" >René Sigrist
+				<i class="external-link__icon icon icon--arrow"></i>
+			</a> 
+			<a class="external-link links__item" href="#" data-name="beatrix-otahal">Beatrix Otahal
+				<i class="external-link__icon icon icon--arrow"></i>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+{{> @team-member }}

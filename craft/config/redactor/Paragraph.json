@@ -1,0 +1,18 @@
+{
+  "buttons": ["formatting", "link", "bold"],
+  "plugins": ["fontcolor", "alignment"],
+  "linkNewTab": true,
+  "toolbarFixed": true,
+  "formattingAdd": {
+    "paragraph": {
+      "title": "Paragraph",
+      "api": "module.block.format",
+      "args": {
+        "type": "add",
+        "class": "paragraph"
+      }
+    }
+
+  }
+
+}

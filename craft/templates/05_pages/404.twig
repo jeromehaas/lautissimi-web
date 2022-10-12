@@ -1,0 +1,11 @@
+{% extends '04_layouts/page' %}
+{% set pageNotFound = craft.entries.section('pages').slug('page-not-found').one() %}
+{% set metaTitle = pageNotFound.metaTitle %}
+{% set metaDescription = pageNotFound.metaDescription %} 
+
+{% block main %}
+	{% include "03_organisms/desktop-navigation" %}
+	{% include "03_organisms/mobile-navigation" %}
+	{% include "03_organisms/page-not-found" %}
+	{% include "01_atoms/cursor" %}
+{% endblock %}

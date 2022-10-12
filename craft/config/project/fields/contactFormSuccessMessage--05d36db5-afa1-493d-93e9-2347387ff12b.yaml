@@ -1,0 +1,19 @@
+columnSuffix: unbmhern
+contentColumnType: text
+fieldGroup: 35c059dd-2c2f-41ff-8d17-876dd7228f9d # Contact Form
+handle: contactFormSuccessMessage
+instructions: ''
+name: 'Contact Form Success Message'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,0 +1,19 @@
+columnSuffix: tysqvqsu
+contentColumnType: text
+fieldGroup: b1aefba3-0637-4f18-ad0f-6e10d5cf4dd5 # Reference
+handle: referencesHeading
+instructions: ''
+name: 'References Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

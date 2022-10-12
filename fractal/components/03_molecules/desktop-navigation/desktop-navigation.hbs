@@ -1,0 +1,14 @@
+		<nav class="desktop-navigation {{ class }} js-desktop-navigation">
+			<a class="desktop-navigation__logo logo" href="/">
+				<img class="logo__image" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+			</a>
+			<div class="desktop-navigation__link-wrapper">
+				{{> @link class="desktop-navigation__link" content="Leistungen" target="services" }}
+				{{> @link class="desktop-navigation__link" content="Referenzen" target="references" }}
+				{{> @link class="desktop-navigation__link" content="Über uns" target="about" }}
+			</div>
+				<span class="desktop-navigation__shortcuts shortcuts">
+					{{> @circle-link class="shortcuts__button" content="Kontakt" icon="arrow" }}
+					{{> @link class="shortcuts__link" content="EN" target="/en" }}
+				</span>
+		</nav>

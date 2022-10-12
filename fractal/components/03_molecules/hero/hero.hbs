@@ -1,0 +1,34 @@
+<section class="hero section js-hero">
+  <div class="hero__inner section__inner">
+
+    <div class="hero__panel panel">
+      {{> @heading class="panel__heading" type='h1' content="Einzigartige Räume, die Begeistern." color="white" }}
+      {{> @heading class="panel__teaser" type='h2' looklike="p" content="Räume nach Ihren Wünschen einzurichten ist
+      unsere Passion. Dabei folgt unser Denken und Handeln dem Anspruch nach Eigenständigkeit, Harmonie und
+      Funktionalität." color="white" }}
+      <i class="panel__scroller icon icon--arrow"></i>
+      <img class="panel__leave" src="/media/graphics/logos/logo-lautissimi-leave-white.svg"></img>
+    </div>
+
+    <div class="hero__showcase showcase">
+			
+      {{> @desktop-navigation class="showcase__navigation" }}
+
+      <div class="showcase__swiper swiper">
+        <div class="showcase__wrapper swiper-wrapper">
+          <div class="showcase__slide swiper-slide">
+            <img class="showcase__image" src="/media/images/rupa-restaurant.webp" alt="Rupa Restaurant" />
+          </div>
+          <div class="showcase__slide swiper-slide">
+            <img class="showcase__image" src="/media/images/cresta-lounge.webp" alt="Rupa Restaurant" />
+          </div>
+          <div class="showcase__slide swiper-slide">
+            <img class="showcase__image" src="/media/images/schloss-restaurant.webp" alt="Rupa Restaurant" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

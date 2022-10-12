@@ -1,0 +1,19 @@
+columnSuffix: uozsrigb
+contentColumnType: text
+fieldGroup: 82768000-61fd-467c-a74f-85ddc7e78b7d # Reference Overview
+handle: heading
+instructions: ''
+name: Heading
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+handle: projects
+name: Projects
+propagationMethod: all
+siteSettings:
+  1c00b42a-dae4-4f15-a772-533bb5b53e7c: # Lautissimi (DE)
+    enabledByDefault: true
+    hasUrls: true
+    template: 05_pages/p-reference-detail.twig
+    uriFormat: 'projects/{parent.slug}/{slug}'
+  cbdca878-f920-45ad-9c48-262b21cf7421: # Lautissimi (EN)
+    enabledByDefault: true
+    hasUrls: true
+    template: 05_pages/p-reference-detail.twig
+    uriFormat: 'projects/{parent.slug}/{slug}'
+structure:
+  maxLevels: null
+  uid: b70de299-a53e-4e32-a27c-37b158c84f81
+type: structure

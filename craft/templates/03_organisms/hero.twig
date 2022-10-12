@@ -1,0 +1,31 @@
+{% set hero = craft.entries.section('hero').one() %}
+
+<section class="hero section js-hero">
+    <div class="hero__inner section__inner">
+
+        <div class="hero__panel panel">
+            <h1 class="heading  heading--h1   heading--white  panel__heading">
+							{{ hero['heroHeading'] is defined ? hero.heroHeading : '' }}
+            </h1>
+            <h2 class="heading  heading--p   heading--white  panel__teaser">
+						{{ hero['heroTeaser'] is defined ? hero.heroTeaser : '' }}
+            </h2> <i class="panel__scroller icon icon--arrow"></i>
+            <img class="panel__leave" src="/media/graphics/logos/logo-lautissimi-leave-white.svg" alt="LAUTISSIMI"></img>
+        </div>
+
+        <div class="hero__showcase showcase">
+						{% include "03_organisms/desktop-navigation" with { class: "showcase__navigation" } %}
+            <div class="showcase__swiper swiper">
+                <div class="showcase__wrapper swiper-wrapper">
+					{% for item in hero.heroImages.all() %}
+                    <div class="showcase__slide swiper-slide">
+                        <img class="showcase__image" src="/{{ item.url() }}" alt="{{ item.assetAltTag }}" />
+                    </div>
+					    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

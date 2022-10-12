@@ -1,0 +1,20 @@
+{% set imprint = craft.entries.section('imprint').one() %}
+
+<div class="imprint section">
+    <div class="imprint__inner section__inner">
+        <h1 class="heading  heading--h1   heading--white  imprint__heading">
+				{{ imprint['imprintHeading'] is defined ? imprint.imprintHeading : 'ssssxx' }}
+        </h1>
+      
+				{% for item in imprint.imprintBox %}
+					<div class="imprint__box">
+            <h4 class="heading  heading--h4   heading--beige-medium owner__heading">
+                {{ item.heading }}
+            </h4>
+						{{ item.text }}
+       		</div>
+				{% endfor %}
+
+    </div>
+</div>
+</div>

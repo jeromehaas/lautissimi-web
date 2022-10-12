@@ -1,0 +1,116 @@
+.team-member {
+	position: fixed !important;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	min-height: 100vh;
+	background-color: $white;
+	grid-template: auto / 1fr 1fr;
+	grid-template-areas: 
+		"portrait text-content";
+	display: none;
+	
+	&--active {
+		display: grid;
+		z-index: 35;
+	}
+
+	 &__portrait {
+		 grid-area: portrait;
+		 height: 100%;
+		 width: 100%;
+		 display: block;
+		 object-fit: cover;
+		 object-position: bottom;
+		 object-position: center;
+	 }
+
+	 &__text-content, .text-content {
+		 grid-area: text-content;
+		 padding: $padding-page-vertical-big;
+		 position: relative;
+		 overflow: scroll;
+
+		 &__name {
+			 font-size: 64px;
+			 margin-bottom: 16px;
+		 }
+
+		 &__contact-details, .contact-details {
+			 margin-bottom: 48px;
+
+
+			 &__phone, &__email, &__role {
+				 padding: 0;
+				 display: block;
+				 line-height: 1.5;
+			 }
+
+		 }
+
+		 &__introduction {
+			max-width: 560px;
+		 }
+
+		 &__close-button {
+			 position: fixed;
+			 top: 48px;
+			 right: 48px;
+		 }
+
+	 }
+
+	 @media (max-width: 1150px ) {
+
+			&__text-content, .text-content {
+				padding: 120px 64px;
+			}
+
+	 }
+
+	 @media (max-width: 950px ) {
+		 overflow: scroll;
+		grid-template: auto auto / auto;
+		grid-template-areas: 
+			"portrait" 
+			"text-content";
+			
+			&__portrait {
+				height: 800px;
+			}
+
+			&__text-content, .text-content {
+				overflow: visible;
+				padding: $padding-page-vertical-medium
+			}
+			
+		}
+		
+	@media (max-width: 650px ) {
+			
+		&__text-content, .text-content {
+			padding: 32px $padding-page-vertical-small;
+				
+			&__close-button {
+				top: 32px;
+				right: 32px;
+			}
+
+		}
+	
+		&__portrait {
+			height: 600px;
+		}
+
+	}
+		
+	@media (max-width: 450px ) {
+			
+		&__portrait {
+			height: 400px;
+		}
+
+	}
+
+}

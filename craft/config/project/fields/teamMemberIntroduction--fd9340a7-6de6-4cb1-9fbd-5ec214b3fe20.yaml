@@ -1,0 +1,19 @@
+columnSuffix: yusnwfjv
+contentColumnType: text
+fieldGroup: 785c8054-7a1d-49c1-87f5-75de0bc45d9f # Team Member
+handle: teamMemberIntroduction
+instructions: ''
+name: 'Team Member Introduction'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '8'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

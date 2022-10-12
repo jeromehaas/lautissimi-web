@@ -1,0 +1,19 @@
+columnSuffix: ulfklwww
+contentColumnType: text
+fieldGroup: aa179e31-b992-45b5-9d87-02a3b23a59ca # About
+handle: aboutHeading
+instructions: ''
+name: 'About Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

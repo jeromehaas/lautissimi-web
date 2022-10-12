@@ -1,0 +1,19 @@
+columnSuffix: tezgisqu
+contentColumnType: text
+fieldGroup: 730cd0d2-75f2-4352-afca-85aad702b46f # Asset
+handle: assetAltTag
+instructions: ''
+name: 'Asset Alt Tag'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

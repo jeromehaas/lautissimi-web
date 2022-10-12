@@ -1,0 +1,27 @@
+columnSuffix: ukciynmg
+contentColumnType: text
+fieldGroup: 35c059dd-2c2f-41ff-8d17-876dd7228f9d # Contact Form
+handle: contactFormDisclaimer
+instructions: ''
+name: 'Contact Form Disclaimer'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Paragraph.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

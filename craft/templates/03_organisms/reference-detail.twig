@@ -1,0 +1,94 @@
+<div class="reference-detail section js-reference-detail">
+	<div class="reference-detail__inner section__inner">
+
+		<div class="reference-detail__panel panel">
+			<h1 class="heading  heading--h3   heading--white  panel__heading">
+				{{ entry.parent.title }} 
+			</h1>
+				
+			<p class="paragraph  paragraph--white   panel__description">
+				{{ entry.projectText }}
+			</p>
+			<div class="panel__item item">
+				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
+					{{ currentSite.handle == 'de' ? 'Fertigstellung:' : 'Completion:' }}
+				</p>
+				<p class="paragraph  paragraph--white   item__heading">
+					{{ entry.projectDate }} 
+					{% if entry.projectEmployeeRelationship %}
+						{{ currentSite.handle == 'de' ? 'im Angestelltenverhältnis' : 'during employment' }}
+					{% endif %}
+					
+				</p>
+			</div>
+			<div class="panel__item item">
+				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
+					{{ currentSite.handle == 'de' ? 'Ort:' : 'Location:' }}
+				</p>
+				<p class="paragraph  paragraph--white   item__heading">
+					{{ entry.projectLocation }}
+				</p>
+			</div>
+			{% if entry.projectCooperations|length > 0 %}
+			<div class="panel__item item">
+				<p class="paragraph  paragraph--white   paragraph--serif  item__heading">
+					{{ currentSite.handle == 'de' ? 'In Zusammenarbeit mit:' : 'In collaboration with:' }}
+				</p>
+				{% for item in entry.projectCooperations %}
+					<p class="paragraph  paragraph--white   item__heading">
+						{{ item.person }}
+					</p>
+				{% endfor %}
+			</div>
+			{% endif %}
+
+			<a class="back-link panel__back-link" href="/{{ currentSite.language }}/#references">
+				<i class="back-link__icon icon icon--angle"></i>
+				<p class="back-link__text">
+					{{ currentSite.language == 'de' ? 'zurück' : 'back' }}
+				</p>
+			</a>
+		</div>
+
+		<div class="reference-detail__showcase showcase">
+
+			<div class="showcase__swiper swiper">
+				<div class="showcase__wrapper swiper-wrapper">
+					{% for item in entry.projectImages %}
+						<div class="showcase__slide swiper-slide">
+							{% if item.assetPhotographer %}
+								<div class="showcase__photographer-tag photographer-tag">
+									<p class="photographer-tag__name">{{ item.assetPhotographer }}</p>
+								</div>
+							{% endif %}
+							
+							<img class="showcase__image" src="/{{ item.url }}" alt="{{ item.assetAltTag }}"/>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			{% if entry.projectImages|length > 1  %}
+			<div class="showcase__controls controls">
+				<div class="controls__pagination"></div>
+				<i class="controls__angle controls__angle--previous icon icon--angle"></i>
+				<i class="controls__angle controls__angle--next icon icon--angle"></i>
+			</div>
+			{% endif %}
+
+			{% if entry['projectNext'].one().url() is defined %}
+			<a class="switcher showcase__switcher" href="{{ entry.projectNext.one().url }}">
+				<img class="switcher__preview" src="/{{ entry.projectNext.one().projectPreviewImage.one().url() }}" alt="{{ entry.projectNext.one().projectPreviewImage.one().assetAltTag }}">
+				<div class="switcher__label label">
+					<p class="paragraph  paragraph--white   label__text">
+						{{ currentSite.language == 'de' ? 'weiter' : 'next' }}
+					</p>
+					<i class="label__icon icon icon--angle"></i>
+				</div>
+			</a>
+		{% endif %}
+
+		</div>
+
+	</div>
+</div>

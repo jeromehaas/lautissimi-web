@@ -1,0 +1,19 @@
+columnSuffix: hlvngcad
+contentColumnType: text
+fieldGroup: 9bbcdb7c-8d5d-4d80-a9ca-37ed98d82ee0 # Hero
+handle: heroHeading
+instructions: ''
+name: 'Hero Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

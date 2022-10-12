@@ -1,0 +1,65 @@
+.circle-link {
+	color: $white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	&::after { 
+		content: "\ea03";
+		margin-left: 16px;
+		font-family: Icon;
+		transform: rotate(270deg);
+		width: 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		font-size: 24px;
+		justify-content: center;
+		vertical-align: center;
+		text-align: center;
+		color: $white;
+		padding: 8px;
+		border: 1px solid $white;
+		border-radius: 50%;
+	}
+
+	&--arrow::after { 
+		content: "\ea03";
+		transform: rotate(235deg);
+	}
+
+	&--close::after { 
+		content: "\ea05"; 
+	}
+
+	&--white {
+		color: $white;
+
+		&::after {
+			color: $white;
+			border-color: white
+		}
+
+	}
+
+	&--black {
+		color: $black;
+
+		&::after {
+			color: $black;
+			border-color: $black;
+		}
+
+	}
+
+	&--beige-medium {
+		color: $beige-medium;
+
+		&::after {
+			color: $beige-medium;
+			border-color: $beige-medium;
+		}
+
+	}
+	
+}
