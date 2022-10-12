@@ -5,6 +5,7 @@
 			<h1 class="heading  heading--h3   heading--white  panel__heading">
 				{{ entry.parent.title }} 
 			</h1>
+				
 			<p class="paragraph  paragraph--white   panel__description">
 				{{ entry.projectText }}
 			</p>
@@ -13,7 +14,11 @@
 					{{ currentSite.handle == 'de' ? 'Fertigstellung:' : 'Completion:' }}
 				</p>
 				<p class="paragraph  paragraph--white   item__heading">
-					{{ entry.projectDate }}
+					{{ entry.projectDate }} 
+					{% if entry.projectEmployeeRelationship %}
+						{{ currentSite.handle == 'de' ? 'im Angestelltenverhältnis' : 'during employment' }}
+					{% endif %}
+					
 				</p>
 			</div>
 			<div class="panel__item item">
@@ -51,6 +56,12 @@
 				<div class="showcase__wrapper swiper-wrapper">
 					{% for item in entry.projectImages %}
 						<div class="showcase__slide swiper-slide">
+							{% if item.assetPhotographer %}
+								<div class="showcase__photographer-tag photographer-tag">
+									<p class="photographer-tag__name">{{ item.assetPhotographer }}</p>
+								</div>
+							{% endif %}
+							
 							<img class="showcase__image" src="/{{ item.url }}" alt="{{ item.assetAltTag }}"/>
 						</div>
 					{% endfor %}

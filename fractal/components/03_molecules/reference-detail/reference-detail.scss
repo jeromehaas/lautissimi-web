@@ -54,14 +54,27 @@
 		height: 100vh;
 		position: relative;
 
-		&__slider, .slider {
+		&__wrapper {
+			display: flex;
+			flex-direction: row;
+		}
+		
+		&__slide, .slide {
 			height: 100%;
 			width: 100%;
+			position: relative;
+		}
 
-			&__wrapper {
-				display: flex;
-				flex-direction: row;
+		&__photographer-tag, .photographer-tag {
+			position: absolute; 
+			top: 32px;
+			right: 32px;
+			background-color: rgba(255, 255, 255, 0.3);
+			backdrop-filter: blur(10px);
+			padding: 4px 8px;
 
+			&__name {
+				color: $white;
 			}
 
 		}
