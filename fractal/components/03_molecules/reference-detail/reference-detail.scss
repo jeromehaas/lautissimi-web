@@ -129,22 +129,22 @@
 	@media (max-width: 1050px) {
 
 		&__inner {
-			height: unset;
 			grid-template: auto / 400px auto;
 			grid-template-areas: 
 			"panel showcase";
 		}
-
+		
 		&__showcase, .showcase {
 			grid-area: showcase;
 			max-width: calc(100vw - 400px);
 		}
-
+		
 	}
-
+	
 	@media (max-width: 950px) {
-
+		
 		&__inner {
+			height: unset;
 			grid-template: auto auto /  auto;
 			grid-template-areas: 
 			"showcase"
