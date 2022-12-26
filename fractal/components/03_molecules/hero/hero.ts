@@ -23,7 +23,6 @@ class Hero {
 
 	addEventListener = () => {
 		this.elements.scroller.addEventListener('click', this.setupScroller);
-		this.slider.on('click', this.showNextSlide);
 	};
 
 	createSlider = () => {
