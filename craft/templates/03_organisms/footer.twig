@@ -4,24 +4,18 @@
 <footer class="footer section" id="footer">
     <div class="footer__inner section__inner">
 
-				{% include "02_molecules/contact-form" %}
-      
+		{% include "02_molecules/contact-form" %}
+
         <address class="footer__address address">
             <img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
             <a href="https://goo.gl/maps/dYHFNyzmofH7k3pZA" target="_blank">
-                <p class="paragraph  paragraph--white   address__item">
-                    O&S Interior GmbH
-                </p> 
+                <p class="paragraph  paragraph--white   address__item">O&S Interior GmbH</p> 
             </a>
             <a href="https://goo.gl/maps/dYHFNyzmofH7k3pZA" target="_blank">
-                <p class="paragraph  paragraph--white   address__item">
-                    St. Johannes Strasse 23
-                </p>
+                <p class="paragraph  paragraph--white   address__item">St. Johannes Strasse 23</p>
             </a>
             <a href="https://goo.gl/maps/dYHFNyzmofH7k3pZA" target="_blank">
-                <p class="paragraph  paragraph--white   address__item">
-                    CH-6300 Zug
-                </p> 
+                <p class="paragraph  paragraph--white   address__item">CH-6300 Zug</p> 
             </a>
             <a class="gravity-link  gravity-link--white    address__item" href="mailto:info@lautissimi.ch">
                 info@lautissimi.ch
@@ -33,24 +27,16 @@
                 {{ currentSite.handle == 'de' ? 'Büro Adresse:' : 'Office:' }}
             </p>
             <a href="https://goo.gl/maps/LMTgNsmTJJzCpAhw5" target="_blank">
-                <p class="paragraph  paragraph--white   office__item">
-                    O&S Interior GmbH
-                </p>
+                <p class="paragraph  paragraph--white   office__item">O&S Interior GmbH</p>
             </a>
             <a href="https://goo.gl/maps/LMTgNsmTJJzCpAhw5" target="_blank">
-                <p class="paragraph  paragraph--white   office__item">
-                    .kuia.office 3. OG
-                </p> 
+                <p class="paragraph  paragraph--white   office__item">.kuia.office 3. OG</p> 
             </a>
             <a href="https://goo.gl/maps/LMTgNsmTJJzCpAhw5" target="_blank">
-                <p class="paragraph  paragraph--white   office__item">
-                    Neuhofstrasse 12
-                </p>
+                <p class="paragraph  paragraph--white   office__item">Neuhofstrasse 12</p>
             </a>
             <a href="https://goo.gl/maps/LMTgNsmTJJzCpAhw5" target="_blank">
-                <p class="paragraph  paragraph--white   office__item">
-                    CH-6340 Baar
-                </p> 
+                <p class="paragraph  paragraph--white   office__item">CH-6340 Baar</p> 
             </a>
             <a class="office__item office__image" href="https://www.hotelleriesuisse.ch/" target="_blank">
                 <img src="/media/graphics/logos/logo-hotellerie-suisse.svg" alt="Hotellerie Suisse">
@@ -58,37 +44,29 @@
         </address>
 
         <div class="footer__links">
-					{% if footer['footerCopyright'] is defined %}
-						<p class="paragraph  paragraph--white   links__item">
-							{{ footer.footerCopyright }}
-						</p> 
-					{% endif %}
-					{% for item in links.all() %}
-						<a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language }}{{ item.href }}">
-							{{ item.text }}
-						</a> 
-						{% endfor %}
-						<a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language == 'de' ? 'en' : 'de' }}">
-							{{ currentSite.language == 'de' ? 'Englisch' : 'Deutsch' }}
+            {% if footer['footerCopyright'] is defined %}
+                <p class="paragraph  paragraph--white   links__item">{{ footer.footerCopyright }}</p> 
+            {% endif %}
+            {% for item in links.all() %}
+                <a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language }}{{ item.href }}">{{ item.text }}</a> 
+            {% endfor %}
+            <a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language == 'de' ? 'en' : 'de' }}">
+                {{ currentSite.language == 'de' ? 'Englisch' : 'Deutsch' }}
             </a>
-
-						{% if contactDetails['contactDetailsLinkedin'] %}
-						<a class="links__item item" href="{{ contactDetails.contactDetailsLinkedin }}">
-							<i class="item__icon icon icon--linkedin"></i>
-						</a>
-					{% endif %}
+            {% if contactDetails['contactDetailsLinkedin'] %}
+                <a class="links__item item" href="{{ contactDetails.contactDetailsLinkedin }}">
+                    <i class="item__icon icon icon--linkedin"></i>
+                </a>
+            {% endif %}
         </div>
 
-				<div class="heading  heading--h2 heading--white footer__heading js-heading">
-					{% if currentSite.language == 'de' %}
-				    <h2 class="heading__title">Kontakt</h2>
-					{% endif %}
-			    <p class="heading__shadow">{{ footer['footerHeading'] is defined ? footer.footerHeading : '' }}</p>
-			    <figure class="heading__line"></figure>
-				</div>
-
-				
-
+        <div class="heading  heading--h2 heading--white footer__heading js-heading">
+            {% if currentSite.language == 'de' %}
+                <h2 class="heading__title">Kontakt</h2>
+            {% endif %}
+            <p class="heading__shadow">{{ footer['footerHeading'] is defined ? footer.footerHeading : '' }}</p>
+            <figure class="heading__line"></figure>
+        </div>
 
     </div>
 </footer>

@@ -1,4 +1,4 @@
-dateModified: 1663582114
+dateModified: 1680506508
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Lautissimi
@@ -49,6 +49,7 @@ meta:
     53df496f-66f4-4fe0-b65d-e2ebf2f53ac0: 'Team Member Mobile' # Team Member Mobile
     58f73fe0-0362-4ee7-8383-57cd67040f70: Heading # Heading
     63cd45e9-41d8-46e9-8c63-55ca65abb5c2: metaDescription # metaDescription
+    68d75e82-9279-4e0a-b242-c95cef3f5b80: Newsletter # Newsletter
     70e0f843-b82b-4f17-9b23-7bde6e0ee508: Inputs # Inputs
     81ab7748-17e8-408d-bb8a-42f62e3e78b9: 'Imprint Heading' # Imprint Heading
     81b9277b-cf7e-4fb7-8af5-90863aad655a: References # References
@@ -114,6 +115,7 @@ meta:
     aa179e31-b992-45b5-9d87-02a3b23a59ca: About # About
     b1aefba3-0637-4f18-ad0f-6e10d5cf4dd5: Reference # Reference
     b73f5876-dbab-4454-8125-6d6f91f36d11: Links # Links
+    b890e47e-f178-427c-968d-06de37933eaf: Newsletter # Newsletter
     bce90d5a-9c1f-46bd-95a5-bd54df05ff3b: 'Contact Form Error Message' # Contact Form Error Message
     bd3e18d5-c14b-4707-8476-07195ae8c015: 'Data Privacy Heading' # Data Privacy Heading
     bd99e6a7-bca7-48ba-bf7a-ed4f05f3eec7: 'Hero Teaser' # Hero Teaser

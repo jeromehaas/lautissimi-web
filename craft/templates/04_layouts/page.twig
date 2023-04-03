@@ -19,6 +19,13 @@
 	<div class="page__transition-layer"></div>
 	{% block main %} {% endblock %}
   <script src="/js/main.build.js"></script>
+  <script src="https://api.mailxpert.ch/forms.js"></script>
+  <script type="text/javascript">
+    mailxpert.forms.include({
+      src: 'https://web.swissnewsletter.ch/e/b0dc198418d18fd9/de/form/5eed8b64-b8eb-48de-80da-419ae17bad9b.html?render=container',
+      element: document.getElementById('formContentId'),
+    });
+  </script>
 </body>
 
 </html>
