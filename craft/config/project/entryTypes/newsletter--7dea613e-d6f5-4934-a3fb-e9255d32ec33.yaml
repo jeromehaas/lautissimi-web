@@ -1,5 +1,5 @@
 fieldLayouts:
-  2e7bb53a-3980-4147-9d39-72300a613a4b:
+  6b3fcbeb-3393-4451-90eb-a9801c8e3735:
     tabs:
       -
         elements:
@@ -31,7 +31,7 @@ fieldLayouts:
 handle: newsletter
 hasTitleField: false
 name: Newsletter
-section: b890e47e-f178-427c-968d-06de37933eaf # Newsletter
+section: 02fa0aa8-0c74-45b7-958c-94b9a5fb5a45 # Newsletter
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
