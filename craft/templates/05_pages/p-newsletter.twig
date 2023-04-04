@@ -1,0 +1,11 @@
+{% extends '04_layouts/page' %}
+{% set newsletter = craft.entries.section('pages').slug('newsletter-page').one() %}
+{% set metaTitle = newsletter.metaTitle ~ " | LAUTISSIMI" %}
+{% set metaDescription = newsletter.metaDescription  %} 
+
+{% block main %}
+    {% include "03_organisms/mobile-navigation" %}
+	{% include "03_organisms/desktop-navigation" %}
+	{% include "03_organisms/newsletter-form" %}
+	{% include "01_atoms/cursor" %}
+{% endblock %}
