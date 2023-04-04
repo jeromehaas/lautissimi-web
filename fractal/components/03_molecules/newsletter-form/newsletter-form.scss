@@ -1,8 +1,13 @@
 .newsletter-form {
     background-color: $green-dark;
+    min-height: calc(100vh - 180px);
 
     &__form {
         margin: 88px 32px;
+    }
+
+    @media (max-width: 1150px) {
+        min-height: calc(100vh);
     }
 
 }
