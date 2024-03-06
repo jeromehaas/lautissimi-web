@@ -10,6 +10,7 @@ import Services from '../../components/03_molecules/services/services';
 import ReferenceDetail from '../../components/03_molecules/reference-detail/reference-detail';
 import DesktopNavigation from '../../components/03_molecules/desktop-navigation/desktop-navigation';
 import Heading from '../../components/01_atoms/heading/heading';
+import NewsBanner from '../../components/02_molecules/news-banner/news-banner';
 
 const cursor = new Cursor();
 // cursor.init();
@@ -46,3 +47,6 @@ desktopNavigation.init();
 
 const heading = new Heading();
 heading.init();
+
+const newsBanner = new NewsBanner();
+newsBanner.init();

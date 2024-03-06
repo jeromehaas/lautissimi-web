@@ -13,7 +13,6 @@ class About {
 		this.closeButtons = document.querySelectorAll('.text-content__close-button');
 	};
 
-
 	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.addEventlistener();
