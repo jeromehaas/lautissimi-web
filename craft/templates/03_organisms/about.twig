@@ -31,22 +31,45 @@
         </div>
 
 				
+				<div class="about__portrait portait">
 				{% if about['aboutImage'] is defined %}
-					 <img class="about__portrait" src="/{{ about.aboutImage.one().url() }}" alt="{{ about.aboutImage.one().assetAltTag }}">
+					 <img class="portrait__image" src="/{{ about.aboutImage.one().url() }}" alt="{{ about.aboutImage.one().assetAltTag }}">
 				{% endif %}
+					<div class="portrait__links links">
+						{% for item in teamMembers.orderBy('postDate ASC').all() %}
+							<a class="external-link links__item" href="#" data-name="{{ item.teamMemberFullName|kebab }}">{{ item.teamMemberFullName }}
+								<i class="external-link__icon icon icon--arrow"></i>
+							</a>
+						{% endfor %}
+					</div>
+				</div>
 
-        <div class="about__links links">
-					{% for item in teamMembers.orderBy('postDate ASC').all() %}
-            <a class="external-link links__item" href="#" data-name="{{ item.teamMemberFullName|kebab }}">{{ item.teamMemberFullName }}
-							<i class="external-link__icon icon icon--arrow"></i>
-						</a>
-					{% endfor %}
-        </div>
+
+
+				<div class="about__info info">
+				<h4 class="heading  heading--h4   heading--black  info__heading js-heading">
+						LAUTISSIMI und D.O.M
+				</h4>
+				<p class="paragraph  paragraph--black   info__text paragraph">
+						Zwei starke Marken für hochwertige Objekteinrichtungen sind ab Januar 2024 ein Team. Mit der Übernahme der D.O.M. Design.Objekt.Möbel. GmbH erweitern wir unser Netzwerk und bieten unseren Kunden noch umfassendere Produktlösungen.
+				</p>
+		</div>
+
+				<div class="about__partner partner">
+				<img class="partner__image" src="/media/images/theo-huebscher.webp" alt="">
+				<div class="partner__links links">
+					<a class="external-link links__item" href="#" data-name="theodor-d-hübscher" >Theodor D. Hübscher
+						<i class="external-link__icon icon icon--arrow"></i>
+					</a>
+				</div>
+			</div>
+
 
     </div>
 </div>
 
 {% for item in teamMembers.orderBy('postDate ASC').all() %}
+{{ item.teamMemberFullName|kebab }}
 
 <div class="team-member" data-name="{{ item.teamMemberFullName|kebab }}">
 <img class="team-member__portrait" src="/{{ item.teamMemberImage.one().url() }}" alt="{{ item.teamMemberFullName }}" class="team-member__portrait">

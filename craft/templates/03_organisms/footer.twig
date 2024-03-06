@@ -17,9 +17,13 @@
             <a href="https://goo.gl/maps/dYHFNyzmofH7k3pZA" target="_blank">
                 <p class="paragraph  paragraph--white   address__item">6312 Steinhausen ZG</p> 
             </a>
-            <a class="gravity-link  gravity-link--white    address__item" href="mailto:info@lautissimi.ch">
+            <a class="gravity-link  gravity-link--white address__item" href="mailto:info@lautissimi.ch">
                 info@lautissimi.ch
             </a>
+					<img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+					<a class=" address__logo-link" href="https://www.dom-gmbh.ch/" target="_blank">
+						<img class="address__partner-logo" src="/media/graphics/logos/logo-dom.svg"></img>
+					</a>
         </address>
 
 
@@ -33,12 +37,17 @@
             <a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language == 'de' ? 'en' : 'de' }}">
                 {{ currentSite.language == 'de' ? 'Englisch' : 'Deutsch' }}
             </a>
-            {% if contactDetails['contactDetailsLinkedin'] %}
-                <a class="links__item item" href="{{ contactDetails.contactDetailsLinkedin }}">
-                    <i class="item__icon icon icon--linkedin"></i>
-                </a>
-            {% endif %}
+								<div class="links__social-media social-media">
+								<a class="social-media__item" href="https://www.instagram.com/lautissimi/" target="_blank">
+									<img class="social-media__icon icon icon--linkedi" src="/media/graphics/icons/icon-instagram.svg"></img>
+								</a>
+								<a class="social-media__item" href="https://www.linkedin.com/company/lautissimi/" target="_blank">
+									<img class="social-media__icon icon icon--linkedi" src="/media/graphics/icons/icon-linkedin.svg"></img>
+								</a>
+							</div>
         </div>
+
+				<img class="footer__label" src="/media/graphics/logos/logo-hotellerie-suisse.svg"/>
 
         <div class="heading  heading--h2 heading--white footer__heading js-heading">
             {% if currentSite.language == 'de' %}
