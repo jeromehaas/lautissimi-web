@@ -5,7 +5,6 @@
 			{{> @contact-form class="footer__contact-form"}}
 
        <address class="footer__address address">
-            <img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
             <p class="paragraph  paragraph--beige-medium   address__item">
                 Adresse
             </p>
@@ -18,9 +17,14 @@
             </a>
             <p class="paragraph  paragraph--white   address__item">
                 CH-6300 Zug
-            </p> <a class="gravity-link  gravity-link--white    address__item" href="mailto:info@lautissimi.ch">
+            </p> 
+						<a class="gravity-link  gravity-link--white    address__item" href="mailto:info@lautissimi.ch">
                 info@lautissimi.ch
             </a>
+            <img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+						<a class=" address__logo-link" href="https://www.dom-gmbh.ch/" target="_blank">
+            	<img class="address__partner-logo" src="/media/graphics/logos/logo-dom.svg"></img>
+						</a>
         </address>
 
 		<div class="footer__links">
@@ -29,10 +33,17 @@
 			{{> @link class="links__item" content="Datenschutz" href="#" color="white" }}
 			{{> @link class="links__item" content="Newsletter" href="#" color="white" }}
 			{{> @link class="links__item" content="Englisch" href="#" color="white" }}
-			<a class="links__item">
-				<i class="item__icon icon icon--linkedin"></i>
-			</a>
+			<div class="links__social-media social-media">
+				<a class="social-media__item" href="https://www.instagram.com/lautissimi/" target="_blank">
+					<img class="social-media__icon icon icon--linkedin" src="/media/graphics/icons/icon-instagram.svg"></img>
+				</a>
+				<a class="social-media__item" href="https://www.linkedin.com/company/lautissimi/" target="_blank">
+					<img class="social-media__icon icon icon--linkedin" src="/media/graphics/icons/icon-linkedin.svg"></img>
+				</a>
+			</div>
 		</div>
+
+		<img class="footer__label" src="/media/graphics/logos/logo-hotellerie-suisse.svg"/>
 
 		{{> @heading class="footer__heading" content="Kontakt" type="h2" color="white" showShadow=true }}
 
