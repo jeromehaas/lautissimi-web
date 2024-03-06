@@ -93,6 +93,15 @@
 			flex-direction: row;
 		}
 
+		&__label {
+			position: absolute;
+			width: 240px;
+			height: auto;
+			right: 64px;
+			bottom: 56px;
+			z-index: 100;
+		}
+
 	}
 
 	@media (max-width: 1100px) {
@@ -110,17 +119,19 @@
 		}
 
 	}
-	
-	@media (max-width: 1050px) {
-		
-		&__showcase, .showcase {
-	
 
-		
-		}
+	@media (max-width: 1150px) {
+
+		&__showcase, .showcase {
+
+			&__label {
+				width: 200px;
+				right: 32px;
+				bottom: 48px;
+			}
 
 	}
-
+	
 	@media (max-width: 1050px) {
 
 		&__inner {
@@ -141,7 +152,11 @@
 			&__navigation {
 				padding: 64px 32px 64px 96px  !important ;
 			}
-			
+
+			&__label {
+				display: none;
+			}
+
 		}
 
 		&__panel, .panel {
@@ -171,6 +186,8 @@
 			}
 
 		}
+
+	}
 
 	}
 
