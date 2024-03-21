@@ -21,18 +21,20 @@
 						<a class="gravity-link  gravity-link--white    address__item" href="mailto:info@lautissimi.ch">
                 info@lautissimi.ch
             </a>
-            <img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+            <img class="address__logo" src="/media/graphics/logos/logo-lautissimi-blatt.svg"></img>
 						<a class=" address__logo-link" href="https://www.dom-gmbh.ch/" target="_blank">
-            	<img class="address__partner-logo" src="/media/graphics/logos/logo-dom.svg"></img>
+            	<img class="address__partner-logo" src="/media/graphics/logos/logo-dom-white.svg"></img>
 						</a>
         </address>
 
 		<div class="footer__links">
-			{{> @paragraph class="links__item" content="©2022 O&S Interior GmbH" color="white" }}
+			<span class="links__wrapper">
 			{{> @link class="links__item" content="Impressum" href="#" color="white" }}
 			{{> @link class="links__item" content="Datenschutz" href="#" color="white" }}
 			{{> @link class="links__item" content="Newsletter" href="#" color="white" }}
 			{{> @link class="links__item" content="Englisch" href="#" color="white" }}
+			</span>
+			<img class="links__logo" src="/media/graphics/logos/logo-hotellerie-suisse.svg"/>
 			<div class="links__social-media social-media">
 				<a class="social-media__item" href="https://www.instagram.com/lautissimi/" target="_blank">
 					<img class="social-media__icon icon icon--linkedin" src="/media/graphics/icons/icon-instagram.svg"></img>
@@ -42,8 +44,8 @@
 				</a>
 			</div>
 		</div>
+			{{> @paragraph class="footer__copyright" content="©202 O&S Interior GmbH" color="white" }}
 
-		<img class="footer__label" src="/media/graphics/logos/logo-hotellerie-suisse.svg"/>
 
 		{{> @heading class="footer__heading" content="Kontakt" type="h2" color="white" showShadow=true }}
 

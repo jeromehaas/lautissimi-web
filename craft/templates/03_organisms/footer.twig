@@ -7,7 +7,6 @@
 		{% include "02_molecules/contact-form" %}
 
         <address class="footer__address address">
-            <img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
             <a href="https://goo.gl/maps/dYHFNyzmofH7k3pZA" target="_blank">
                 <p class="paragraph  paragraph--white   address__item">O&S Interior GmbH</p> 
             </a>
@@ -20,23 +19,24 @@
             <a class="gravity-link  gravity-link--white address__item" href="mailto:info@lautissimi.ch">
                 info@lautissimi.ch
             </a>
-					<img class="address__logo" src="/media/graphics/logos/logo-lautissimi.svg"></img>
+					<img class="address__logo" src="/media/graphics/logos/logo-lautissimi-blatt.svg"></img>
 					<a class=" address__logo-link" href="https://www.dom-gmbh.ch/" target="_blank">
-						<img class="address__partner-logo" src="/media/graphics/logos/logo-dom.svg"></img>
+						<img class="address__partner-logo" src="/media/graphics/logos/logo-dom-white.svg"></img>
 					</a>
         </address>
 
 
         <div class="footer__links">
-            {% if footer['footerCopyright'] is defined %}
-                <p class="paragraph  paragraph--white   links__item">{{ footer.footerCopyright }}</p> 
-            {% endif %}
-            {% for item in links.all() %}
-                <a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language }}{{ item.href }}">{{ item.text }}</a> 
-            {% endfor %}
+					<span class="links__wrapper">
+           
+							{% for item in links.all() %}
+									<a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language }}{{ item.href }}">{{ item.text }}</a> 
+							{% endfor %}
             <a class="gravity-link  gravity-link--white links__item" href="/{{ currentSite.language == 'de' ? 'en' : 'de' }}">
                 {{ currentSite.language == 'de' ? 'Englisch' : 'Deutsch' }}
             </a>
+						</span>
+						<img class="links__logo" src="/media/graphics/logos/logo-hotellerie-suisse.svg"/>
 								<div class="links__social-media social-media">
 								<a class="social-media__item" href="https://www.instagram.com/lautissimi/" target="_blank">
 									<img class="social-media__icon icon icon--linkedi" src="/media/graphics/icons/icon-instagram.svg"></img>
@@ -47,7 +47,9 @@
 							</div>
         </div>
 
-				<img class="footer__label" src="/media/graphics/logos/logo-hotellerie-suisse.svg"/>
+ 				{% if footer['footerCopyright'] is defined %}
+        	<p class="paragraph  paragraph--white   footer__copyright">{{ footer.footerCopyright }}</p> 
+        {% endif %}
 
         <div class="heading  heading--h2 heading--white footer__heading js-heading">
             {% if currentSite.language == 'de' %}

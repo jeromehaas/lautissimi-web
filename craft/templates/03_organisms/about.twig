@@ -36,11 +36,17 @@
 					 <img class="portrait__image" src="/{{ about.aboutImage.one().url() }}" alt="{{ about.aboutImage.one().assetAltTag }}">
 				{% endif %}
 					<div class="portrait__links links">
-						{% for item in teamMembers.orderBy('postDate ASC').all() %}
-							<a class="external-link links__item" href="#" data-name="{{ item.teamMemberFullName|kebab }}">{{ item.teamMemberFullName }}
+						{# {% for item in teamMembers.orderBy('postDate ASC').all() %} #}
+							{# <a class="external-link links__item" href="#" data-name="{{ item.teamMemberFullName|kebab }}">{{ item.teamMemberFullName }}
 								<i class="external-link__icon icon icon--arrow"></i>
-							</a>
-						{% endfor %}
+							</a> #}
+				<a class="external-link links__item" href="#" data-name="rené-sigrist">René Sigrist
+					<i class="external-link__icon icon icon--arrow"></i>
+				</a>
+				<a class="external-link links__item" href="#" data-name="beatrix-otahal">Beatrix Otahal
+					<i class="external-link__icon icon icon--arrow"></i>
+				</a>
+						{# {% endfor %} #}
 					</div>
 				</div>
 
@@ -48,10 +54,21 @@
 
 				<div class="about__info info">
 				<h4 class="heading  heading--h4   heading--black  info__heading js-heading">
-						LAUTISSIMI und D.O.M
+
+						{% if currentSite.language == 'de' %}
+							LAUTISSIMI und D.O.M
+						{% endif %}
+						{% if currentSite.language == 'en' %}
+							LAUTISSIMI and D.O.M
+						{% endif %}
 				</h4>
 				<p class="paragraph  paragraph--black   info__text paragraph">
-						Zwei starke Marken für hochwertige Objekteinrichtungen sind ab Januar 2024 ein Team. Mit der Übernahme der D.O.M. Design.Objekt.Möbel. GmbH erweitern wir unser Netzwerk und bieten unseren Kunden noch umfassendere Produktlösungen.
+						{% if currentSite.language == 'de' %}
+							Zwei starke Marken für hochwertige Objekteinrichtungen sind ab Januar 2024 ein Team. Mit der Übernahme der D.O.M. Design.Objekt.Möbel. GmbH erweitern wir unser Netzwerk und bieten unseren Kunden noch umfassendere Produktlösungen.
+						{% endif %}
+						{% if currentSite.language == 'en' %}
+						Two strong brands for finest representative Interiors have been one team since January 2024. With the acquisition of the company D.O.M. GmbH, we expand our network and offer our customers even more comprehensive product solutions.						
+						{% endif %}
 				</p>
 		</div>
 
@@ -69,7 +86,6 @@
 </div>
 
 {% for item in teamMembers.orderBy('postDate ASC').all() %}
-{{ item.teamMemberFullName|kebab }}
 
 <div class="team-member" data-name="{{ item.teamMemberFullName|kebab }}">
 <img class="team-member__portrait" src="/{{ item.teamMemberImage.one().url() }}" alt="{{ item.teamMemberFullName }}" class="team-member__portrait">

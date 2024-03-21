@@ -24,13 +24,13 @@ class NewsBanner {
 		if (!hasShown) {
 			setTimeout(() => {
 				this.showBanner();
-				sessionStorage.setItem('news-banner-has-shown', 'true');
 			}, 3000);
 		};
 	};
 
 	addEventlistener = () => {
 		this.closeButton.addEventListener('click', () => {
+			sessionStorage.setItem('news-banner-has-shown', 'true');
 			this.hideBanner();
 		});
 	};

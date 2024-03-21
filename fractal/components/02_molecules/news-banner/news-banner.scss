@@ -1,7 +1,7 @@
 .news-banner {
 	width: 100%;
 	max-width: 320px;
-	z-index: 100;
+	z-index: 45;
 	border: 1px solid $beige-bright;
 	position: fixed;
 	bottom: 32px;
@@ -31,13 +31,13 @@
 
 	&__text {
 		margin-bottom: 16px;
+		color: $black;
 	}
 
 	&__image {
 		display: block;
-		width: 100%;
-		padding: 24px 24px 8px 24px;
-		border: 1px solid $beige-bright;
+		width: 65%;
+		padding: 8px 0;
 	}
 
 	@media (max-width: 500px) {

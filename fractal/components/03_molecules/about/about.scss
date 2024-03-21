@@ -172,6 +172,7 @@
 	&__info, .info {
 		margin: 0;
 		margin-top: 32px;
+		margin-bottom: 64px;
 	}
 
 	@media (max-width: 650px) {
@@ -188,13 +189,14 @@
 		}
 
 		&__partner, .partner {
+			margin-bottom: 0;
 		
 				&__image {
 					width: 100%;
 					max-width: unset;
 					margin-bottom: 16px;
 				}
-		
+
 		}
 
 	}

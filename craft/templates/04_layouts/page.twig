@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/css/main.min.css?v=1.0">
+    <link rel="stylesheet" href="/css/main.min.css?v=2.0">
     <link rel="icon" href="/media/favicons/favicon.ico">
     <title>{{ metaTitle }}</title>
 		<meta name="description" content="{{ metaDescription }}">
@@ -17,8 +17,25 @@
 
 <body class="body page js-page">
 	<div class="page__transition-layer"></div>
+
 	{% block main %} {% endblock %}
-  <script src="/js/main.build.js?v=1.0"></script>
+
+	<div class="news-banner js-news-banner">
+		<img class="news-banner__close" src="/media/graphics/icons/icon-close.svg" alt="">
+		<h4 class="heading  heading--h4   heading--beige-medium  news-banner__heading js-heading">
+				Aktuell
+		</h4>
+		<p class="paragraph  paragraph--beige-dark   news-banner__text paragraph--small">
+				{% if currentSite.language == 'de' %}
+					Zwei starke Marken für hochwertige Objekteinrichtungen schliessen sich zusammen. Per Januar 2024 übernimmt LAUTISSIMI die Firma D.O.M. Design.Objekt.Möbel GmbH.
+				{% endif %}
+				{% if currentSite.language == 'en' %}
+					Two strong brands for high-quality object interior incorporates. As of January 2024 LAUTISSIMI acquires the company D.O.M. GmbH.
+				{% endif %}
+		</p> <img class="news-banner__image" src="/media/graphics/logos/logo-dom-black.svg" alt="DOM">
+</div>
+
+  <script src="/js/main.build.js?v=2.0"></script>
   <script src="https://api.mailxpert.ch/forms.js"></script>
   <script type="text/javascript">
     mailxpert.forms.include({
@@ -26,6 +43,8 @@
       element: document.getElementById('formContentId'),
     });
   </script>
+
+
 </body>
 
 </html>

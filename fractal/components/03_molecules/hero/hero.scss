@@ -82,10 +82,11 @@
 			height: 100%;
 			object-fit: cover;
 			position: absolute;
-    		top: 0;
-    		bottom: 0;
-    		left: 0;
-    		right: 0;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			object-position: right;
 		}
 
 		&__wrapper {
@@ -97,9 +98,9 @@
 			position: absolute;
 			width: 240px;
 			height: auto;
-			right: 64px;
-			bottom: 56px;
-			z-index: 100;
+			right: 32px;
+			bottom: 32px;
+			z-index: 40;
 		}
 
 	}
