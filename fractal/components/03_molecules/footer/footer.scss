@@ -225,8 +225,8 @@
 				margin-bottom: 48px;
 			}
 
+
 			&__item, .item {
-				// padding: 8px 0px;
 				line-height: 1.5;
 	
 				&:nth-child(1) {
@@ -237,6 +237,15 @@
 
 		}
 
+		&__address, .address {
+
+
+			&__label-logo {
+				margin-top: 80px;
+				margin-bottom: 16px;
+			}
+
+		}
 		&__social-media, .social-media {
 			margin-left: unset;
 			margin-bottom: 48px;
