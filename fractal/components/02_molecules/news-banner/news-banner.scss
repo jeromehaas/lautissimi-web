@@ -1,56 +1,61 @@
 .news-banner {
-	width: 100%;
-	max-width: 320px;
-	z-index: 45;
-	border: 1px solid $beige-bright;
-	position: fixed;
-	bottom: 32px;
-	right: 32px;
-	padding: 32px;
-	background-color: $white;
-	transform: translateX(calc(100% + (2 * 32px)));
-	transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 320px;
+    z-index: 45;
+    border: 1px solid $beige-bright;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    padding: 32px;
+    background-color: $white;
+    transform: translateX(calc(100% + 64px)); /* Start off-screen using transform */
+    transition: transform 0.5s ease;
+    overflow: hidden;
 
-	&--visible {
-		transform: translateX(0);
-	}
+    &__close {
+        align-self: flex-end;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
 
-	&__close {
-		margin-left: auto;
-		margin-bottom: 8px;
-		display: block;
-		cursor: pointer;
-		position: absolute;
-		right: 32px;
-		top: 32px;
-	}
+    &__heading {
+        margin-bottom: 24px;
+    }
 
-	&__heading {
-		margin-bottom: 16px;
-	}
+    &__text {
+       margin-bottom: 24px;
+    }
 
-	&__text {
-		margin-bottom: 16px;
-		color: $black;
-	}
+    &__image {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
 
-	&__image {
-		display: block;
-		width: 65%;
-		padding: 8px 0;
-	}
+    &--visible {
+        transform: translateX(0); /* Slide in from the right */
+    }
 
-	@media (max-width: 500px) {
+    &--exit {
+        transform: translateX(calc(100% + 64px)); /* Slide out to the right */
+    }
 
-		max-width: unset;
-		bottom: 32px;
-		right: 32px;
-		width: calc(100% - (2 * 32px));
-		left: 32px;
-		padding: 32px;
+    .news-card {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 
+    .news-card--active {
+        display: block;
+        opacity: 1;
+    }
 
-	}
-
+    @media (max-width: 400px) {
+        max-width: 100%;
+        width: calc(100% - (2 * 32px));
+    }
 }
-
