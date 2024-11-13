@@ -58,15 +58,18 @@
 
 	&__portrait, .portrait {
 		grid-area: portrait;
-		margin-bottom: 96px;
+		margin-bottom: 24px;
+		align-items: flex-end;
+		margin-top: auto;
 
 		&__image {
 			width: 100%;
-			height: 100%;
-			object-fit: cover;
+			object-fit: contain;
 			object-position: center 20%;
 			display: block;
 			margin-bottom: 16px;
+			max-width: 320px;
+			margin-top: auto;
 		}
 
 
@@ -148,9 +151,14 @@
 			margin-bottom: 32px;
 		}
 
-		&__portrait {
+		&__portrait, .portrait {
 			aspect-ratio: 1.6 / 1;
 			margin-bottom: 0;
+
+			&__image {
+				max-width: unset;
+			}
+
 		}
 
 		&__statements, .statements {
